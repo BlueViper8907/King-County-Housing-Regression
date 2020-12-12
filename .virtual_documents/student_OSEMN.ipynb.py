@@ -8,13 +8,13 @@ import scipy.stats as stats
 import statsmodels.api as sm
 import statsmodels.stats.api as sms
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
 
 from math import sin, cos, sqrt, atan2, radians
 from mlxtend.feature_selection import SequentialFeatureSelector as SFS
 from scipy.stats import zscore
+from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.neighbors import NearestNeighbors, KNeighborsClassifier, KNeighborsRegressor
 from sklearn.model_selection import cross_val_predict, KFold, train_test_split
@@ -26,52 +26,59 @@ from statsmodels.formula.api import ols
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 
-#set settings 
+#editing our settings so we can view more of our data at once 
 get_ipython().run_line_magic("matplotlib", " inline")
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
 
 
-# read data
-kc_columns = ['price', 'bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'condition', 'grade', 'sqft_above', 
-              'sqft_basement', 'yr_built']
-
+#wrote up our data types to save on computer space and stop some of them from being inccorectly read as objs
 kc_dtypes = {'id': int, 'date' : str,  'price': float, 'bedrooms' : int, 'bathrooms' : float, 'sqft_living': int, 'sqft_lot': int, 
              'floors': float, 'waterfront': float, 'view' : float, 'condition': float, 'grade': int, 'sqft_above': int, 
              'yr_built': int, 'yr_renovated': float, 'zipcode': float, 'lat': float, 'long': float}
 
+
+#read csv, parsing dates and using our dtypes 
 kc_data = pd.read_csv(r'~\Documents\Flatiron\data\data\kc_house_data.csv', parse_dates = ['date'], dtype=kc_dtypes)
 
 
+#have some errors in sqft_basement but I want to use it, so I've gotta replace the str, fill the null values 
+# & add one sqft to each basement with no sqft, so that when we multiply to get rid of multi-colinieartiy 
+#we don't end up multiplying by a bunch of zeroes and wrecking stuff 
 kc_data['sqft_basement'] = kc_data['sqft_basement'].replace({'?': 0})
-kc_data['sqft_basement'] = kc_data['sqft_basement'].astype(dtype=float, errors='ignore')
+kc_data['sqft_basement'] = kc_data['sqft_basement'].fillna(0)
+kc_data['sqft_basement'] = kc_data['sqft_basement'].astype(dtype=float)
+
+i = 0 
+for sqft in kc_data['sqft_basement']:
+    if kc_data['sqft_basement'].iloc[i] == 0.0:
+        kc_data['sqft_basement'].iloc[i] + 1.0
+
+
+#getting rid of multicolinearity in sqftage 
 kc_data['sqft_total'] = kc_data['sqft_living']*kc_data['sqft_lot']
-kc_data['sqft_habitable'] = (kc_data['sqft_above']+1)*(kc_data['sqft_basement']+1)
+kc_data['sqft_neighb'] = kc_data['sqft_living15']*kc_data['sqft_lot15']
+kc_data['sqft_habitable'] = kc_data['sqft_above']*kc_data['sqft_basement']
 
 
-#drop unnessecary columns and fix data
-kc_data = kc_data.drop('sqft_living', 1).drop('sqft_lot', 1).drop('id', 1).drop('date', 1).drop('sqft_above',1).drop('sqft_basement',1)
-
-#look for outliers, in bedrooms, we can clearly see a single outlier, for other columns, filtering by z score will be easiest 
-kc_data[kc_data['bedrooms'] == 33]
-# wouldn't be realistic for a house with 33 bedrooms to only have a sqft_living of 1620 and only 1 3/4 bathrooms so it looks like a typo
-# will adjust to 3 
+#in our search for outliers we found some data that was likely just a typo, let's fix that 
 kc_data[kc_data['bedrooms'] == 33] = kc_data[kc_data['bedrooms'] == 33].replace(33,3)
 
 
 #setting waterfront NaN values equal to the ratio of waterfront/non-waterfront properties, will want to try and narrow by zipcode 
 #filling NaN with easily seperatable/changable values helpful 
-kc_data['waterfront'] = kc_data['waterfront'].fillna(0)
-kc_data['view'] = kc_data['view'].fillna(0)
-kc_data['yr_renovated'] = kc_data['yr_renovated'].fillna(0)
+kc_data = kc_data.fillna(0)
 
 
-#Convert to integer for whole number year
+#Convert to integer for whole number year, not sure why it'll let us reassign it here but raise errors in dtypes
 kc_data['yr_renovated'] = kc_data['yr_renovated'].astype('int')
+# fixing condition to be a good or bad, hoping that'll help get rid of the multicolinearity 
+kc_data['condition'] = kc_data.condition.replace(to_replace = [1.0, 2.0, 3.0, 4.0, 5.0],  value= ['bad', 'bad', 'good', 'good', 'good'])
 
 
-dumm = pd.get_dummies(kc_data['condition'], prefix='cond', drop_first=True, dtype=int)
+#making dummies of our catagorical variables 
+dumm = pd.get_dummies(kc_data['condition'], drop_first=True)
 kc_data = kc_data.merge(dumm, left_index=True, right_index=True)
 dumm = pd.get_dummies(kc_data['view'], prefix='view', drop_first=True, dtype=int)
 kc_data = kc_data.merge(dumm, left_index=True, right_index=True)
@@ -79,72 +86,95 @@ dumm = pd.get_dummies(kc_data['grade'], prefix='gra', drop_first=True, dtype=int
 kc_data = kc_data.merge(dumm, left_index=True, right_index=True)
 
 
-kc_data = kc_data.rename({'cond_2.0':'con2', 'cond_3.0':'con3','cond_4.0':'con4','cond_5.0':'con5'},axis=1)
-kc_data = kc_data.rename({ 'view_1.0': 'view1', 'view_2.0': 'view2', 'view_3.0': 'view3', 'view_4.0':'view4'},axis=1)
-kc_data = kc_data.rename({ 'gra_4': 'grd4', 'gra_5':'grd5', 'gra_6':'grd6',
-       'gra_7':'grd7', 'gra_8':'grd8', 'gra_9':'grd9', 'gra_10':'grd10', 'gra_11':'grd11', 'gra_12':'grd12', 'gra_13':'grd13'},axis=1)
+# renaming our dummies so that they'r easier to interpret 
+kc_data = kc_data.rename({'view_1.0': 'view1', 'view_2.0': 'view2', 'view_3.0': 'view3', 'view_4.0':'view4'},axis=1)
+kc_data = kc_data.rename({'gra_4': 'D', 'gra_5':'Cmin', 'gra_6':'C','gra_7':'Cpl', 'gra_8':'Bmin', 'gra_9':'B',
+                          'gra_10':'Bpl', 'gra_11':'Amin', 'gra_12':'A', 'gra_13':'Apl'},axis=1)
 
 
+#we have 70 zipcodes and 120 years, it would add too much complexity to our data to increase it by 190 columns
+# so instead, we're going to go through and bin them! 
 zips = []
+years = []
+
 
 for zipcode in kc_data.zipcode:
     zips.append(zipcode)
-    
-zips = list(set(zips))
-zips.sort()
-
-
-#would be a bad idea to add 70 dummies to our columns so instead we're binning our zipcodes by 5 
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:5], value= 'zip1')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:10], value= 'zip2')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:15], value= 'zip3')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:20], value= 'zip4')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:25], value= 'zip5')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:30], value= 'zip6')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:35], value= 'zip7')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:40], value= 'zip8')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:45], value= 'zip9')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:50], value= 'zip10')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:55], value= 'zip11')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:60], value= 'zip12')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:65], value= 'zip13')
-kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[:70], value= 'zip14')
-
-
-years = []
-
 for year in kc_data.yr_built:
     years.append(year)
     
+zips = list(set(zips))
 years = list(set(years))
+
+zips.sort()
 years.sort()
 
 
+#will have to find a way to write this into a loop at some point, but, I can't figure out how to get .replace()
+#to adequatley read lists of lists while also giving them unique names, so for now this works 
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[0:5],  value= 'zip001t005')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[5:10], value= 'zip006t011')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[10:15], value= 'zip014t024')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[15:20], value= 'zip027t031')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[20:25], value= 'zip032t039')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[25:30], value= 'zip040t053')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[30:35], value= 'zip055t065')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[35:40], value= 'zip070t077')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[40:45], value= 'zip092t106')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[45:50], value= 'zip107t115')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[50:55], value= 'zip116t122')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[55:60], value= 'zip125t144')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[60:65], value= 'zip146t168')
+kc_data['zipcode'] = kc_data.zipcode.replace(to_replace = zips[65:70], value= 'zip177t199')
+
+
 #gonna do the same for year built by 20 years, will give us 6 new columns, may be illuminating 
-kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[:20], value= 'thru20')
-kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[:40], value= 'thru40')
-kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[:60], value= 'thru60')
-kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[:80], value= 'thru80')
-kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[:100], value= 'thru2000')
-kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[:120], value= 'thru2020')
+kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[0:20], value= 'thru20')
+kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[20:40], value= 'thru40')
+kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[40:60], value= 'thru60')
+kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[60:80], value= 'thru80')
+kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[80:100], value= 'thru2000')
+kc_data['yr_built'] = kc_data.yr_built.replace(to_replace = years[100:120], value= 'thru2020')
 
 
+# get dummies of our new variables 
 dumm = pd.get_dummies(kc_data['zipcode'], prefix=None, drop_first=True)
 kc_data = kc_data.merge(dumm, left_index=True, right_index=True)
 dumm = pd.get_dummies(kc_data['yr_built'], prefix=None, drop_first=True)
 kc_data = kc_data.merge(dumm, left_index=True, right_index=True)
 
 
+#sqrt trasnforming price so that it's more normalized 
+kc_data['pricesqrt'] = kc_data['price'].apply(np.sqrt)
+
+
+print(sqrt(17728447450.16226 ))
+print(sqrt(19094035777.885963))
+
+
+#some of these homes don't have a full bathroom, as we're focusing on homes that would be sold to families
+#wanting at least one full bathroom is a reasonable requirement. We also have a handful of homes with too 
+#many bedrooms, while I'm sure some families want 10 bedrooms, 7 is probably a good stopping point there 
 kc_data =  kc_data.loc[kc_data['bathrooms'] >= 1]
+kc_data =  kc_data.loc[kc_data['bedrooms'] <= 7]
+#drop unnessecary columns, print columns we will be using going forward 
+to_drop = ['sqft_living','sqft_lot','id','date','sqft_above','sqft_basement', 'yr_built', 'condition', 'grade',
+           'zipcode']
+kc_data = kc_data.drop(labels=to_drop,axis=1)
 kc_data.columns
 
 
-kc_data = kc_data[['price', 'bedrooms', 'bathrooms', 'floors', 'waterfront', 'yr_renovated', 
-                   'lat', 'long', 'sqft_living15', 'sqft_lot15', 'sqft_total', 'sqft_habitable', 'con2', 
-                   'con3', 'con4', 'con5', 'view1', 'view2', 'view3', 'view4', 'grd4', 'grd5', 'grd6', 
-                   'grd7', 'grd8', 'grd9', 'grd10', 'grd11', 'grd12', 'grd13', 'zip10', 'zip11', 'zip12', 
-                   'zip13', 'zip14', 'zip2', 'zip3', 'zip4', 'zip5', 'zip6', 'zip7', 'zip8', 'zip9',
-                   'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80']].copy()
+kc_data = kc_data[['pricesqrt', 'price', 'bedrooms', 'bathrooms', 'floors', 'waterfront', 'yr_renovated',
+                   'lat', 'long', 'sqft_neighb', 'sqft_total', 'sqft_habitable', 'good',
+                   'view1', 'view2', 'view3', 'view4', 
+                   'D', 'Cmin', 'C', 'Cpl', 'Bmin', 'B', 'Bpl', 'Amin', 'A', 'Apl', 
+                   'zip006t011', 'zip014t024', 'zip027t031', 'zip032t039', 'zip040t053', 
+                   'zip055t065', 'zip070t077', 'zip092t106', 'zip107t115', 'zip116t122', 
+                   'zip125t144', 'zip146t168', 'zip177t199', 'thru2000', 
+                   'thru2020', 'thru40', 'thru60', 'thru80']].copy()
+
+
+kc_data.describe()
 
 
 schools = pd.read_csv(r'~\Documents\Flatiron\data\data\Schools.csv')
@@ -156,17 +186,17 @@ type(schools['LAT_CEN'].iloc[2])
 
 #calculate distance between schools and data 
 kc = {}
-kc3 = {}
 kc5 = {}
 # approximate radius of earth in miles  miles
 i = 0
-while i <= 21521:
+#iterate over each of our rows in the dataframe
+while i <= 21498:
     R = 3963.0
     k = 0
     lat1 = radians(kc_data['lat'].iloc[i])
     lon1 = radians(kc_data['long'].iloc[i])
     distance = []
-    
+    #iterate over each school to see which school is the closest to each row in our datframe 
     while k <= 641:
         lat2 = radians(schools['LAT_CEN'].iloc[k])
         lon2 = radians(schools['LONG_CEN'].iloc[k])
@@ -179,21 +209,20 @@ while i <= 21521:
         distance.append(R * c)
         
         k += 1 
-        
+    #sort schools by distance 
     distance.sort()
+    #choose closest school 
     kc[i] = distance[0:1]
-    kc3[i] = sum(distance[0:3])
+    #find some of distance to nearest 5 schools 
     kc5[i] = sum(distance[0:5])
     i += 1
 
 
 kc1 = pd.DataFrame.from_dict(kc, orient='index', columns=['mi_nearest_scl'])
-kc3 = pd.DataFrame.from_dict(kc3, orient='index', columns=['mi_3_scls'])
 kc5 = pd.DataFrame.from_dict(kc5, orient='index', columns=['mi_5_scls'])
 
 
 kc_data = kc_data.merge(kc1, left_index=True, right_index=True)
-kc_data = kc_data.merge(kc3, left_index=True, right_index=True)
 kc_data = kc_data.merge(kc5, left_index=True, right_index=True)
 
 
@@ -218,8 +247,8 @@ kc_data.hist(figsize=(10,10))
 plt.tight_layout()
 
 
-# fig = pd.plotting.scatter_matrix(kc_data,figsize=(16,16));
-# print(type(fig))
+#fig = pd.plotting.scatter_matrix(kc_data,figsize=(30,30));
+#print(type(fig))
 
 
 fig, ax = plt.subplots(figsize=(26,12))
@@ -236,13 +265,16 @@ plt.setp(ax.get_xticklabels(),
 ax.set_title('Correlations')
 
 
-outcome = 'price'
-x_cols = ['bedrooms', 'bathrooms', 'floors', 'waterfront', 'yr_renovated', 
-                   'lat', 'long', 'sqft_living15', 'sqft_lot15', 'sqft_total', 'sqft_habitable', 'con2', 
-                   'con4', 'con5', 'view1', 'view2', 'view3', 'view4', 'grd4', 'grd5', 'grd6', 
-                   'grd7', 'grd8', 'grd9', 'grd10', 'grd11', 'grd12', 'zip10', 'zip11', 'zip12', 
-                   'zip13', 'zip14', 'zip2', 'zip3', 'zip4', 'zip5', 'zip6', 'zip7', 'zip8', 'zip9',
-                   'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80', 'mi_3_scls']
+outcome = 'pricesqrt'
+x_cols = [ 'bedrooms', 'bathrooms', 'floors', 'waterfront', 'yr_renovated', 
+          'lat', 'long', 'sqft_neighb', 'sqft_total', 'sqft_habitable', 
+          'good', 'view1', 'view2', 'view3', 'view4',
+          'D', 'Cmin', 'C', 'Cpl', 'Bmin', 'B', 'Bpl', 'Amin', 'A', 'Apl', 
+          'zip006t011', 'zip014t024', 'zip027t031', 'zip032t039', 
+          'zip055t065', 'zip070t077', 'zip092t106', 
+          'zip107t115', 'zip116t122', 'zip125t144', 'zip146t168', 
+          'zip177t199', 
+          'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80']
 
 
 predictors = '+'.join(x_cols)
@@ -256,30 +288,34 @@ model.params.sort_values()
 
 lowtier = kc_data[kc_data.price <=300000]
 midtier = kc_data[(kc_data.price > 300001) & (kc_data.price<=800000) ]
-hightier = kc_data[kc_data.price >800000]
+hightier = kc_data[(kc_data.price > 600000)]
 
-lowincome = ['bedrooms', 'mi_nearest_scl',	'mi_3_scls', 'mi_5_scls',
-                   'lat', 'long', 'sqft_living15', 'sqft_total', 'sqft_habitable', 'con2', 
-                   'con4', 'con5', 'view1', 'view2', 'grd4', 'grd10', 'grd11', 'grd12', 'zip10', 'zip11', 'zip12', 
-                   'zip13', 'zip14', 'zip2', 'zip3', 'zip4', 'zip5', 'zip6', 'zip7', 'zip8', 'zip9',
-                   'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80']
+lowincome = ['bedrooms', 'bathrooms', 'floors', 'waterfront','yr_renovated',
+           'lat', 'long', 'sqft_neighb', 'sqft_total', 'sqft_habitable', 'good', 
+           'view1', 'view2', 'view3', 'view4', 
+           'D', 'Cmin', 'C', 'Cpl', 'Bmin', 'B', 'Bpl', 'Amin', 'A', 'Apl', 
+           'zip006t011', 'zip014t024', 'zip027t031', 'zip032t039', 'zip040t053', 
+           'zip055t065', 'zip070t077', 'zip092t106', 'zip107t115', 'zip116t122', 
+           'zip125t144', 'zip146t168', 'zip177t199', 'thru2000', 
+           'thru2020', 'thru40', 'thru60', 'thru80']
 
-mediumincome = ['bedrooms', 'bathrooms', 'floors', 'waterfront', 'yr_renovated', 
-                   'lat', 'long', 'sqft_living15', 'sqft_lot15', 'sqft_total', 'sqft_habitable', 'con2', 
-                   'con4', 'con5', 'view1', 'view2', 'view3', 'view4', 'grd4', 'grd5', 'grd6', 
-                   'grd7', 'grd8', 'grd9', 'grd10', 'grd11', 'grd12', 'zip10', 'zip11', 'zip12', 
-                   'zip13', 'zip14', 'zip2', 'zip3', 'zip4', 'zip5', 'zip6', 'zip7', 'zip8', 'zip9',
-                   'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80','mi_nearest_scl',	
-                   'mi_3_scls', 'mi_5_scls']
+mediumincome = ['bedrooms', 'bathrooms', 'floors', 'waterfront', 'yr_renovated',
+           'lat', 'long', 'sqft_neighb', 'sqft_total', 'sqft_habitable',  'good', 
+           'view1', 'view2', 'view3', 'view4', 
+           'D', 'Cmin', 'C', 'Cpl', 'Bmin', 'B', 'Bpl', 'Amin', 'A', 'Apl', 
+           'zip006t011', 'zip014t024', 'zip027t031', 'zip032t039', 'zip040t053', 
+           'zip055t065', 'zip070t077', 'zip092t106', 'zip107t115', 'zip116t122', 
+           'zip125t144', 'zip146t168', 'zip177t199', 'thru2000', 
+           'thru2020', 'thru40', 'thru60', 'thru80']
 
-highincome = ['bedrooms', 'bathrooms', 'floors', 'waterfront', 'yr_renovated', 
-                   'lat', 'long', 'sqft_living15', 'sqft_lot15', 'sqft_total', 'sqft_habitable', 'con2', 
-                   'con4', 'con5', 'view1', 'view2', 'view3', 'view4', 'grd4', 'grd5', 'grd6', 
-                   'grd7', 'grd8', 'grd9', 'grd10', 'grd11', 'grd12', 'zip10', 'zip11', 'zip12', 
-                   'zip13', 'zip14', 'zip2', 'zip3', 'zip4', 'zip5', 'zip6', 'zip7', 'zip8', 'zip9',
-                   'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80', 'mi_nearest_scl',	'mi_3_scls', 'mi_5_scls']
+highincome = ['bd_bth_ratio', 'floors', 'waterfront',
+           'lattrans', 'sqft_neighb', 'sqft_total', 'sqft_habitable',  
+           'view1', 'view2', 'view3', 'view4', 
+           'zip014t024', 'zip027t031', 'zip055t065', 'zip092t106', 'zip116t122', 
+           'zip125t144', 'zip146t168', 'zip177t199',
+           'thru40', 'thru60', 'mi_nearest_scl']
 
-def make_ols(df, x_columns, drops=None, target='price', add_constant=False):
+def make_ols(df, x_columns, drops=None, target='pricesqrt', add_constant=False):
     if drops:
         drops.append(target)
         X = df.drop(columns=drops)
@@ -293,9 +329,12 @@ def make_ols(df, x_columns, drops=None, target='price', add_constant=False):
     display(res.summary())
     fig = sm.graphics.qqplot(res.resid, dist=stats.norm, line='45', fit=True)
     return res
-make_ols(lowtier,lowincome)
-make_ols(midtier,mediumincome)
+#make_ols(lowtier,lowincome)
+#make_ols(midtier,mediumincome)
 make_ols(hightier,highincome)
+X = hightier[highincome]
+vif = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+list(zip(highincome, vif))
 
 
 kc_columns = ['price']
@@ -318,29 +357,60 @@ for i in range(1,100):
     print('{} percentile: {}'.format(q, kc_data['price'].quantile(q=q)))
 
 
+kc_data['flr'] = kc_data['floors']-kc_data['floors'].mean()
+kc_data['bth*bd'] = kc_data['bathrooms']*kc_data['bedrooms']
+kc_data['near_scl_comp'] = kc_data['mi_nearest_scl']-kc_data['mi_nearest_scl'].mean()
+kc_data['near_5_scl_comp'] = kc_data['mi_5_scls']-kc_data['mi_5_scls'].mean()
+kc_data['lattrans'] = kc_data['lat']-kc_data['lat'].mean()
+kc_data.columns
+
+
+#test vifs 
+test = kc_data[['waterfront', 'yr_renovated', 'lat', 'long', 'sqft_neighb', 'sqft_total', 'sqft_habitable', 'good', 'view1', 'view2', 'view3', 'view4', 'D', 'Cmin', 'C', 'Cpl', 'Bmin', 'B', 'Bpl', 'Amin', 'A', 'Apl', 'zip006t011', 'zip014t024', 'zip027t031', 'zip032t039', 'zip040t053', 'zip055t065', 'zip070t077', 'zip092t106', 'zip107t115', 'zip116t122', 'zip125t144', 'zip146t168', 'zip177t199', 'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80', 'lattrans', 'longtrans', 'bd', 'bth', 'flr', 'nearest_scl_comp', 'near_5_scl_comp']]
+test_cols = ['waterfront', 'yr_renovated', 'lat', 'long', 'sqft_neighb', 'sqft_total', 'sqft_habitable', 'good', 'view1', 'view2', 'view3', 'view4', 'D', 'Cmin', 'C', 'Cpl', 'Bmin', 'B', 'Bpl', 'Amin', 'A', 'Apl', 'zip006t011', 'zip014t024', 'zip027t031', 'zip032t039', 'zip040t053', 'zip055t065', 'zip070t077', 'zip092t106', 'zip107t115', 'zip116t122', 'zip125t144', 'zip146t168', 'zip177t199', 'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80', 'lattrans', 'longtrans', 'bd', 'bth', 'flr', 'nearest_scl_comp']
+X = test[test_cols]
+vif = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+list(zip(test_cols, vif))
+
+
 lowtier = kc_data[(kc_data.price > 210000) & (kc_data.price<=348000) ]
 midtier = kc_data[(kc_data.price > 348000) & (kc_data.price<=480000) ]
 uppermidtier = kc_data[(kc_data.price > 480000) & (kc_data.price<=664000) ]
 hightier = kc_data[(kc_data.price >664000) & (kc_data.price<=1080000)]
 
-lowincome = ['bedrooms', 'bathrooms', 'floors', 'lat', 'long', 'sqft_lot15', 'sqft_total', 
-             'sqft_habitable',  'view1', 'view2', 'view3',  'grd7', 'grd8', 'grd9', 'zip12', 
-             'zip13', 'zip5',  'zip7', 'zip8', 'zip9', 'thru80']
+lowincome = ['sqft_neighb', 'sqft_total', 'sqft_habitable', 
+             'view3', 'zip006t011', 
+             'zip014t024', 'zip027t031', 'zip032t039', 'zip040t053', 'zip055t065',
+             'zip070t077', 'zip092t106', 'zip107t115', 'zip116t122', 'zip125t144', 
+             'zip146t168', 'zip177t199', 'thru2000', 'thru2020', 'thru40', 'thru60', 
+             'thru80', 'lattrans', 'longtrans', 'bth*bd', 'flr', 'nearest_scl_comp']
 
 
-mediumincome = ['bathrooms', 'lat', 'long', 'sqft_living15',  'sqft_total', 'sqft_habitable', 
-              'view2', 'view3', 'grd9', 'grd10', 'zip10', 'zip11', 'zip2', 'zip3', 'zip6', 'zip8',
-              'thru2000', 'thru2020', 'thru60', 'thru80']
+mediumincome = ['bathrooms', 'lat', 'long', 
+                'sqft_neighb', 'sqft_habitable',  
+                'view2', 'Cpl', 'Bmin', 'B', 'Bpl', 
+                'zip006t011', 'zip014t024', 'zip040t053', 
+                'zip070t077', 'zip107t115', 'zip116t122', 
+                'zip146t168', 'thru2000', 
+                'thru2020', 'thru60', 'thru80']
 
-uppermedincome = ['bedrooms', 'bathrooms', 'floors', 'waterfront', 'lat', 'long', 'sqft_living15',
-                  'sqft_total', 'sqft_habitable', 'zip12', 'zip13', 'zip2', 'zip3', 'zip4', 'zip5',
-                  'zip6', 'zip7', 'zip8', 'thru2000', 'thru2020', 'thru60', 'thru80']
+uppermedincome = ['bedrooms', 'bathrooms', 'floors', 'waterfront', 
+                  'lat', 'long', 'sqft_neighb', 'sqft_habitable', 
+                  'D',  'Bmin', 'B', 'Bpl', 'Amin', 
+                  'zip027t031', 'zip032t039', 'zip055t065',  
+                  'zip125t144', 'zip146t168',  'thru2000', 
+                  'thru2020', 'thru80', 'mi_5_scls']
 
-highincome = ['bathrooms', 'bathrooms', 'floors', 'waterfront', 'yr_renovated', 'lat', 'long', 
-              'sqft_living15','sqft_habitable', 'view2', 'grd4','zip11', 'zip12', 'zip13', 
-              'zip14', 'zip2', 'zip3', 'zip4', 'zip5', 'zip6', 'zip7', 'zip8']
+highincome = ['bedrooms', 'bathrooms', 'waterfront', 'yr_renovated',
+              'sqft_neighb','good',
+              'Cmin','C', 'Cpl',  'B', 'Bpl', 'Amin', 
+              'zip006t011', 'zip014t024', 'zip032t039', 'zip040t053', 
+              'zip055t065', 'zip092t106', 'zip107t115', 'zip116t122', 
+              'zip125t144', 'zip146t168', 'zip177t199', 'thru2000', 
+              'thru2020', 'thru40', 'thru60', 'thru80', 
+              'mi_nearest_scl', 'mi_5_scls']
 
-def make_ols(df, x_columns, drops=None, target='price', add_constant=False):
+def make_ols(df, x_columns, drops=None, target='pricesqrt', add_constant=False):
     if drops:
         drops.append(target)
         X = df.drop(columns=drops)
@@ -356,10 +426,13 @@ def make_ols(df, x_columns, drops=None, target='price', add_constant=False):
     return res
 
 
-#make_ols(lowtier,lowincome)
-#make_ols(midtier,mediumincome)
-#make_ols(uppermidtier,uppermedincome)
-make_ols(hightier,highincome)
+make_ols(lowtier,lowincome)
+# make_ols(midtier,mediumincome)
+# make_ols(uppermidtier,uppermedincome)
+# make_ols(hightier,highincome)
+X = lowtier[lowincome]
+vif = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+list(zip(lowincome, vif))
 
 
 print(type(hightier))
@@ -367,17 +440,18 @@ kc_data.columns
 highincome
 
 
-y = hightier[['price']].copy()
-X = hightier[['bedrooms', 'bathrooms', 'floors', 'waterfront',
-              'lat', 'long', 'sqft_living15', 'sqft_total', 'sqft_habitable',
-              'con4', 'view2', 'view3', 'view4', 
-              'grd6', 'grd8', 'grd9', 'grd10', 'grd11', 
-              'zip10', 'zip11', 'zip12', 'zip13', 'zip14', 'zip2', 'zip3', 'zip4', 'zip5', 
-              'zip6', 'zip7', 'zip8', 'zip9', 'thru2000', 'thru2020',  
-              'thru80', 'mi_5_scls']].copy()
+y = hightier[['pricesqrt']].copy()
+X = hightier[['bedrooms', 'bathrooms', 'waterfront', 'yr_renovated',
+              'sqft_neighb','good',
+              'Cmin','C', 'Cpl',  'B', 'Bpl', 'Amin', 
+              'zip006t011', 'zip014t024', 'zip032t039', 'zip040t053', 
+              'zip055t065', 'zip092t106', 'zip107t115', 'zip116t122', 
+              'zip125t144', 'zip146t168', 'zip177t199', 'thru2000', 
+              'thru2020', 'thru40', 'thru60', 'thru80', 
+              'mi_nearest_scl', 'mi_5_scls']].copy()
 
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.40, random_state=42)
 
 
 print(len(X_train), len(X_test), len(y_train), len(y_test))
@@ -386,7 +460,7 @@ print(len(X_train), len(X_test), len(y_train), len(y_test))
 print(X_train)
 
 
-reg = LinearRegression()
+linreg = LinearRegression()
 linreg.fit(X_train, y_train)
 
 y_hat_train = linreg.predict(X_train)
@@ -412,21 +486,17 @@ print('Test Mean Squarred Error:', test_mse)
 linreg.score(X_test, y_test)
 
 
-clf = svm.SVC(kernel='linear', C=1).fit(X_train, y_train)
-clf.score(X_test, y_test)
+y = m[['pricesqrt']]
+X = kc_data.drop(['price', 'pricesqrt'], axis=1)
 
 
-y = midtier[['price']]
-X = midtier.drop(['price'], axis=1)
-
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 
 print(len(X_train), len(X_test), len(y_train), len(y_test))
 
 
-print(X_train)
+#print(X_train)
 
 
 linreg = LinearRegression()
@@ -453,21 +523,23 @@ print('Test Mean Squarred Error:', test_mse)
 print('Diff:', test_mse-train_mse)
 
 
-
 linreg.score(X_test, y_test)
 
 
-y = lowtier[['price']]
-X = lowtier.drop(['price'], axis=1)
+y = lowtier[['price']].copy()
+X = lowtier[['bth', 'flr', 'lattrans', 'sqft_neighb', 'sqft_habitable','view3', 
+             'Cmin', 'Cpl', 'Bmin', 'Bpl', 'zip032t039', 'zip055t065', 'zip070t077', 'zip092t106', 
+             'zip107t115', 'zip116t122', 'zip125t144', 'zip146t168', 'thru2000', 
+             'thru2020', 'thru40', 'thru60']].copy()
 
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.35, random_state=42)
 
 
 print(len(X_train), len(X_test), len(y_train), len(y_test))
 
 
-print(X_train)
+#print(X_train)
 
 
 linreg = LinearRegression()
@@ -493,19 +565,23 @@ print('Train Mean Squarred Error:', train_mse)
 print('Test Mean Squarred Error:', test_mse)
 
 
+print(sqrt(1031317247.0812349))
+print(sqrt(1058736547.9719138))
+
+
 linreg.score(X_test, y_test)
 
 
 x_cols =['price', 'bedrooms', 'bathrooms', 'floors', 'waterfront', 'grade', 'yr_built', 'yr_renovated', 'zipcode', 'lat',
-       'long', 'sqft_living15', 'sqft_lot15', 'sqft_total', 'sqft_habitable',
+       'long', 'sqft_neighb', 'sqft_total', 'sqft_habitable',
        'con2', 'con3', 'con4', 'con5', 'view1', 'view2', 'view3', 'view4',
        'grd4', 'grd5', 'grd6', 'grd7', 'grd8', 'grd9', 'grd10', 'grd11',
        'grd12', 'grd13']
 
 
-X = kc_data[x_cols]
+X = kc_data[highincome]
 vif = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
-list(zip(x_cols, vif))
+list(zip(highincome, vif))
 
 
 model.summary()
@@ -514,7 +590,7 @@ model.summary()
 pd.set_option('display.max_rows', None)
 
 
-kc_data = kc_data.sort_values('coef', ascending=False)
+kc_data = model.sort_values('coef', ascending=False)
 kc_data.head(15)
 
 
@@ -608,29 +684,6 @@ df.drop_ducplicates(inplace=True)
 
 
 df_renovated[(df.cc>.75) & (df.cc <1)]
-
-
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
-from sklearn.model_selection import cross_val_score
-
-
-X = kc_data.drop('price', axis=1)
-y = kc_data['price']
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-ols1 = LinearRegression()
-ols1.fit(X_train, y_train)
-
-predprice = ols1.predict(y_train)
-
-np.sqrt(mean_squared_error(X_train, predprice))
-
-ols2 = LinearRegression()
-ols_cv_mse = cross_val_score(ols2, X_train, y_train, scoring='neg_mean_squared_error', cv=10)
-ols_cv_mse.mean()
-
 
 
 mean_squared_error(y_train, predprice)
