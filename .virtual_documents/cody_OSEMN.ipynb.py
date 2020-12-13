@@ -186,7 +186,7 @@ kc_data.hist(figsize=(10,10))
 plt.tight_layout()
 
 
-fig = pd.plotting.scatter_matrix(kc_data,figsize=(16,16));
+# fig = pd.plotting.scatter_matrix(kc_data,figsize=(16,16));
 
 
 fig, ax = plt.subplots(figsize=(16,12))
@@ -213,6 +213,7 @@ kc_data['sqft_habitable'] = kc_data['sqft_above']*kc_data['sqft_basement']
 #print columns we will be using going forward 
 #make a copy of the dataframe holding only columns we'll be including
 kc_data.columns
+all_data = kc_data.copy()
 kc_data = kc_data[['price', 'bedrooms', 'bathrooms', 'floors','waterfront', 
                    'yr_renovated', 'lat', 'long', 
                    'sqft_total', 'sqft_neighb', 'sqft_habitable', 
@@ -223,7 +224,7 @@ kc_data = kc_data[['price', 'bedrooms', 'bathrooms', 'floors','waterfront',
                    'zip107t115', 'zip116t122', 'zip125t144', 'zip146t168', 
                    'zip177t199', 
                    'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80'
-                  ]]
+                   'mi_nearest_scl', 'mi_5_scls', 'prcnt_2_scl', 'prcnt_2_5_scl']].copy()
 
 
 lowtier = kc_data[kc_data.price <=300000]
@@ -419,13 +420,38 @@ training_data, testing_data = train_test_split(hightier, test_size=0.2)
 
 #split columns
 target = 'price'
-predictive_cols = training_data.drop(target, axis=1).columns
+predictive_cols = training_data[['bathrooms', 'floors', 'sqft_neighb', 
+              'sqft_habitable', 'Amin', 'thru2020',
+              'zip006t011', 'zip027t031',  'zip070t077', 
+              'zip107t115', 'zip116t122', 'zip177t199']].copy()
 
 
-#fit the model
-predictors = '+'.join(predictive_cols)
-formula = target + '~' + predictors
-model = ols(formula=formula, data=training_data).fit()
+model = make_ols(hightier, highincome)
+
+
+# predictions
+y_pred_train = model.predict(training_data[predictive_cols])
+y_pred_test = model.predict(testing_data[predictive_cols])
+# then get the scores:
+train_mse = mean_squared_error(training_data[target], y_pred_train)
+test_mse = mean_squared_error(testing_data[target], y_pred_test)
+print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
+
+
+#first step
+training_data, testing_data = train_test_split(uppermidtier, test_size=0.2)
+
+
+#split columns
+target = 'price'
+predictive_cols = training_data[['bathrooms', 'long', 'sqft_habitable',
+                  'Cpl', 'Bmin', 'B', 'Bpl',
+                  'zip014t024', 'zip146t168', 
+                  'zip055t065', 'zip070t077', 'zip125t144', 
+                  'thru2000', 'thru2020', 'thru80']].copy()
+
+
+model = make_ols(uppermidtier, uppermedincome)
 
 
 # predictions
@@ -443,13 +469,14 @@ training_data, testing_data = train_test_split(midtier, test_size=0.2)
 
 #split columns
 target = 'price'
-predictive_cols = training_data.drop(target, axis=1).columns
+predictive_cols = training_data[['bathrooms', 'waterfront',  'lat', 'long', 
+                'view2', 'Bmin', 'B', 'Bpl', 'Amin', 
+                'zip006t011', 'zip032t039', 'zip040t053', 
+                'zip070t077',  'zip107t115', 'zip116t122', 
+                'zip125t144', 'thru2000', 'thru60', 'thru80']].copy()
 
 
-#fit the model
-predictors = '+'.join(predictive_cols)
-formula = target + '~' + predictors
-model = ols(formula=formula, data=training_data).fit()
+model = make_ols(midtier, midincome)
 
 
 # predictions
@@ -467,13 +494,13 @@ training_data, testing_data = train_test_split(lowtier, test_size=0.2)
 
 #split columns
 target = 'price'
-predictive_cols = training_data.drop(target, axis=1).columns
+predictive_cols = training_data[['bathrooms', 'lat', 'long',  'sqft_habitable', 
+             'view1', 'view2', 'view3', 'Cpl', 'Bmin', 'B', 
+             'Bpl', 'Amin', 'zip055t065', 'zip092t106',
+             'zip107t115', 'zip116t122', 'zip146t168']].copy()
 
 
-#fit the model
-predictors = '+'.join(predictive_cols)
-formula = target + '~' + predictors
-model = ols(formula=formula, data=training_data).fit()
+model = make_ols(hightier, highincome)
 
 
 # predictions
@@ -487,7 +514,7 @@ print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.boxplot(x='grade', y='price', data=kc_data)
+sns.boxplot(x='grade', y='price', data=all_data)
 ax.set(title='Grade relationship on Price', 
        xlabel='Grade', ylabel='Price')
 
@@ -496,7 +523,7 @@ fig.tight_layout()
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.boxplot(x='bathrooms', y='price', data=kc_data)
+sns.boxplot(x='bathrooms', y='price', data=all_data)
 ax.set(title='Bathrooms & Price', 
        xlabel='Bathrooms', ylabel='Price')
 
@@ -505,7 +532,7 @@ fig.tight_layout()
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.boxplot(x='bedrooms', y='price', data=kc_data)
+sns.boxplot(x='bedrooms', y='price', data=all_data)
 ax.set(title='Bedrooms & Price', 
        xlabel='Bedrooms', ylabel='Price')
 
@@ -514,7 +541,7 @@ fig.tight_layout()
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.boxplot(x='floors', y='price', data=kc_data)
+sns.boxplot(x='floors', y='price', data=all_data)
 ax.set(title='Floors & Price', 
        xlabel='Floors', ylabel='Price')
 
@@ -523,7 +550,7 @@ fig.tight_layout()
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.boxplot(x='condition', y='price', data=kc_data)
+sns.boxplot(x='condition', y='price', data=all_data)
 ax.set(title='Condition & Price', 
        xlabel='Condition', ylabel='Price')
 
@@ -532,7 +559,7 @@ fig.tight_layout()
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.regplot(x='sqft_habitable', y='price', data=kc_data)
+sns.regplot(x='sqft_habitable', y='price', data=all_data)
 ax.set(title='Square Habitable & Price', 
        xlabel='SqFt.', ylabel='Price')
 
@@ -541,7 +568,7 @@ fig.tight_layout()
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.boxplot(x='yr_built', y='price', data=kc_data)
+sns.boxplot(x='yr_built', y='price', data=all_data)
 ax.set(title='Year Built & Price', 
        xlabel='Year Built', ylabel='Price')
 
@@ -550,7 +577,7 @@ fig.tight_layout()
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.boxplot(x='yr_renovated', y='price', data=kc_data)
+sns.boxplot(x='yr_renovated', y='price', data=all_data)
 ax.set(title='Year Renovated & Price', 
        xlabel='Year', ylabel='Price')
 
