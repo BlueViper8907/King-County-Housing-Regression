@@ -44,7 +44,7 @@ schools = pd.read_csv(r'~\Documents\Flatiron\data\data\Schools.csv')
 
 #calculate distance between schools and data 
 kc = {}
-kc5 = {}
+
 # approximate radius of earth in miles  miles
 i = 0
 #iterate over each of our rows in the dataframe
@@ -71,22 +71,13 @@ while i <= 21480:
     distance.sort()
     #choose closest school 
     kc[i] = distance[0:1]
-    #find some of distance to nearest 5 schools 
-    kc5[i] = sum(distance[0:5])
     i += 1
 
 
 kc1 = pd.DataFrame.from_dict(kc, orient='index', columns=['mi_nearest_scl'])
-kc5 = pd.DataFrame.from_dict(kc5, orient='index', columns=['mi_5_scls'])
 
 
 kc_data = kc_data.merge(kc1, left_index=True, right_index=True)
-kc_data = kc_data.merge(kc5, left_index=True, right_index=True)
-
-
-# checking to see if maybe percentile matters in terms of distance, as most of our hoems are relitively close 
-kc_data['prcnt_2_scl'] = kc_data['mi_nearest_scl'].rank(pct = True) 
-kc_data['prcnt_2_5_scls'] = kc_data['mi_5_scls'].rank(pct = True)
 
 
 kc_data.describe()
@@ -223,8 +214,8 @@ kc_data = kc_data[['price', 'bedrooms', 'bathrooms', 'floors','waterfront',
                    'zip040t053', 'zip055t065', 'zip070t077', 'zip092t106', 
                    'zip107t115', 'zip116t122', 'zip125t144', 'zip146t168', 
                    'zip177t199', 
-                   'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80'
-                   'mi_nearest_scl', 'mi_5_scls', 'prcnt_2_scl', 'prcnt_2_5_scl']].copy()
+                   'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80',
+                   'mi_nearest_scl']].copy()
 
 
 lowtier = kc_data[kc_data.price <=300000]
@@ -297,8 +288,8 @@ for name, tier, income in price_tiers:
 for col in ['price']:
     col_zscore = str(col + '_zscore')
     kc_data[col_zscore] = (kc_data[col] - kc_data[col].mean())/kc_data[col].std()
-    kc_data = kc_data.loc[kc_data[col_zscore] < 2.5]
-    kc_data = kc_data.loc[kc_data[col_zscore] > (-2.5)]
+    kc_data = kc_data.loc[kc_data[col_zscore] < 2]
+    kc_data = kc_data.loc[kc_data[col_zscore] > (-2)]
     kc_data = kc_data.drop(col_zscore, axis = 1)
 
 
@@ -308,7 +299,7 @@ plt.plot(kc_data['price'].value_counts().sort_index())
 
 for i in range(1,100):
     q = i / 100
-    print('{} percentile: {}'.format(q, kc_data['sqft_neighb'].quantile(q=q)))
+    print('{} percentile: {}'.format(q, kc_data['price'].quantile(q=q)))
 
 
 #in bedrooms, we can clearly see a single outlier that is likely just a typo 
@@ -318,43 +309,44 @@ kc_data[kc_data['bedrooms'] == 33] = kc_data[kc_data['bedrooms'] == 33].replace(
 
 
 # to fix other outliers we will explore our data and find cutoffs that seem reasonable 
-kc_data = kc_data.loc[kc_data['sqft_total'] <= 3.000000e+07] 
-kc_data = kc_data.loc[kc_data['sqft_total'] >= 500000]
-kc_data = kc_data.loc[kc_data['sqft_neighb'] <= 2.500000e+07]
-kc_data = kc_data.loc[kc_data['sqft_habitable'] >= 500000]
-kc_data = kc_data.loc[kc_data['sqft_habitable'] <= 2000000]
+kc_data = kc_data.loc[kc_data['sqft_total'] <= 1.000000e+09] 
+kc_data = kc_data.loc[kc_data['sqft_total'] >= 400000]
+kc_data = kc_data.loc[kc_data['sqft_neighb'] <= 1.000000e+09]
+kc_data = kc_data.loc[kc_data['sqft_habitable'] >= 400000]
+kc_data = kc_data.loc[kc_data['sqft_habitable'] <= 1.000000e+07]
 kc_data =  kc_data.loc[kc_data['bathrooms'] >= 1]
-kc_data =  kc_data.loc[kc_data['bathrooms'] <= 5.5]
+kc_data =  kc_data.loc[kc_data['bathrooms'] <= 5]
 kc_data =  kc_data.loc[kc_data['bedrooms'] <= 7]
+all_data.describe()
 
 
-lowtier = kc_data[(kc_data.price > 210000) & (kc_data.price<=348000) ]
-midtier = kc_data[(kc_data.price > 348000) & (kc_data.price<=480000) ]
-uppermidtier = kc_data[(kc_data.price > 480000) & (kc_data.price<=664000) ]
-hightier = kc_data[(kc_data.price >664000) & (kc_data.price<=1080000)]
+lowtier = kc_data[(kc_data.price >= 210000) & (kc_data.price <= 348000) ]
+midtier = kc_data[(kc_data.price >= 348000) & (kc_data.price <= 480000) ]
+uppermidtier = kc_data[(kc_data.price >= 480000) & (kc_data.price <= 640000) ]
+hightier = kc_data[(kc_data.price >= 640000) & (kc_data.price <= 900000)]
 
 
 lowincome = ['bathrooms', 'lat', 'long',  'sqft_habitable', 
              'view1', 'view2', 'view3', 'Cpl', 'Bmin', 'B', 
              'Bpl', 'Amin', 'zip055t065', 'zip092t106',
-             'zip107t115', 'zip116t122', 'zip146t168']
+             'zip107t115', 'zip146t168']
 
-mediumincome = ['bathrooms', 'waterfront',  'lat', 'long', 
-                'view2', 'Bmin', 'B', 'Bpl', 'Amin', 
+mediumincome = ['bathrooms', 'lat', 'long', 
+                'view2', 'Bmin', 'B', 'Bpl', 
                 'zip006t011', 'zip032t039', 'zip040t053', 
                 'zip070t077',  'zip107t115', 'zip116t122', 
-                'zip125t144', 'thru2000', 'thru60', 'thru80']
+                'zip125t144', 'thru2000', 'thru80']
 
 uppermedincome = ['bathrooms', 'long', 'sqft_habitable',
                   'Cpl', 'Bmin', 'B', 'Bpl',
                   'zip014t024', 'zip146t168', 
-                  'zip055t065', 'zip070t077', 'zip125t144', 
+                  'zip125t144', 
                   'thru2000', 'thru2020', 'thru80']
 
 highincome = ['bathrooms', 'floors', 'sqft_neighb', 
-              'sqft_habitable', 'Amin', 'thru2020',
-              'zip006t011', 'zip027t031',  'zip070t077', 
-              'zip107t115', 'zip116t122', 'zip177t199']
+              'sqft_habitable', 'thru2020',
+              'zip006t011', 'zip107t115',
+              'zip116t122', 'zip177t199']
 
 
 price_tiers = [('low', lowtier, lowincome), 
@@ -370,9 +362,6 @@ for name, tier, income in price_tiers:
 
 #make_ols(hightier, highincome)
 model = make_ols(lowtier, lowincome)
-
-
-# print('test R Squared: ' + str(round(r2_score(X_test, y_test), 2)))
 
 
 fig = plt.figure(figsize=(15,8))
@@ -415,18 +404,20 @@ lowtier['sqft_total'].describe()
 
 
 #first step
-training_data, testing_data = train_test_split(hightier, test_size=0.2)
-
-
-#split columns
-target = 'price'
-predictive_cols = training_data[['bathrooms', 'floors', 'sqft_neighb', 
+high_data = hightier[['price', 'bathrooms', 'floors', 'sqft_neighb', 
               'sqft_habitable', 'Amin', 'thru2020',
               'zip006t011', 'zip027t031',  'zip070t077', 
               'zip107t115', 'zip116t122', 'zip177t199']].copy()
 
+training_data, testing_data = train_test_split(high_data, test_size=0.30, random_state=42)
 
-model = make_ols(hightier, highincome)
+
+#split columns
+target = 'price'
+predictive_cols = training_data.drop('price', 1).columns
+
+
+model = make_ols(hightier, predictive_cols)
 
 
 # predictions
@@ -436,22 +427,27 @@ y_pred_test = model.predict(testing_data[predictive_cols])
 train_mse = mean_squared_error(training_data[target], y_pred_train)
 test_mse = mean_squared_error(testing_data[target], y_pred_test)
 print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
+print('Training Mean Error', sqrt(train_mse), '\nTesting Mean Error:', sqrt(test_mse))
+print(r2_score(training_data[target], y_pred_train))
+print(r2_score(testing_data[target], y_pred_test))
 
 
 #first step
-training_data, testing_data = train_test_split(uppermidtier, test_size=0.2)
-
-
-#split columns
-target = 'price'
-predictive_cols = training_data[['bathrooms', 'long', 'sqft_habitable',
+upper_med_data = uppermidtier[['price', 'bathrooms', 'long', 'sqft_habitable',
                   'Cpl', 'Bmin', 'B', 'Bpl',
                   'zip014t024', 'zip146t168', 
-                  'zip055t065', 'zip070t077', 'zip125t144', 
+                  'zip055t065', 'zip125t144', 
                   'thru2000', 'thru2020', 'thru80']].copy()
 
+training_data, testing_data = train_test_split(upper_med_data,test_size=0.25, random_state=42)
 
-model = make_ols(uppermidtier, uppermedincome)
+
+#split columns
+target = 'price'
+predictive_cols = training_data.drop('price', 1).columns
+
+
+model = make_ols(training_data, predictive_cols)
 
 
 # predictions
@@ -461,46 +457,26 @@ y_pred_test = model.predict(testing_data[predictive_cols])
 train_mse = mean_squared_error(training_data[target], y_pred_train)
 test_mse = mean_squared_error(testing_data[target], y_pred_test)
 print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
+print('Training Mean Error', sqrt(train_mse), '\nTesting Mean Error:', sqrt(test_mse))
+print(r2_score(training_data[target], y_pred_train))
+print(r2_score(testing_data[target], y_pred_test))
 
 
 #first step
-training_data, testing_data = train_test_split(midtier, test_size=0.2)
-
-
-#split columns
-target = 'price'
-predictive_cols = training_data[['bathrooms', 'waterfront',  'lat', 'long', 
-                'view2', 'Bmin', 'B', 'Bpl', 'Amin', 
+mid_data = midtier[['bathrooms', 'waterfront',  'lat', 'long', 
+                'view2', 'Bmin', 'B', 'Bpl', 'Amin', 'price',
                 'zip006t011', 'zip032t039', 'zip040t053', 
                 'zip070t077',  'zip107t115', 'zip116t122', 
                 'zip125t144', 'thru2000', 'thru60', 'thru80']].copy()
-
-
-model = make_ols(midtier, midincome)
-
-
-# predictions
-y_pred_train = model.predict(training_data[predictive_cols])
-y_pred_test = model.predict(testing_data[predictive_cols])
-# then get the scores:
-train_mse = mean_squared_error(training_data[target], y_pred_train)
-test_mse = mean_squared_error(testing_data[target], y_pred_test)
-print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
-
-
-#first step
-training_data, testing_data = train_test_split(lowtier, test_size=0.2)
+training_data, testing_data = train_test_split(mid_data, test_size=0.25, random_state=42)
 
 
 #split columns
 target = 'price'
-predictive_cols = training_data[['bathrooms', 'lat', 'long',  'sqft_habitable', 
-             'view1', 'view2', 'view3', 'Cpl', 'Bmin', 'B', 
-             'Bpl', 'Amin', 'zip055t065', 'zip092t106',
-             'zip107t115', 'zip116t122', 'zip146t168']].copy()
+predictive_cols = training_data.drop('price', 1).columns
 
 
-model = make_ols(hightier, highincome)
+model = make_ols(mid_data, predictive_cols)
 
 
 # predictions
@@ -510,6 +486,38 @@ y_pred_test = model.predict(testing_data[predictive_cols])
 train_mse = mean_squared_error(training_data[target], y_pred_train)
 test_mse = mean_squared_error(testing_data[target], y_pred_test)
 print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
+print('Training Mean Error', sqrt(train_mse), '\nTesting Mean Error:', sqrt(test_mse))
+print(r2_score(training_data[target], y_pred_train))
+print(r2_score(testing_data[target], y_pred_test))
+
+
+#first step
+low_data = lowtier[['bathrooms', 'lat', 'long',  'sqft_habitable', 
+             'view1', 'view2', 'view3', 'Cpl', 'Bmin', 'B', 
+             'Bpl', 'Amin', 'zip055t065', 'zip092t106', 'price',
+             'zip107t115', 'zip116t122', 'zip146t168']].copy()
+
+training_data, testing_data = train_test_split(low_data, test_size=0.25, random_state=42)
+
+
+#split columns
+target = 'price'
+predictive_cols = training_data.drop('price', 1).columns
+
+
+model = make_ols(low_data, predictive_cols)
+
+
+# predictions
+y_pred_train = model.predict(training_data[predictive_cols])
+y_pred_test = model.predict(testing_data[predictive_cols])
+# then get the scores:
+train_mse = mean_squared_error(training_data[target], y_pred_train)
+test_mse = mean_squared_error(testing_data[target], y_pred_test)
+print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
+print('Training Mean Error', sqrt(train_mse), '\nTesting Mean Error:', sqrt(test_mse))
+print(r2_score(training_data[target], y_pred_train))
+print(r2_score(testing_data[target], y_pred_test))
 
 
 fig, ax = plt.subplots(figsize=(12,8))
@@ -523,7 +531,7 @@ fig.tight_layout()
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.boxplot(x='bathrooms', y='price', data=all_data)
+sns.boxplot(x='bathrooms', y='price', data=kc_data)
 ax.set(title='Bathrooms & Price', 
        xlabel='Bathrooms', ylabel='Price')
 
@@ -532,7 +540,7 @@ fig.tight_layout()
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.boxplot(x='bedrooms', y='price', data=all_data)
+sns.boxplot(x='bedrooms', y='price', data=kc_data)
 ax.set(title='Bedrooms & Price', 
        xlabel='Bedrooms', ylabel='Price')
 
@@ -541,7 +549,7 @@ fig.tight_layout()
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.boxplot(x='floors', y='price', data=all_data)
+sns.boxplot(x='floors', y='price', data=kc_data)
 ax.set(title='Floors & Price', 
        xlabel='Floors', ylabel='Price')
 
@@ -559,7 +567,7 @@ fig.tight_layout()
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.regplot(x='sqft_habitable', y='price', data=all_data)
+sns.regplot(x='sqft_habitable', y='price', data=kc_data)
 ax.set(title='Square Habitable & Price', 
        xlabel='SqFt.', ylabel='Price')
 
@@ -582,9 +590,6 @@ ax.set(title='Year Renovated & Price',
        xlabel='Year', ylabel='Price')
 
 fig.tight_layout()
-
-
-
 
 
 
