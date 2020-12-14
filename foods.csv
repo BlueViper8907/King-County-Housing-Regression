@@ -1,0 +1,2338 @@
+,NAME,SEAT_CAP,long,lat
+0,A'Jhang Market,Grocery,-122.3456304,47.6137855
+1,A-Chau Cafe,Seating 13-50,-122.27119275210893,47.5405602
+2,A-Pizza Mart,Seating 0-12,-122.3763925,47.5177162
+3,A & B Cafe; Inc.,Seating 13-50,-122.3240809,47.5976268
+4,A & H World Market,Seating 0-12,-122.28618669011647,47.38925705
+5,A & J Meats & Seafood,Meat/Sea Food,-122.357325,47.63973
+6,A Cottage Creek Inn B & B,Bed and Breakfast,-122.1054768,47.6779297
+7,Ahadu,Seating 13-50,-122.3120443,47.7141583
+8,Airfield Estates Winery,Seating 13-50,[0.0],[0.0]
+9,Airport 76,Seating 0-12,[0.0],[0.0]
+10,Airport Shell,Grocery,[0.0],[0.0]
+11,Airport Way Market,Seating 0-12,-122.31437329526312,47.54746815
+12,Airways Brewing Beer & Bistro,Seating 13-50,-122.2356443,47.3819049
+13,Aj'S Espresso @ 17311 Vashon Hwy Sw,Limited Food Services,-122.46064174822364,47.449983399999994
+14,Aji Sushi & Grill,Seating 13-50,[0.0],[0.0]
+15,Aki Kurose,School Kitchen,-122.28209764474863,47.54658895
+16,Al'S Gourment Sausages @  1029 Occidental,Mobile Food Service,-122.3089966,47.6402843
+17,Al'S Gourmet - Dteh034 / 1029 Occidental,Mobile Food Service,-122.3089966,47.6402843
+18,Al'S Gourmet Sausge @  1029 Occidental,Mobile Food Service,-122.3089966,47.6402843
+19,Al'S Tavern,Seating 13-50,-122.3311202,47.6612631
+20,Al-Madina Grocery,Seating 0-12,-122.21655497807156,47.48368165
+21,Al-Noor Grocery & Halal Meat,Seating 0-12,-122.2762673,47.5458891
+22,Al Boccalino,Seating 13-50,-122.3357382,47.6015874
+23,Al Hidaya Halal Grocery,Meat/Sea Food,-122.2895022,47.4676614
+24,Al Shukr Mini Market & Bakery,Seating 0-12,-122.2972529,47.4223957
+25,Aladdin Falafel Corner,Seating 0-12,-122.3132934,47.6624595
+26,Aladdin Gyro-Cery & Deli,Seating 13-50,-122.3133806,47.658038
+27,Alano Club Eastside,Non-Profit Institution,-122.1655728,47.6172417
+28,Alanya Cafe,Seating 0-12,-122.2068162,47.6756509
+29,Alaska Ale House,Seating 51-150,[0.0],[0.0]
+30,Alaska Smokehouse,Grocery,[0.0],[0.0]
+31,Arthur Jacobsen Elem School,School Kitchen,-122.1664877,47.3232076
+32,Artisan Cafe,Seating 13-50,-122.3462629,47.6177081
+33,Arts West Playhouse,Seating 0-12,-122.3870227,47.5607163
+34,Arturo'S Mex-Restaurant,Seating 13-50,-122.3242494,47.402924
+35,Asa Mercer Middle School,School Kitchen,-122.3120812,47.5641346
+36,Asensio Coffee,Seating 13-50,-122.3593475,47.3002606
+37,Asgard Tavern,Seating 13-50,[0.0],[0.0]
+38,Ashley Furiture Homestore,Seating 13-50,-122.2631132820328,47.4439079
+39,Ashwood Urban Market,Seating 0-12,[0.0],[0.0]
+40,Asia Bbq & Fast Food,Seating 0-12,-122.324689,47.5990209
+41,Asia Ginger,Seating 13-50,-122.331795,47.6005131
+42,Asian Express,Grocery,-122.3144423,47.5838333
+43,Asian Food Center-Grocery,Grocery,-122.1466602,47.6271366
+44,Asian Food Center-Seafood,Meat/Sea Food,-122.1466602,47.6271366
+45,Asian Gardens Buffet,Seating > 250,-122.2468045734352,47.378452949999996
+46,Asian Pacific Market And Deli,Seating 0-12,-122.2017094,47.3712687
+47,Asian Pacific Market/Grocery,Grocery,-122.2017094,47.3712687
+48,Asian Pacific Market/Seafood,Meat/Sea Food,-122.2017094,47.3712687
+49,Asian Palette Bento Teriyaki,Seating 13-50,-122.3452038,47.734507
+50,Asian Xpress / Hong Kong Market - Deli,Seating 0-12,-122.2302821,47.3812871
+51,Asian Xpress / Hong Kong Market - Grocery,Grocery,-122.2302821,47.3812871
+52,Bartell Drugs #28,Grocery,[0.0],[0.0]
+53,Bartell Drugs #29,Grocery,-122.0337456,47.6144449
+54,Bartell Drugs #31,Grocery,-122.2973441,47.663506
+55,Bartell Drugs #34,Grocery,[0.0],[0.0]
+56,Bartell Drugs #40,Grocery,-122.20536670568248,47.61863475
+57,Bartell Drugs #41,Grocery,-122.3458226,47.4685798
+58,Bartell Drugs #43,Grocery,-122.2936085,47.4941777
+59,Bartell Drugs #44,Grocery,-122.196645,47.6658533
+60,Bartell Drugs #47,Grocery,-122.04628084014396,47.3885863
+61,Bartell Drugs #59,Grocery,-122.1323682,47.6133384
+62,Bartell Drugs #62,Grocery,-122.3452038,47.734507
+63,Bartell Drugs #63,Grocery,-122.30117345402405,47.5815778
+64,Bartell Drugs #66,Grocery,-122.2955957,47.7196282
+65,Bartell Drugs #67,Grocery,-122.3573432,47.6367851
+66,Bartell Drugs #68,Grocery,-122.1517031,47.464134
+67,Bartell Drugs #8,Grocery,-122.353913,47.5336929
+68,Bartell Drugs #9,Grocery,-122.3574016,47.6910062
+69,Bartell Drugs Store #52,Grocery,-122.1135142,47.6837986
+70,Bartell Drugs; #23,Grocery,-122.3213422,47.6134138
+71,Bartell Drugs; #32,Grocery,-122.3118145,47.3592113
+72,Barwaago Cafe,Seating 0-12,[0.0],[0.0]
+73,Bashro Market / Deli,Seating 0-12,-122.2317984,47.3817335
+74,Basil'S Kitchen,Seating 151-250,-122.29055869456585,47.65943985
+75,Basil Box,Seating 0-12,-122.33071812801815,47.60454285
+76,Baskin-Robbins,Seating 0-12,-122.20658675391746,47.75985585
+77,Bill And Johns Food Center,Grocery,[0.0],[0.0]
+78,Bill Pace Fruit & Produce,Grocery,-122.1806679,47.5591435
+79,Bill Pace Fruit & Produce/Cafe Pace,Seating 13-50,-122.1806679,47.5591435
+80,Bill The Butcher,Meat/Sea Food,-122.3413554,47.6625858
+81,Bill The Butcher #2,Meat/Sea Food,-122.2886113,47.6613226
+82,Bill The Butcher #5,Meat/Sea Food,-122.40034400043123,47.654263799999995
+83,Billie On Gourmet Burger,Seating 0-12,-122.3452038,47.734507
+84,Billy Baroo'S Bar & Grill,Seating 51-150,-122.26513363511123,47.481316050000004
+85,Billy Beach Sushi & Bar,Seating 13-50,-122.384243,47.6681849
+86,Billy Mc Hale'S,Seating > 250,-122.3104021,47.31554645
+87,Bin On The Lake,Seating 51-150,-122.2075474,47.6568752
+88,Bindlestick; The,Seating 0-12,[0.0],[0.0]
+89,Bing Of Fire @ Route 727-410-4671,Mobile Food Service,-122.3869651,47.6684979
+90,Bis On Main,Seating 13-50,-122.2040693,47.6101713
+91,Bishops Alehouse,Seating 51-150,-122.209773,47.7068584
+92,Bison Creek Pizza,Seating 51-150,[0.0],[0.0]
+93,Bistro @ Aljoya,Seating 0-12,-122.32353130373814,47.701789649999995
+94,Bistro Baffi,Seating 13-50,-122.3610848,47.4662059
+95,Bistro Turkuaz,Seating 0-12,-122.289151,47.6121496
+96,Bitterroot Seattle,Seating 51-150,-122.3832191,47.6662498
+97,Bizzarro Italian Cafe,Seating 13-50,-122.34167611301875,47.6619683
+98,A Fire Inside Wood Fired Pizza @ Route 206-713-0512,Mobile Food Service,-122.2212051,47.4433284
+99,A G Bell Elementary School,School Kitchen,-122.19133169706664,47.7014769
+100,A Happy Hot Dog @ Route 503-680-6860,Mobile Food Service,-122.21279191394558,47.752722899999995
+101,A La Bonne Franquette,Seating 13-50,-122.2926778,47.5896466
+102,A La Mode Pies,Seating 0-12,-122.3545905,47.671748
+103,A Pizza Mart,Seating 0-12,-122.2853744,47.3804594
+104,A Platinum Event,Catering Operation,[0.0],[0.0]
+105,A Street Valero,Grocery,-122.22910673142825,47.30458875
+106,A Terrible Beauty,Seating 51-150,-122.33181230163085,47.62873664999999
+107,A Terrible Beauty Irish Pub,Seating 151-250,-122.20695478616759,47.4810779
+108,A Terrible Beauty Irish Pub & Restaurant,Seating 51-150,-122.3866085,47.5594825
+109,A1 Mart,Seating 0-12,-122.3549575,47.7046027
+110,A1 Sushi,Seating 13-50,[0.0],[0.0]
+111,Aa Sushi,Seating 51-150,-122.2117891,47.7070011
+112,Aahaar,Seating 13-50,[0.0],[0.0]
+113,Aaron Brenners Bakery & Deli,Seating 0-12,-121.9908322,47.2027581
+114,Aarons Pizza Palace,Seating 0-12,[0.0],[0.0]
+115,Abarrotes El Mexicano,Grocery,-122.294613,47.5745026
+116,Abarrotes El Oaxaqueno,Grocery,-122.3138815,47.5630348
+117,Abarrotes Quinceo,Grocery,[0.0],[0.0]
+118,Abay Ethiopian Restaurant,Seating 13-50,-122.3202059,47.6412335
+119,Abbondanza,Seating 51-150,-122.38742,47.5446407
+120,Abboud'S Mc Donald'S,Seating 51-150,[0.0],[0.0]
+121,Abc Book Store,Grocery,-122.1612316,47.2803086
+122,Abc Grocery,Grocery,-122.3263732,47.4016524
+123,Abdul Gafoor Halal Meat Market,Seating 0-12,[0.0],[0.0]
+124,Absolut Hot Dog @ 20409 Aurora Ave N Shoreline,Mobile Food Service,-122.3475748,47.6630224
+125,Abye Restaurant,Seating 51-150,-122.31575412943548,47.32267965
+126,Abyssinia Market,Seating 0-12,-122.3439579,47.6151537
+127,Acapulco Fresh @ Ms 98,Seating 51-150,-122.1357983,47.6459663
+128,Acapulco Fresh Kenmore,Seating 13-50,[0.0],[0.0]
+129,Acme Bowling; Billiards; Events,Seating > 250,-122.2533301,47.4595705
+130,Acorn Catering,Catering Operation,-122.3021059,47.7556115
+131,Acquabar,Seating 51-150,-122.3443824,47.6148403
+132,Acropolis Pizza & Pasta,Seating 51-150,-122.1985483,47.679143249999996
+133,Acura Of Bellevue,Seating 0-12,-122.1597504,47.628382
+134,Ad Food Mart,Seating 0-12,-122.3873188559144,47.568230150000005
+135,Ada'S Technical Books & Cafe,Seating 13-50,-122.3128926,47.6226867
+136,Adams Elementary School,School Kitchen,-122.3915569,47.67346645
+137,Adelaide Elem School,School Kitchen,-122.35642993900566,47.3288181
+138,Adesa Washington @ 621 37Th St Nw; Auburn,Limited Food Services,-122.23787208662333,47.34093385
+139,Adey Abeba Ethiopian Restaurant,Seating 13-50,-122.3038368,47.6127907
+140,Admiral Bird,Seating 13-50,-122.3862429,47.5809941
+141,Admiral Chevron,Seating 0-12,-122.387013,47.5815431
+142,Admiral Pub,Seating 51-150,-122.3862243,47.5826988
+143,Admiral Theatre,Seating 0-12,-122.4116859,47.6572502
+144,Adrienne'S Cakes & Pies,Catering Operation,-122.2212051,47.4433284
+145,Advanced Fresh Concepts,Seating 0-12,-122.33577704082913,47.44180875
+146,Aerie,Seating 13-50,-122.1917141121047,47.6577568
+147,Aerojet,Seating 51-150,-122.1539368,47.6725097
+148,Afc @ Metropolitan Market,Seating 0-12,-122.1972297,47.6658576
+149,Afc Sushi,Seating 0-12,-122.386030685262,47.579870299999996
+150,Afc Sushi  (Qfc #824),Seating 0-12,-122.0355556,47.5845809
+151,Afc Sushi  @  (Qfc #866),Seating 0-12,[0.0],[0.0]
+152,Afc Sushi #161 @ Metropolitan Market,Seating 0-12,-122.4005524,47.6552831
+153,Afc Sushi & Metropolitan #153,Seating 0-12,-122.38477882964776,47.58214135
+154,Afc Sushi (Fred Meyer #00664),Seating 0-12,-122.1046230601111,47.670554949999996
+155,Afc Sushi (Safeway #490),Seating 0-12,[0.0],[0.0]
+156,Afc Sushi @  Qfc Store #863,Seating 0-12,[0.0],[0.0]
+157,Afc Sushi @ Fred Meyer #111,Seating 0-12,-122.3594006,47.2980288
+158,Afc Sushi @ Fred Meyer #28,Seating 0-12,-122.33162247667852,47.47533965
+159,Afc Sushi @ Fred Meyer #459,Seating 0-12,-4.5863281,55.970407
+160,Afc Sushi @ Fred Meyer #53,Seating 0-12,-122.1182456,47.3568184
+161,Afc Sushi @ Fred Meyer #658,Seating 0-12,-122.0357343,47.541911
+162,Afc Sushi @ Fred Meyer #682,Seating 0-12,[0.0],[0.0]
+163,Afc Sushi @ Fred Meyer 122,Seating 0-12,-122.3588481,47.6918967
+164,Afc Sushi @ Fred Meyers #23,Seating 0-12,-122.1430588,47.6101047
+165,Afc Sushi @ Fred Meyers #391,Seating 0-12,-122.1840301,47.7083941
+166,Afc Sushi @ Metopolitan Market#157,Seating 0-12,-122.355052,47.6247495
+167,Afc Sushi @ Metropolitan 156,Seating 0-12,-122.28361822213222,47.6681887
+168,Afc Sushi @ Pcc Redmond 12,Seating 0-12,-122.0934016,47.7015875
+169,Afc Sushi @ Qfc #803,Seating 0-12,-122.1635929,47.3876223
+170,Afc Sushi @ Qfc #806,Seating 0-12,-122.2270594,47.542046
+171,Afc Sushi @ Qfc #811,Seating 0-12,-122.37786682157447,47.64941585
+172,Afc Sushi @ Qfc #819,Seating 0-12,-122.2112666,47.7657207
+173,Afc Sushi @ Qfc #821,Seating 0-12,[0.0],[0.0]
+174,Afc Sushi @ Qfc #828,Seating 0-12,-122.19122456035848,47.7124422
+175,Afc Sushi @ Qfc #829,Seating 0-12,-121.78052695465243,47.4932874
+176,Afc Sushi @ Qfc #837,Seating 0-12,-122.04501107925287,47.3880453
+177,Afc Sushi @ Qfc #839,Seating 0-12,-122.2329051,47.5850259
+178,Afc Sushi @ Qfc #840,Seating 0-12,-122.00335979035142,47.56566805
+179,Afc Sushi @ Qfc #849,Seating 0-12,-122.2998367,47.5787483
+180,Afc Sushi @ Qfc #869,Seating 0-12,-122.335989,47.6617288
+181,Afc Sushi @ Qfc #871,Seating 0-12,-122.1548173,47.4898049
+182,Afc Sushi @ Qfc #872,Seating 0-12,-122.3636648001913,47.7019318
+183,Afc Sushi @ Qfc #874,Seating 0-12,-122.14849578271198,47.5968855
+184,Afc Sushi @ Qfc #878,Seating 0-12,-122.088964,47.6891342
+185,Afc Sushi @ Qfc #881,Seating 0-12,-122.3472754,47.6246921
+186,Afc Sushi @ Qfc #883,Seating 0-12,-122.3852393,47.5613693
+187,Afc Sushi @ Qfc #887,Seating 0-12,-122.320847,47.6186726
+188,Afc Sushi @ Qfc 822,Seating 0-12,-122.1702876,47.5541905
+189,Afc Sushi @ Qfc 825,Seating 0-12,-122.36594271783112,47.522088999999994
+190,Afc Sushi @ Qfc 860,Seating 0-12,-122.127345,47.6810002
+191,Afc Sushi @ Qfc 873,Seating 0-12,-122.29020420630928,47.6897375
+192,Afc Sushi @ Qfc; #847,Seating 0-12,-122.3210828,47.6138791
+193,Afc Sushi @ Safeway # 1471,Seating 0-12,[0.0],[0.0]
+194,Afc Sushi @ Safeway # 1586,Seating 0-12,-122.31196406580874,47.7180447
+195,Afc Sushi @ Safeway # 2734,Seating 0-12,-122.2063788260844,47.72363675
+196,Afc Sushi @ Safeway #1550,Seating 0-12,-122.31693733018638,47.6818472
+197,Afc Sushi @ Safeway #3006,Seating 0-12,-122.01963041669713,47.54134955
+198,Afc Sushi @ Safeway #555,Seating 0-12,-122.03351400500472,47.615362250000004
+199,Afc Sushi @ Safeway ; #1551,Seating 0-12,-122.312948,47.6201294
+200,Afc Sushi @Qfc #808,Seating 0-12,-122.20536670568248,47.61863475
+201,Afc Sushi @Qfc #816,Seating 0-12,-122.3664472,47.7651211
+202,Afc Sushi @Qfc #826,Seating 0-12,-122.130154,47.6209366
+203,Afc Sushi @Qfc 820,Seating 0-12,-122.1286791,47.6755936
+204,Afc Sushi@Qfc #891,Seating 0-12,-122.3872019,47.6705565
+205,Afghan Cuisine,Seating 13-50,-122.2041756,47.4812811
+206,Afgoye Mini Market,Meat/Sea Food,-122.1980767,47.3714356
+207,Afk Elixirs & Eatery,Seating > 250,-122.21746321101836,47.445667
+208,Afrikando Banadir,Seating 13-50,-122.28291338754866,47.555732649999996
+209,After 5 Sports Bar,Seating 51-150,-122.1959174,47.4136998
+210,Agave,Seating 51-150,[0.0],[0.0]
+211,Agave Cocina & Cantina,Seating 151-250,-122.1425603,47.6751757
+212,Agave Cocina & Tequilas,Seating 51-150,-122.3551075,47.6234316
+213,Agrodolce,Seating 51-150,-122.3493389,47.6502979
+214,Agua Verde Cafe,Seating 51-150,-122.3143795,47.6516032
+215,Aguacateros,Seating 13-50,-122.20182354082567,47.386400050000006
+216,Baskin-Robbins #1369,Seating 0-12,-122.3129247,47.3196624
+217,Baskin-Robbins ; #1362,Seating 0-12,[0.0],[0.0]
+218,Baskin-Robbins 1312,Seating 0-12,-122.1323495,47.6300347
+219,Baskin-Robbins 31 Flavors#4335,Seating 0-12,[0.0],[0.0]
+220,Baskin-Robbins Ice Cream,Seating 0-12,-122.34755705401412,47.7634094
+221,Baskin & Robbins,Seating 0-12,-122.2203038294582,47.32449045
+222,Baskin & Robbins #1348,Seating 0-12,-122.138147664149,47.5765346
+223,Baskin & Robbins Ice Cream,Seating 0-12,[0.0],[0.0]
+224,Baskin Robbins,Seating 0-12,-85.0179986,42.4437685
+225,Baskin Robbins #1304,Seating 0-12,-122.2920831,47.6614585
+226,Baskin Robbins #4347,Seating 0-12,-122.2797136,47.7543645
+227,Baskin Robbins Gyros & Donuts,Seating 13-50,-122.2462107,47.3815828
+228,Baskins & Robbins Fairwood Ctr,Seating 0-12,-122.1517031,47.464134
+229,Bastille Cafe & Bar,Seating 151-250,-122.3836103,47.66655
+230,Bastyr University,Non-Profit Institution,-122.2500101,47.7513039
+231,Batch 206 Distillery,Seating 51-150,-122.3742762,47.6306513
+232,Bauhaus Ballard,Seating 51-150,-122.382312,47.6684223
+233,Bauhaus Books & Coffee,Seating 51-150,-122.326021,47.6153439
+234,Bavarian Meat Products,Seating 0-12,-122.34283,47.610141
+235,Bay Leavs Indian Foods,Catering Operation,-122.1943442,47.6819779
+236,Bayan Mongolian Bbq,Seating 13-50,-121.87643429847063,47.52861394999999
+237,Baymont Inn & Suites,Seating 13-50,-122.17823399914263,47.702751649999996
+238,Bayou Grill,Seating 0-12,[0.0],[0.0]
+239,Bayou On 1St,Seating 13-50,-122.340759,47.60938
+240,Bbq Chicken Uw,Seating 13-50,-122.3133049,47.6620626
+241,Bbq Pete'S,Seating 51-150,[0.0],[0.0]
+242,Bbq Schacht,Seating 13-50,[0.0],[0.0]
+243,Be'S Restaurant,Seating 13-50,-122.3873313,47.5626162
+244,Beach House Bar & Grill,Seating 51-150,[0.0],[0.0]
+245,Beachcomber Tavern,Seating 51-150,-122.249758,47.4998239
+246,Beacon Ave Sandwiches,Seating 0-12,-122.3106119,47.5775577
+247,Beacon Avenue Shell Food Mart,Seating 0-12,-122.31376243678875,47.58150235
+248,Beacon Hill 76,Seating 0-12,-122.3145268318341,47.581176600000006
+249,Beacon Hill Market- Seafood,Meat/Sea Food,-122.3106119,47.5775577
+250,Beacon Hill Market - Grocery,Grocery,-122.3106119,47.5775577
+251,Beacon Hill Market - Meat Shop,Meat/Sea Food,-122.3106119,47.5775577
+252,Bean & Bagel,Seating 13-50,-122.3128296,47.6554482
+253,Bean City Espresso,Limited Food Services,-122.2946807,47.7206578
+254,Bean Sprouts (Kc249) @ Seattle Sprouts Llc,Mobile Food Service,-122.35397700018214,47.6220986
+255,Bear Creek Elementary School,School Kitchen,-122.08052982500001,47.7595254
+256,Bear Creek Golf Course #431,Seating > 250,[0.0],[0.0]
+257,Bear Creek School,Non-Profit Institution,-122.0888681,47.6855929
+258,Beard Papa'S,Bakery,[0.0],[0.0]
+259,Beauty And The Beans,Limited Food Services,[0.0],[0.0]
+260,Beaver Lake Middle School,School Kitchen,[0.0],[0.0]
+261,Beba'S Deli,Seating 13-50,-122.334425,47.5986272
+262,Bebas & Amigos,Seating 51-150,-122.32963866789018,47.60503555
+263,Bebas And Dos Amigos,Seating 13-50,-122.3306081,47.6198994
+264,Bebas Deli,Seating 0-12,[0.0],[0.0]
+265,Bed & Breakfast On Broadway,Bed and Breakfast,-122.320847,47.6186726
+266,Bed & Breakfast On Capitol Hill,Bed and Breakfast,-122.32160065018158,47.626150550000006
+267,Bed Bath & Beyond,Seating 0-12,[0.0],[0.0]
+268,Bedlam,Seating 13-50,-122.345447,47.6136912
+269,Beecher'S Handmade Cheese,Seating 0-12,-122.3418158,47.6095818
+270,Beehive Espresso,Seating 0-12,-122.21160083251232,47.7565173
+271,Beer Authority,Seating 13-50,-122.2934279,47.7219046
+272,Beer Junction,Seating 13-50,-122.3870064,47.5625293
+273,Beijing O Chef,Seating 51-150,-122.2049274,47.6770483
+274,Bel Red Arco,Seating 0-12,-122.1779667,47.6188932
+275,Belen,Seating 13-50,[0.0],[0.0]
+276,Bell Harbor Int Conference Ctr /  Restaurant,Seating 151-250,-122.34926787500001,47.61114245
+277,Bell Harbor Intn'L - Banquet Kitchen - 2Nd Flr.,Catering Operation,-122.34926787500001,47.61114245
+278,Bell St Deli & Grocery,Seating 0-12,-122.3489721,47.6110277
+279,Bell Thai  Thai  Restaurant,Seating 13-50,-122.3432264,47.6147395
+280,Bella Bottega Cinema #403,Seating 0-12,-122.12262668188835,47.6808027
+281,Bella Luna Pizza And Pasta,Seating 0-12,-122.3381966,47.4656819
+282,Bella Viet Cafe,Seating 13-50,-122.280351,47.6338856
+283,Bellas Artes Bakery,Bakery,-122.3116734428312,47.3390474
+284,Belle Pastry,Seating 13-50,-122.2030425,47.6102752
+285,Bellevue Brewing Company,Seating 151-250,-122.1662253,47.626576
+286,Bellevue Children'S Academy,School Kitchen,-122.1455713,47.6321176
+287,Bellevue Christian School - Concession,Non-Profit Institution,-122.2097978,47.6274403
+288,Bellevue Christian School - Main Kitchen,Non-Profit Institution,-122.2097978,47.6274403
+289,Bellevue Club - Luna,Seating 0-12,-122.2054349,47.6042776
+290,Bellevue Club - Polaris/Cosmos Bar,Seating 51-150,-122.2054349,47.6042776
+291,Bellevue Club - Splash,Seating 51-150,-122.2054349,47.6042776
+292,Bellevue Fairfield Inn,Seating 51-150,-122.1466387,47.6344987
+293,Bellevue G.C.,Seating 51-150,-122.1535591,47.6125993
+294,Bellevue Grill,Seating 51-150,-122.18988682742199,47.6108429
+295,Bellevue Hs/Cafeteria,School Kitchen,[0.0],[0.0]
+296,Bellevue Hs/Concessions/Rm 1242,Non-Profit Institution,[0.0],[0.0]
+297,Bellevue Hs/Student Store,Non-Profit Institution,[0.0],[0.0]
+298,Bellevue International School,School Kitchen,-122.1694091,47.6094593
+299,Bellevue Public Schools (Esc),Seating 0-12,-122.1653545,47.6104531
+300,Bellevue Shell,Grocery,-122.1533606,47.6176559
+301,Bellevue Silver Cloud Inn,Seating 13-50,-122.2015446,47.6210402
+302,Bellewood,School Kitchen,-122.1381895,47.609919
+303,Bellewood Retirement Apts,Seating 51-150,[0.0],[0.0]
+304,Bellini,Seating 0-12,-122.3466219,47.6136323
+305,Bellisimo Espresso,Seating 0-12,-122.1655728,47.6172417
+306,Belltown Billiards,Seating 51-150,-122.3456212,47.6124652
+307,Belltown Cafe Market,Seating 0-12,-122.35238849401236,47.6176675
+308,Belltown Pizza,Seating 13-50,-122.3482579,47.6146017
+309,Belltown Pub,Seating 51-150,-122.3471252,47.6139415
+310,Beloved Mexico @ 9434 36Th Ave Sw; Seattle  98126,Mobile Food Service,-122.3777685,47.5617127
+311,Ben & Jerry,Seating 13-50,[0.0],[0.0]
+312,Ben & Jerry'S,Seating 0-12,-122.2057816,47.6741901
+313,Ben & Jerry'S (Kc172),Mobile Food Service,[0.0],[0.0]
+314,Ben & Jerry'S @ Route 360-970-6849,Mobile Food Service,[0.0],[0.0]
+315,Ben Thanh,Seating 51-150,-122.2957123,47.5747549
+316,Benaroya Shell,Seating 0-12,-122.32572796627504,47.546704000000005
+317,Bengodi Cafe,Seating 13-50,-122.334204,47.6027182
+318,Benihana Of Tokyo,Seating 151-250,-122.3330797748389,47.608443699999995
+319,Benito'S Chicago Eatery,Seating 13-50,-122.3764631,47.6739503
+320,Benjamin Rush Elementary,School Kitchen,-122.1375199,47.6455846
+321,Benjarong Thai,Seating 13-50,[0.0],[0.0]
+322,Benjarong Thai Restaurant,Seating 13-50,[0.0],[0.0]
+323,Benson Dairy Queen,Seating 51-150,-122.1965168,47.4424876
+324,Benson Hill Elementary Kitchen,School Kitchen,-122.18797408117048,47.43486
+325,Benson Mart,Grocery,-122.1965109,47.4164314
+326,Benson Pizza,Seating 13-50,-122.2031312,47.38989
+327,Bensons Grocery,Grocery,-122.3270474,47.61432295
+328,Bent Burgers,Seating 13-50,[0.0],[0.0]
+329,Bento Box; The,Seating 13-50,-122.1098547,47.6312363
+330,Bento House,Seating 13-50,-122.0355556,47.5845809
+331,Bento Sushi,Seating 13-50,-122.37726807491896,47.69076
+332,Bento Teriyaki,Seating 13-50,-122.2112666,47.7657207
+333,Bento World,Seating 0-12,-122.342044,47.6134829
+334,Berliner Doner Kebab,Seating 13-50,-122.33441,47.6002002
+335,Berliner Pub,Seating 13-50,-4.5842152,55.9736116
+336,Bernard'S On Seneca,Seating 51-150,-122.3344649,47.6072739
+337,Berry Bbq Catering & Takeout,Seating 13-50,[0.0],[0.0]
+338,Bert'S Markets Inc,Meat/Sea Food,-122.28001183825708,47.6348012
+339,Best Catering,Catering Operation,-122.2485433,47.4476076
+340,Best Corn #1  - @ Sam'S Way,Mobile Food Service,-122.3539978,47.5210333
+341,Best Friend Espresso,Seating 0-12,[0.0],[0.0]
+342,Best Of Bento,Seating 13-50,-122.3133326,47.6596112
+343,Best Of India,Seating 13-50,-122.29136779476366,47.459221799999995
+344,Best Teriyaki,Seating 0-12,-122.3251193,47.6188364
+345,Best Teriyaki & Bento,Seating 13-50,-122.37698240798358,47.7695583
+346,Best Western Airport Inn,Seating 51-150,[0.0],[0.0]
+347,Best Western Executive Inn,Seating 51-150,-122.3458957614059,47.6203243
+348,Best Western Peppertree,Seating 13-50,-122.2345633043675,47.30175185
+349,Best Wok,Seating 51-150,-122.1430588,47.6101047
+350,Beta Theta Pi,Seating 51-150,-122.3100645,47.6628869
+351,Bethel Christian Center,Non-Profit Institution,-122.34110078001524,47.32338165
+352,Better Meat Inc,Grocery,-122.36099485366216,47.68820075
+353,Betty,Seating 51-150,-122.3572116,47.6326914
+354,Beverages & More,Seating 0-12,-122.2001416,47.6204739
+355,Beverly Park At Glendale,School Kitchen,-122.3174294,47.5094394
+356,Bevmo!,Seating 0-12,-122.367945,47.661754
+357,Bibimbap,Seating 0-12,-122.3358006,47.6037539
+358,Bick'S Broadview Grill,Seating 51-150,-122.3557878,47.7067227
+359,Big Air Bar-B-Que,Seating 0-12,-121.4113446,47.4211021
+360,Big Apple Bagel,Seating 13-50,[0.0],[0.0]
+361,Big Apple Deli,Seating 13-50,[0.0],[0.0]
+362,Big Bawarchi,Seating 51-150,-122.1323495,47.6300347
+363,Big Bazaar,Grocery,-122.1375199,47.6455846
+364,Big Daddy'S,Seating 13-50,-122.2197941,47.2987841
+365,Big Fish Grill,Seating 151-250,[0.0],[0.0]
+366,Big Food / Centerhouse #208,Seating 0-12,-122.35397700018214,47.6220986
+367,Big Food Bbq,Mobile Food Service,-122.3777685,47.5617127
+368,Big Food/Pacific Raceway,Seating 13-50,-122.1495534,47.3676426
+369,Big Foot Java,Seating 0-12,[0.0],[0.0]
+370,Big Mario'S New York Style Pizza,Seating 13-50,-122.319023,47.6139519
+371,Big Orange,Seating 0-12,-122.2583964977926,47.45894615
+372,Big Picture,Seating 13-50,-122.3490138,47.614714
+373,Big Picture School; The,School Kitchen,-122.140333,47.5908581
+374,Big Time Brewing Co,Seating 51-150,-122.31357594886455,47.65785225
+375,Bigfun,Seating 151-250,-122.318451,47.6150551
+376,Bilisee Mini Market,Grocery,-122.269769,47.528966
+377,Blazing Bagels,Seating 13-50,-122.19687180287366,47.61477185
+378,Blazing Bagels @ Safeco Field,Seating 0-12,-122.3341977,47.5912484
+379,Bleacher'S Pub,Seating 13-50,-122.3553542,47.6725083
+380,Blend,Seating 0-12,-122.3862691,47.6684325
+381,Blend Juice & Java Lounge;The,Seating 0-12,-121.99601,47.362503
+382,Blimpie,Seating 13-50,[0.0],[0.0]
+383,Blind Pig Bistro,Seating 51-150,-122.3255195,47.6394811
+384,Blinker Tavern,Seating 51-150,-122.24698104848181,47.3823583
+385,Blinkers Bar,Seating 0-12,-122.235683,47.3222772
+386,Bliss Coffehouse & Cafe,Limited Food Services,-122.1684796,47.7525136
+387,Bloom Restaurant,Seating 13-50,-122.378742,47.668316
+388,Blossom Vegetarian,Seating 151-250,-122.2083976,47.4794079
+389,Blu Grouse,Seating 13-50,-122.3287771,47.5521123
+390,Blu Hong Kong Bisro,Seating 151-250,-122.21915359686747,47.4433668
+391,Blue C Sushi,Seating 151-250,-122.201701,47.6255964
+392,Blue Dragon,Seating 51-150,-122.2193863,47.4397901
+393,Blue Fin & Seafood,Seating 151-250,[0.0],[0.0]
+394,Blue Ginger Korean Grill & Sushi,Seating 151-250,-122.1524819,47.6276431
+395,Blue Glass,Seating 13-50,-122.3647966,47.6761007
+396,Blue Heron,Seating 0-12,-122.3870862,47.6559581
+397,Blue Heron Golf Course,Seating 151-250,[0.0],[0.0]
+398,Blue Martini,Seating 151-250,[0.0],[0.0]
+399,Dairy Queen Of Pacific,Seating 51-150,-122.25785003670148,47.27232385
+400,Dairy Queen Of Redmond,Seating 13-50,-122.1425603,47.6751757
+401,Dairy Queen/ Eastgate,Seating 13-50,-122.1399756,47.5815772
+402,Dairy Queen/Auburn,Seating 51-150,-122.22626892127079,47.32047555
+403,Dakine Grindz,Limited Food Services,[0.0],[0.0]
+404,Dakshin South Indian Bistro,Seating 13-50,-122.204066,47.6766637
+405,Dalian House,Seating 151-250,-122.1321542,47.6061585
+406,Daman'S Bar & Grill,Seating 51-150,-122.1424275,47.6325836
+407,Damn The Weather,Seating 51-150,-122.3339391,47.6011077
+408,Dan'S Belltown Grocery,Seating 0-12,-122.3445010500472,47.61416925
+409,Dan'S Deli Mart,Grocery,-122.3557653,47.7055482
+410,Dandy Dogs @ 18438 120Th Ave Ne Woodinville,Mobile Food Service,-122.2056545,47.6763089
+411,Daniel'S Broiler; Lake Union,Seating 151-250,-122.33487874545261,47.62671225
+412,Daniel Bagley Elementary,School Kitchen,-122.3407677,47.6642809
+413,Daniel Elementary School,School Kitchen,-122.19024538057545,47.380332949999996
+414,Daniels Broiler,Seating 151-250,[0.0],[0.0]
+415,Daniels Broiler - Bellevue Place,Seating > 250,-122.2001928,47.6176171
+416,Dante'S Inc,Seating 51-150,-122.3172024,47.6672639
+417,Dante'S Inferno (2)@ Route 206-579-7559,Mobile Food Service,-122.36342438531747,47.668867399999996
+418,Dante'S Inferno @ Route 206-579-7559,Mobile Food Service,-122.36342438531747,47.668867399999996
+419,Danube,Seating 13-50,-122.1928555304937,47.619648850000004
+420,Darrell'S Tavern,Seating 13-50,-122.3452038,47.734507
+421,Dash Point Arco,Seating 0-12,-122.3554517,47.322631200000004
+422,Dave'S Diner & Brew,Seating 51-150,[0.0],[0.0]
+423,Davinci Pizza & Pasta,Seating 13-50,-122.3446906,47.6845936
+424,Bizzy Bean Espresso,Seating 0-12,[0.0],[0.0]
+425,Bj'S Restaurant & Brewhouse,Seating > 250,-122.1179264,47.687585
+426,Bk Mae Phim,Seating 13-50,-122.3353113,47.6032314
+427,Black Angus Steakhosue,Seating > 250,-122.30256732555142,47.315775849999994
+428,Black Bamboo,Seating 13-50,-122.344501,47.6147308
+429,Black Bear Coffee,Limited Food Services,-122.19660099999999,47.430537
+430,Black Bear Diner,Seating 151-250,-122.31401204354668,47.31326195
+431,Black Bottle,Seating 13-50,-122.3497037,47.6154608
+432,Black Coffee,Seating 13-50,-122.3251342,47.615072
+433,Black Diamond Bakery,Bakery,-122.0063786,47.3073651
+434,Black Diamond Bakery Espresso,Limited Food Services,-122.0063786,47.3073651
+435,Black Diamond Community Center,Non-Profit Institution,-122.0054441,47.3182083
+436,Black Diamond Eagles,Non-Profit Institution,-122.007035,47.3092965
+437,Black Diamond Elementary School,School Kitchen,-122.00523224731711,47.3099763
+438,Black Diamond Pizza,Seating 13-50,-122.00663298796,47.3084432
+439,Black Diamond Restaurant,Seating 51-150,-122.0063786,47.3073651
+440,Black Dog Arts Cafe; Inc,Seating 13-50,-121.824707,47.5281101
+441,Black Pearl,Seating 51-150,-122.2907629,47.6826651
+442,Black Raven Brewing Company,Seating 51-150,-122.1446573,47.6855472
+443,Black Zia Cantina,Seating 51-150,-122.3416372,47.4664814
+444,Blackboard Bistro,Seating 13-50,-122.3870312,47.5742713
+445,Blake'S Pizza,Seating 13-50,[0.0],[0.0]
+446,Blanchet High School Kitc,Non-Profit Institution,-122.33477631306295,47.6898042
+447,Blue Moon Burgers,Seating 13-50,[0.0],[0.0]
+448,Blue Moon Burgers #2,Seating 13-50,-122.3491213,47.6492247
+449,Blue Moon; The,Seating 51-150,-122.3200271,47.6614732
+450,Blue Nile Restaurant,Seating 13-50,-122.3165656,47.6056907
+451,Blue Plate Express,Catering Operation,-122.2907629,47.6826651
+452,Blue Ribbon Cooking; Llc,Catering Operation,-122.3292157,47.6430253
+453,Blue Stars Food Mart,Seating 0-12,-122.2358082,47.5088669
+454,Blue Vanilla Bakery,Seating 13-50,-122.32484892898458,47.400639749999996
+455,Blue Water Burrito,Seating 13-50,-122.3567993,47.6183998
+456,Blue Water Taco Grill,Seating 0-12,[0.0],[0.0]
+457,Blue Willow Catering Inc,Catering Operation,-122.3870061,47.5604465
+458,Blueacre Seafood,Seating > 250,-122.335852,47.614361
+459,Bluebird,Seating 13-50,[0.0],[0.0]
+460,Bluebird Ice Cream,Seating 0-12,-122.3553542,47.6725083
+461,Bluwater Leschi,Seating 151-250,-122.2856592,47.6007716
+462,Boar'S Nest,Seating 0-12,-122.382638,47.6695656
+463,Boarding House; The,Seating 51-150,[0.0],[0.0]
+464,Boardroom Cafe,Seating 13-50,-122.3442678,47.6895583
+465,Boat House Deli,Seating 13-50,-122.3398693,47.6353957
+466,Bob'S Quality Meats,Meat/Sea Food,-122.2855019,47.5583249
+467,Boba Express,Seating 0-12,[0.0],[0.0]
+468,Boba Smoothies,Seating 0-12,[0.0],[0.0]
+469,Boba Smoothies #90975,Seating 0-12,-122.2583964977926,47.45894615
+470,Bobs Burgers,Seating 13-50,[0.0],[0.0]
+471,Boehm'S Candies Inc.,Seating 0-12,[0.0],[0.0]
+472,Boeing 18-25 - Eurest,Seating > 250,-122.2574902,47.4198921
+473,Boeing 25-20 Cafeteria,Seating > 250,[0.0],[0.0]
+474,Boeing Co - 17-44 Bldg,Seating 151-250,-95.81708527530796,38.91439235
+475,Boeing Co Bldg 2-22,Seating 0-12,-122.30555272630573,47.52784145
+476,Boeing Co.-10-20 Cafe,Seating 51-150,-122.20502650815673,47.4925754
+477,Boeing Co.-33-07 Cafe,Seating 151-250,-122.1268767,47.6035849
+478,Boeing Co.-4-21 Cafe.-Pro,Seating 0-12,[0.0],[0.0]
+479,Boeing Co.-4-21 Cafeteria,Seating 51-150,[0.0],[0.0]
+480,Boeing Co.-Plant Ii-Duw. Bldg 11-14,Seating 51-150,-122.252641,47.5028036
+481,Boeing Co.-South Park Diner,Seating 151-250,[0.0],[0.0]
+482,Boeing Co. - Plant Ii / Plaza 99,Seating 51-150,[0.0],[0.0]
+483,Boeing Company -22-01/Spares,Seating 13-50,[0.0],[0.0]
+484,Boeing Field Chevron,Seating 0-12,-122.3361702,47.5519086
+485,Boeing Flight Test & 3-800 Bldg,Seating > 250,-122.3184091,47.5373569
+486,Boeing/ Eurest  14-01 Bldg.,Seating 0-12,-122.2982749,47.5191813
+487,Boeing/09-101(Fly Away Cafe),Seating > 250,-122.3361702,47.5519086
+488,Boi Pho Bistro,Seating 13-50,-122.317797,47.675155
+489,Boiling Point,Seating 51-150,-122.32745195702364,47.596812
+490,Boiling Point Corp; Wa,Seating 0-12,-122.3201892,47.5392015
+491,Boise Grocery; Llc,Seating 0-12,-122.0162655,47.199297
+492,Boka Restaurant - Banquet Kitchen,Seating 0-12,-122.33612006526123,47.60506555
+493,Boka Restaurant  - Main Kitchen,Seating 51-150,-122.33612006526123,47.60506555
+494,Bombay-Fiji Bazaar,Grocery,[0.0],[0.0]
+495,Bombay Grill & Lounge,Seating 51-150,-122.31770764944272,47.6643036
+496,Bombay House Indian Cuisine,Seating 51-150,[0.0],[0.0]
+497,Bombay Wala,Seating 0-12,-122.344663,47.6145075
+498,Bon Appetit,Seating 51-150,-122.33823738837278,47.60770555
+499,Bon Appetit - Chardin Kitchen,Catering Operation,-122.31864304308772,47.60673455
+500,Bon Appetit - Fashion Bowl,Seating 51-150,-122.3362966074246,47.612306000000004
+501,Bon Appetit - The Dish,Seating 51-150,-122.335852,47.614361
+502,Bon Appetit / Bottom Line,Seating 0-12,[0.0],[0.0]
+503,Bon Appetit @ Adobe,Seating 51-150,-122.34799173267658,47.64803085
+504,Bon Appetit @ Amazon.Com /Coffee Bar,Seating 13-50,-122.33650545,47.622950349999996
+505,Bon Appetit @ Amazon.Com/ Server,Seating 151-250,-122.33650545,47.622950349999996
+506,Bon Appetit At Zulily,Seating 151-250,-122.3522473,47.6142622
+507,Bon Appetit Cafe@ Starbucks- 3Rd Floor,Seating 151-250,-122.33591793436466,47.5807667
+508,Bon Appetit Catering #1 Rt. 206-779-6622,Mobile Food Service,-122.3550629,47.5345059
+509,Bon Appetit Mgt Co,Seating > 250,-122.33409124475132,47.61291445
+510,Bon Appetit/Amazon,Seating 0-12,-122.33807254999999,47.620128
+511,Bongo'S Cafe @ 6501 Aurora Ave,Mobile Food Service,-122.3231882,47.5728531
+512,Book Bindery,Seating 13-50,-122.3528511,47.6479131
+513,Boom Noodle,Seating 151-250,-122.3171796,47.6139201
+514,Boonmar Pho & Thai Cuisine,Seating 13-50,-122.1690263,47.3594908
+515,Boots Bar,Seating 13-50,-122.00715216804585,47.32256665
+516,Bors Hede Inne; The,Non-Profit Institution,[0.0],[0.0]
+517,Both Ways Cataering Co.,Seating 13-50,-122.2709269,47.5642708
+518,Bothell Deli & Grocery,Grocery,-122.20189823494681,47.76010075
+519,Bothell High Student Store,Non-Profit Institution,-122.2205601933174,47.760475
+520,Bothell Police Department,Non-Profit Institution,-122.20529501740373,47.76149235
+521,Bothell Service Center Inc,Seating 0-12,-122.21019,47.765840999999995
+522,Bothell Stadium Chevron,Seating 0-12,-122.20852088256427,47.7639463
+523,Bottega Italiana,Seating 0-12,-122.339914,47.6084639
+524,Bottlehouse,Seating 13-50,-122.2890034137184,47.61348555
+525,Bottleneck Lounge,Seating 0-12,-122.3016005,47.6199858
+526,Bottoms Up Espresso,Seating 0-12,-122.21843763235472,47.49063995
+527,Boud'S Pinehurst Pub,Seating 13-50,-122.31279650221057,47.7155556
+528,Boulangerie Bakery,Seating 0-12,[0.0],[0.0]
+529,Boulevard Grocery,Seating 0-12,[0.0],[0.0]
+530,Boulevard Park Chevron,Seating 0-12,-122.252641,47.5028036
+531,Boulevard Park Thriftway - Meat,Meat/Sea Food,[0.0],[0.0]
+532,Boumba Hotdog @ 1325 E. Madison St,Mobile Food Service,-122.31445695731445,47.6134847
+533,Bounty Caffe,Seating 13-50,-122.3137524,47.7572126
+534,Bourbon & Bones,Seating 13-50,-122.3655772,47.6601221
+535,Bourbon Jacks,Seating 151-250,-122.24667333803839,47.385109400000005
+536,Bow Lake Elementary School Kitchen,School Kitchen,-122.28240139766547,47.4388596
+537,Bowls & Noodles,Seating 0-12,[0.0],[0.0]
+538,Box And Bottle,Seating 13-50,-122.3551025,47.6921308
+539,Box Car Alehouse,Seating 51-150,-122.3822704,47.6505885
+540,Box Nature Sushi @ Route 206-302-8329,Mobile Food Service,-122.3174183,47.7099898
+541,Box On Wheels @ Route 808-429-1947,Mobile Food Service,[0.0],[0.0]
+542,Boxing Fish,Catering Operation,-122.33371,47.5539041
+543,Cafe Soleil,Seating 13-50,-122.2891389,47.6130066
+544,Cafe Solstice,Seating 13-50,-122.3130573,47.6574105
+545,Cafe Starbucks  #3702,Seating 51-150,-122.2807886,47.6341227
+546,Cafe Suisse,Seating 0-12,[0.0],[0.0]
+547,Cafe Sun & Moon,Seating 13-50,-122.31281721347483,47.3211128
+548,Cafe Tao Ngo,Seating 13-50,-122.3561733,47.5355747
+549,Cafe Teamore,Seating 13-50,-122.31438700964137,47.307100399999996
+550,Cafe Truong Nguyen,Seating 13-50,[0.0],[0.0]
+551,Cafe Van Gough,Seating 13-50,-122.2901216,47.6889639
+552,Cafe Veloce,Seating 51-150,-122.1786598,47.7113896
+553,Cafe Vignole,Seating 13-50,-122.2613611,47.5200043
+554,Cafe Yumm!,Seating 13-50,-122.3334076,47.612719
+555,Cafe Zum Zum,Seating 13-50,-122.3333423942081,47.60455545
+556,Caffe Appassionato,Seating 13-50,-122.3837069,47.6560771
+557,Caffe Appassionato-North Kiosk,Seating 0-12,-122.33851128796024,47.6027143
+558,Caffe Appassionato -  Restaurant/Colman Dock,Seating 0-12,-122.33851128796024,47.6027143
+559,Caffe Bee,Seating 0-12,-122.348385,47.619883
+560,Caffe D'Arte,Seating 0-12,[0.0],[0.0]
+561,Caffe Fiore,Seating 0-12,-122.3608221,47.6324599
+562,Caffe Ladro,Seating 13-50,[0.0],[0.0]
+563,Caffe Lieto,Seating 0-12,-122.3417918,47.6103986
+564,Caffe Nautica  @ 23919 Vashon Hwy Sw,Mobile Food Service,-122.46615044555736,47.38902525
+565,Caffe Rococo,Seating 13-50,-122.205367,47.6763719
+566,Caffe Senso Unico,Seating 13-50,-122.3355284,47.6135839
+567,Caffe Sospeso,Non-Profit Institution,-122.1868323490963,47.6186563
+568,Chandy'S North Commons @ Ms 98,Seating 51-150,-122.13645425466683,47.64433175
+569,Chang'S Mongolian Grill,Seating 51-150,-122.2184234,47.4901462
+570,Chang Ko Restaurant,Seating 51-150,-122.312871,47.3090269
+571,Chang Thai & Pho,Seating 51-150,-121.774522,47.4891226
+572,Changes,Seating 13-50,-122.3334927,47.6612762
+573,Chantanee Family Thai,Seating 51-150,[0.0],[0.0]
+574,Chao Praya Restaurant,Seating 13-50,-122.2273626,47.4110958
+575,Charley'S Grilled Sub,Seating 0-12,[0.0],[0.0]
+576,Charlie'S,Seating > 250,-122.320847,47.6186726
+577,Charlie'S Food Truck  @ Route 206-850-3432,Mobile Food Service,-122.31252455058075,47.6706004
+578,Charlies Cafe,Seating 51-150,-121.9923569,47.1991846
+579,Chateau Ste Michelle - Banquet Room,Seating > 250,-122.1493658402225,47.72928585
+580,Chateau Ste Michelle - Manor House,Seating 51-150,-122.1493658402225,47.72928585
+581,Chateau Ste Michelle - Retail/Tasting Bar,Seating 0-12,-122.1493658402225,47.72928585
+582,Chateau Ste Michelle -Vintage/Tasting Bar,Seating 0-12,-122.1493658402225,47.72928585
+583,Chatterbox,Seating 13-50,[0.0],[0.0]
+584,Chautauqua Elementary,School Kitchen,-122.4524378,47.427701
+585,Cheap Dog Catering @ 589 Occidental Ave S,Mobile Food Service,-122.362655425,47.551682
+586,Checkers Iii,Grocery,-122.27038272629076,47.50714615
+587,Cheeky Cafe,Seating 13-50,-122.309682,47.5994486
+588,Cheese Cellar; The,Seating 0-12,-122.34864185,47.61905455
+589,Cheese Wizards @ 210 Nickerson St,Mobile Food Service,-122.3869651,47.6684979
+590,Cheesecake Factory,Seating > 250,[0.0],[0.0]
+591,Cheesecake Factory; The,Seating > 250,-85.0179986,42.4437685
+592,Coffee Bear,Seating 0-12,-122.28469976971817,47.3161681
+593,Coffee Express-O,Seating 0-12,-121.8240768,47.5270804
+594,Coffee Sensations,Limited Food Services,-122.2701123,47.7754607
+595,Coffee Shack; The,Seating 0-12,-122.3130293,47.7454763
+596,Coffee Shop,Non-Profit Institution,-122.1069249,47.6980465
+597,Coffee Time Catering/B9815L/Route/206-782-5944,Mobile Food Service,-122.32922539226678,47.7258311
+598,Coffee Too,Seating 0-12,-121.9721484,47.5373724
+599,Coffee Tree,Seating 13-50,-122.3281984,47.6073387
+600,Coffee Trolley@ Rendezvous,Mobile Food Service,-121.9886258,47.203768
+601,Coffee Vault,Seating 0-12,-121.99508292499999,47.197988949999996
+602,Coffees A La Cart - Commissary,Catering Operation,-122.22734635,47.58986005
+603,Cold Spot Of Seattle - N Kiosk,Seating 0-12,-122.33851128796024,47.6027143
+604,Cold Stone Creamery,Seating 13-50,-122.130154,47.6209366
+605,Cole Street Cafe,Seating 13-50,-121.98997021407563,47.2029781
+606,Collections Cafe,Seating 151-250,-122.35397700018214,47.6220986
+607,College Inn Pub,Seating 51-150,-122.31308,47.6555283
+608,Collins Pub,Seating 51-150,-122.3320521,47.6021043
+609,Colman Dock News / Candy Lane,Grocery,-122.3360185,47.5936487
+610,Columbia Athletic Club,Seating 0-12,-122.20982756503044,47.7035434
+611,Columbia City Ale House,Seating 51-150,-122.2844898396073,47.5573979
+612,Columbia City Bakery,Seating 13-50,-122.2854376,47.5581793
+613,Columbia City Theater,Seating 13-50,-122.2844953,47.5573111
+614,Columbia School,Seating 0-12,-122.2874904,47.55825175
+615,Columbia Tower Club,Seating > 250,-122.33071812801815,47.60454285
+616,Boxley'S,Seating 51-150,-121.7863914,47.4952008
+617,Branding Iron Cafe,Seating 51-150,-122.0184887,47.2101528
+618,Branzino,Seating 13-50,-122.3478678,47.6151228
+619,Bravehorse Tavern,Seating 51-150,-122.33677785,47.62154445
+620,Bread Of Life Mission,Non-Profit Institution,-122.334459,47.599942
+621,Breakfast Club,Seating 13-50,-122.2957943,47.7177483
+622,Breaktime Deli,Seating 13-50,-122.33137034800473,47.5246936
+623,Brew,Seating 13-50,-122.2057995,47.7599392
+624,Bri'S Beans; Ii,Seating 0-12,0.7354444499865738,51.3395012
+625,Briarcrest School Elementary,School Kitchen,-122.29821660317393,47.74174645
+626,Briarwood Elementary School,School Kitchen,-122.11556008114616,47.4834581
+627,Briatore,Seating 13-50,[0.0],[0.0]
+628,Bridge Park,Seating 151-250,-122.37358660564405,47.5453908
+629,Bridle Trail Red Apple Market-Grocery,Grocery,-122.165911,47.6657608
+630,Bridle Trails Dairy Queen,Seating 51-150,-122.16457133258905,47.666166849999996
+631,Bridle Trails Red Apple Market,Seating 13-50,-122.165911,47.6657608
+632,Bridle Trails Red Apple Market-Bakery,Bakery,-122.165911,47.6657608
+633,Bridle Trails Red Apple Market/Meat & Seafood,Meat/Sea Food,-122.165911,47.6657608
+634,Brigadoon Elementary School,School Kitchen,-122.3642647,47.3006913
+635,Brimmer & Heeltap,Seating 13-50,-122.3631168,47.6685259
+636,British Pantry & Pub; The,Seating 51-150,-122.1262564,47.67599
+637,Britt'S Pickles,Seating 0-12,-122.3405819,47.6088194
+638,Brix Wine Cafe,Seating 51-150,-122.2109008,47.707094
+639,Broadacre Deli,Seating 13-50,-122.3401939,47.6103391
+640,Broadcast Coffee,Seating 13-50,-122.3175366,47.6762475
+641,Broadcast Coffee; Llc,Seating 13-50,-122.3209333,47.6016992
+642,Broadmoor Golf Club-10Th,Seating 0-12,-122.29136671740929,47.64043785
+643,Broadmoor Golf Club Kitchen,Seating > 250,-122.29136671740929,47.64043785
+644,Broadview/Thomson School,School Kitchen,-122.3528684929583,47.72446995
+645,Broadway Market,Grocery,-122.3204103,47.6065256
+646,Broadway Shell,Grocery,-122.32030005035227,47.6143773
+647,Broiler Bay,Seating 13-50,-122.3452038,47.734507
+648,Broiler Bay; Inc,Seating 13-50,-122.1976598,47.6105218
+649,Bronson  Big Foot Java,Seating 0-12,[0.0],[0.0]
+650,Bronson Market,Seating 0-12,-122.1988930922165,47.484439550000005
+651,Brooklake Christian - School,Non-Profit Institution,-122.32595101267553,47.28163555
+652,Brooklyn Cafe; The,Seating 151-250,-122.3367995,47.6072682
+653,Brookside Elementary School,School Kitchen,-122.28992304617844,47.75493
+654,Brouwer'S Cafe; Inc,Seating 51-150,-122.3542083978022,47.6516233
+655,Brown Bag Baguette (Kc264) @ Route 310-623-0844,Mobile Food Service,-122.3293495,47.5751981
+656,Brown Bear Car Wash,Grocery,-122.16913504831776,47.576833500000006
+657,Browns Corner Short Stop,Seating 0-12,-122.15552199999999,47.2754595
+658,Brugge Chocolates,Seating 0-12,[0.0],[0.0]
+659,Brunello Ristorante,Seating 13-50,[0.0],[0.0]
+660,Brunswick & Hunt,Seating 13-50,-122.3763469,47.679608
+661,Bryant Elementary School,School Kitchen,-122.2885786,47.6721486
+662,Bryn Mawr Elementary School,School Kitchen,-122.22940295332761,47.498083199999996
+663,Bryn Mawr United Methodist,Non-Profit Institution,-122.2496229,47.4994081
+664,Bubble Tea And Sandwich,Seating 13-50,-122.3134356,47.6627944
+665,Buca Di Beppo,Seating > 250,-122.34014011217268,47.6255752
+666,Buckley'S On Queen Anne,Seating 51-150,-122.3577372,47.6208303
+667,Buckleys In Belltown,Seating 51-150,-122.3469171,47.6145851
+668,Bucks Teriyaki,Seating 13-50,-122.1992099,47.3866152
+669,Bucks Teriyaki  Wok,Seating 13-50,[0.0],[0.0]
+670,Buena Market,Seating 0-12,[0.0],[0.0]
+671,Buena Vista / Sda School,Non-Profit Institution,-122.15742911105511,47.2807435
+672,Buena Vista 7 Day Adventist School ; Kitchen B,Non-Profit Institution,-122.15742911105511,47.2807435
+673,Buffalo Deli,Seating 0-12,-122.3449597,47.6122511
+674,Buffalo Wild Wings,Seating > 250,-122.2613177,47.4617699
+675,Buffalo Wild Wings; #419,Seating > 250,-122.30820113177981,47.31475745
+676,Bulgogi,Seating 0-12,-122.130154,47.6209366
+677,Bull Pen Pub Bar & Grill,Seating 51-150,[0.0],[0.0]
+678,Bulldog News Inc,Seating 0-12,-122.3130437,47.6585573
+679,Bumbu Truck @ 206-604-3462,Mobile Food Service,-122.23822046595703,47.38562095
+680,Bun Llc,Seating 51-150,-122.3235819,47.5978531
+681,Buns @ Route 425-218-9791,Mobile Food Service,[0.0],[0.0]
+682,Burger And Kabob Hut,Seating 0-12,-122.3130727,47.6580857
+683,Burger Boss,Seating 0-12,-122.35901048223684,47.5211624
+684,Burger Express; The,Seating 13-50,-122.31388627536302,47.3077493
+685,Burger Hero,Seating 0-12,-122.37652392500044,47.68168165
+686,Burger King,Seating 51-150,-122.25173001631607,47.296273299999996
+687,Burger King #10465,Seating 51-150,-122.21943430038874,47.4440992
+688,Burger King #15965,Seating 51-150,-122.33921097857085,47.469895199999996
+689,Burger King #2307,Seating 51-150,-122.2948348,47.3929085
+690,Burger King #2368,Seating 51-150,-122.3767265,47.6686678
+691,Burger King #2440,Seating 51-150,-122.18702319968108,47.71192375
+692,Burger King #3369,Seating 51-150,-122.3036775,47.5846957
+693,Burger King #3949,Seating 51-150,-122.20195161184174,47.37500955
+694,Burger King #4156,Seating 51-150,[0.0],[0.0]
+695,Burger King #4273,Seating 51-150,-122.1702876,47.5541905
+696,Burger King #4523,Seating 51-150,-122.2251172,47.30462465
+697,Burger King #4825,Seating 51-150,-122.18340132500605,47.6167971
+698,Burger King #4830,Seating 51-150,[0.0],[0.0]
+699,Burger King #5782,Seating 51-150,-122.22744286963155,47.4004201
+700,Burger King #6040,Seating 51-150,-122.31865314995648,47.2893537
+701,Burger King #6782,Seating 51-150,-122.2547151319558,47.4544276
+702,Burger King #6972,Seating 51-150,-122.32956977872081,47.57412525
+703,Burger King #7587,Seating 51-150,-122.10836684965656,47.35852735
+704,Burger King #965,Seating 51-150,-122.1464309,47.6315145
+705,Burger Town,Seating 13-50,-122.200455,47.479611
+706,Burgermaster,Seating 13-50,-122.34428798852355,47.70112025
+707,Burgermaster-Bellevue,Seating 0-12,-122.1859763,47.6331808
+708,Burien 76,Grocery,-122.3349917,47.5378864
+709,Burien Grocery Outlet,Grocery,[0.0],[0.0]
+710,Burien Market,Grocery,-122.3379017,47.4666104
+711,Burien Mini Mart,Grocery,[0.0],[0.0]
+712,Burien Press,Seating 13-50,-122.34025338334806,47.466644450000004
+713,Burney Brothers Bbq,Seating 0-12,-122.2797136,47.7543645
+714,Burrito Express,Seating 0-12,-122.3399912,47.6085532
+715,Burrito Loco Taqueria,Seating 13-50,-122.3724228,47.696869
+716,Burritos El Incapaz,Seating 13-50,-122.2359183,47.3813198
+717,Bus Stop Espresso,Seating 0-12,-122.31976245119577,47.6760611
+718,Bush Garden Restaurant,Seating 51-150,-122.3248941,47.5970239
+719,Bush School,Non-Profit Institution,-122.28830313116922,47.6231001
+720,Bushnell Craft,Seating 13-50,-122.1210617,47.6874723
+721,Bustle On Queen Anne,Seating 13-50,-122.3647719,47.6394797
+722,Butcher & The Baker,Catering Operation,-122.3252868,47.6757088
+723,Butcher Shop Cafe,Seating 0-12,[0.0],[0.0]
+724,Butter & Bloom,Catering Operation,-122.1053769,47.6906397
+725,Buxx Teriyaki,Seating 13-50,-122.252641,47.5028036
+726,Buzzy Beans,Limited Food Services,-122.12316114942607,47.50096815
+727,Byblos Deli,Seating 13-50,-122.1464685,47.6278515
+728,Byen Bakeri,Seating 13-50,-122.3567925,47.6491931
+729,Byron Kibler Grade School,School Kitchen,-121.99619813832733,47.21075835
+730,Bys Drive In,Seating 13-50,-122.32978792516592,47.5775236
+731,Byzantion Restaurant,Seating 13-50,-122.32134487873356,47.6074792
+732,C'Est La Juice,Catering Operation,-122.1676442,47.4456759
+733,C & C Food Store,Seating 0-12,-122.30933766184489,47.57680325
+734,C & P Coffee Brand Llc,Seating 0-12,-122.38664965294865,47.55166065
+735,C & Y One Stop,Grocery,-122.12154669621756,47.488494450000005
+736,C C'S 2.0,Seating 0-12,-121.9858582,47.7424749
+737,C J'S Bakery,Seating 0-12,-122.0078959,47.3257332
+738,C P Thai Restaurant,Seating 13-50,[0.0],[0.0]
+739,Cactus,Seating 51-150,-122.205641,47.6760837
+740,Cactus Alki,Seating 51-150,-122.4127632,47.578361
+741,Cactus Bellevue Square,Seating 151-250,-85.0179986,42.4437685
+742,Cafe  Argento,Seating 0-12,-122.31726880232767,47.61616455
+743,Cafe 56,Seating 13-50,[0.0],[0.0]
+744,Cafe Abodegas,Seating 0-12,-122.312567,47.6187813
+745,Cafe Arizona,Seating > 250,-122.3072498,47.3169427
+746,Cafe Aroma,Seating 0-12,-122.3184878,47.7485175
+747,Cafe Bambino,Seating 0-12,-122.3618287,47.675966
+748,Cafe Belltown,Seating 0-12,-122.3450009,47.6134745
+749,Cafe By Hillside Quickie,Seating 0-12,-122.31243738524441,47.6213558
+750,Cafe Cesura,Seating 13-50,-122.1965565,47.6194585
+751,Cafe Columbia,Seating 0-12,-122.33071812801815,47.60454285
+752,Cafe Con Leche,Seating 151-250,-122.3344675,47.577551
+753,Cafe Da Pino,Seating 0-12,-122.3040237,47.6756743
+754,Cafe Del Cielo,Seating 0-12,-122.2283958917457,47.292400549999996
+755,Cafe Flora,Seating 51-150,-122.2952091,47.6239702
+756,Cafe Habits,Seating 13-50,-122.1982816,47.6152002
+757,Cafe Habits/Kitchen,Seating 0-12,-122.1982816,47.6152002
+758,Cafe Happy,Seating 0-12,-122.2063636,47.6756635
+759,Cafe Hope Espresso Cart @ 3639 Mlk Jr. Way S,Mobile Food Service,[0.0],[0.0]
+760,Cafe Huong Que,Seating 13-50,[0.0],[0.0]
+761,Cafe In The Court,Catering Operation,-122.331954,47.5987509
+762,Cafe Kopi,Seating 0-12,-122.311858,47.687579
+763,Cafe Lago,Seating 51-150,-122.30233695000001,47.63969335
+764,Cafe Lati,Seating 13-50,-122.291251,47.7086234
+765,Cafe Lobbie,Limited Food Services,[0.0],[0.0]
+766,Cafe Lulu,Seating 13-50,-122.3255978,47.6756476
+767,Cafe Mario @ Nintendo,Seating > 250,-122.13920711867644,47.65123495
+768,Cafe Momo,Seating 13-50,-122.3248304,47.6803423
+769,Cafe Mox,Seating 13-50,-122.3804706,47.6649868
+770,Cafe Ori,Seating 51-150,-122.1489608,47.6275787
+771,Cafe Osita,Seating 0-12,-122.3768542,47.5358005
+772,Cafe Pacific-Adesa,Seating 13-50,-122.23787208662333,47.34093385
+773,Cafe Pacific Catering & Deli,Seating 13-50,-122.22192865,47.346717
+774,Cafe Parco,Seating 13-50,-122.27876725074978,47.6348588
+775,Cafe Pettirosso,Seating 51-150,-122.3179728,47.613905
+776,Cafe Pho,Seating 51-150,-122.3333423942081,47.60455545
+777,Cafe Pho Ii; Inc.,Seating 13-50,[0.0],[0.0]
+778,Cafe Pleiku,Seating 0-12,-122.1485097,47.6254105
+779,Cafe Presse,Seating 51-150,-122.3169927,47.6120944
+780,Cafe Racer Espresso,Seating 13-50,-122.3171255343282,47.67147225
+781,Cafe Ragazze,Seating 0-12,-122.165911,47.6657608
+782,Cafe Selam,Seating 13-50,-122.2972688746859,47.6078185
+783,Alberona,Seating 13-50,-122.3596631,47.6540138
+784,Alberson'S #473 Grocery,Grocery,-122.33579101502755,47.48912704999999
+785,Albert Einstein Elementary,School Kitchen,[0.0],[0.0]
+786,Albert Einstein Middle,School Kitchen,-122.3611618,47.7548932
+787,Albertson'S - Deli,Seating 0-12,-122.31537883070413,47.32358275
+788,Albertson'S - Grocery,Grocery,-122.31537883070413,47.32358275
+789,Albertson'S - Meat/ Seafood Shop,Meat/Sea Food,-122.31537883070413,47.32358275
+790,Albertson'S #408 - Deli,Seating 0-12,-122.3978791,47.6424625
+791,Albertson'S #411 (Bakery),Bakery,-122.33179317113735,47.4610529
+792,Albertson'S #411 (Deli),Seating 0-12,-122.33179317113735,47.4610529
+793,Albertson'S #411 (Grocery),Grocery,-122.33179317113735,47.4610529
+794,Albertson'S #470  Meat,Meat/Sea Food,-122.1676442,47.4456759
+795,Albertson'S #470  Seafood,Meat/Sea Food,-122.1676442,47.4456759
+796,Albertson'S #473 (Seafood),Meat/Sea Food,-122.33579101502755,47.48912704999999
+797,Albertson'S #473 Deli,Seating 0-12,-122.33579101502755,47.48912704999999
+798,Albertson'S #483 (Bakery),Bakery,-122.2273843,47.2728215
+799,Albertson'S #483 (Deli),Seating 0-12,-122.2273843,47.2728215
+800,Albertson'S #483 (Meat),Meat/Sea Food,-122.2273843,47.2728215
+801,Albertson'S Deli,Seating 0-12,-122.2350471,47.5843345
+802,Albertson'S Food Ctr #411 (Meat),Meat/Sea Food,-122.33179317113735,47.4610529
+803,Albertson'S Food Ctr #411 (Seafood),Meat/Sea Food,-122.33179317113735,47.4610529
+804,Albertson'S Food Ctr #453/Meat,Meat/Sea Food,[0.0],[0.0]
+805,Albertson'S Food Ctr #453/Seafood,Meat/Sea Food,[0.0],[0.0]
+806,Albertsons - Seafood Dept.,Meat/Sea Food,-122.31537883070413,47.32358275
+807,Albertsons #403,Seating 0-12,-122.0250686,47.6769093
+808,Albertsons #403/Starbucks Kiosk,Seating 0-12,-122.0250686,47.6769093
+809,Albertsons #410,Seating 0-12,-122.34488,47.7170604
+810,Albertsons #410-Meat,Meat/Sea Food,-122.34488,47.7170604
+811,Albertsons #425,Seating 0-12,-122.2797136,47.7543645
+812,Albertsons #444,Seating 0-12,-122.138147664149,47.5765346
+813,Albertsons #450 - Bakery,Bakery,-122.2350471,47.5843345
+814,Albertsons #450 - Kosher Deli,Seating 0-12,-122.2350471,47.5843345
+815,Albertsons #453,Seating 0-12,[0.0],[0.0]
+816,Albertsons #459,Seating 0-12,[0.0],[0.0]
+817,Albertsons #470 Bakery,Bakery,-122.1676442,47.4456759
+818,Albertsons #470 Deli,Seating 0-12,-122.1676442,47.4456759
+819,Albertsons #470 Grocery,Grocery,-122.1676442,47.4456759
+820,Albertsons #483 (Seafood),Meat/Sea Food,-122.2273843,47.2728215
+821,Alexa'S On Main,Seating 51-150,-122.2047626,47.7600051
+822,Alfi'S Food & Deli,Seating 0-12,-122.3316247,47.6176102
+823,Alfurat Market,Grocery,-122.3354217,47.4656635
+824,Alibi Room; The,Seating 51-150,-122.3407779,47.6084817
+825,Alki Bakery,Seating 151-250,-122.2455818,47.4165922
+826,Alki Cafe,Seating 51-150,-122.4104377,47.5790228
+827,Alki Community Center,Non-Profit Institution,-122.4070101,47.5775704
+828,Alki Elementary,School Kitchen,-122.4073935,47.577376349999994
+829,Alki Homefront Smoothies & Espresso,Seating 13-50,[0.0],[0.0]
+830,Alki Juice & Java,Seating 0-12,-122.3813676,47.5891674
+831,Alki Mail & Dispatch; Inc.,Seating 0-12,-122.392074,47.5808745
+832,Alki Spud Fish & Chips,Seating 51-150,-122.4087986,47.5795494
+833,All-Star Sports Bar,Seating 51-150,-122.3248101,47.4016436
+834,All Catering,Catering Operation,-122.30721580827301,47.50097835
+835,All Star Grocery & Video,Grocery,[0.0],[0.0]
+836,All Things Wine,Seating 0-12,-122.1573003,47.4882869
+837,Allegro Espresso Bar,Seating 13-50,-122.3130382,47.6587941
+838,Allentown Superette,Grocery,-122.2807834,47.5676379
+839,Aloha Grill,Seating 13-50,-122.220522,47.4415507
+840,Aloha Grocery Store,Grocery,-122.2884147,47.5326643
+841,Aloha Hawaiian Grill,Seating 13-50,[0.0],[0.0]
+842,Aloha Plates,Seating 0-12,[0.0],[0.0]
+843,Aloha Ramen,Seating 13-50,-122.2960049,47.7213632
+844,Alpac Elementary School,School Kitchen,[0.0],[0.0]
+845,Alpha Chi Omega,Seating 51-150,-122.31004507432165,47.662549549999994
+846,Alpha Delta Fraternity Inc,Seating 51-150,-122.30499839069381,47.66331865
+847,Alpha Delta Pi,Seating 151-250,-122.30811629077958,47.66279445
+848,Alpha Epsilon Pi,Seating 13-50,-122.3075757522119,47.66242235
+849,Alpha Gamma Delta,Seating 13-50,-122.30515019620671,47.6616739
+850,Alpha Omicron Pi,Seating 51-150,-122.30688226905434,47.661465899999996
+851,Alpha Phi,Seating 13-50,-122.30681317310606,47.6632933
+852,Alpha Sigma Phi,Seating 51-150,-122.30687494117416,47.66275
+853,Alpha Xi Delta,Seating 51-150,-122.31002464817783,47.665086599999995
+854,Alstadt Llc,Seating 51-150,-122.3343914,47.600512
+855,Altaye  Restaurant,Seating 0-12,-122.2701921,47.5293936
+856,Altura,Seating 13-50,-122.320847,47.6186726
+857,Always Happy Hour,Seating 13-50,[0.0],[0.0]
+858,Am-Pm Mini Market 82174,Seating 0-12,-122.1592091,47.5161074
+859,Am-Pm Mini Mart,Seating 0-12,-122.31738904856789,47.708225299999995
+860,Am-Pm Mini Mart #559,Seating 0-12,-122.1651198,47.6280512
+861,Am-Pm Mini Mart #82220,Seating 0-12,-122.1661466,47.7540151
+862,Am Pm,Seating 0-12,-122.34513045,47.690875399999996
+863,Am Pm Mini Market,Seating 0-12,-122.269496,47.3150136
+864,Am Pm Mini Mart,Seating 0-12,-122.3551298,47.7338736
+865,Am Pm/Shoreline,Seating 0-12,-122.3297653,47.7776076
+866,Am/Pm Arco,Seating 0-12,-122.0475337,47.5519364
+867,Am/Pm Mini Market,Seating 0-12,-122.25921035086631,47.38153815
+868,Am/Pm Mini Market #5435,Seating 0-12,-122.22923879999999,47.321148050000005
+869,Am/Pm Mini Market #6026,Seating 0-12,-122.1517031,47.464134
+870,Am\Pm Lake Meridian,Seating 0-12,-122.16599876756808,47.35844075
+871,Amante Pizza & Pasta,Seating 51-150,-122.0282062,47.5173143
+872,Amante Pizza & Pasta,Seating 51-150,-122.2273162,47.4130905
+873,Amante Pizza And Pasta,Seating 0-12,-122.2372718,47.7097866
+874,Amazing Thai Cuisine,Seating 13-50,-122.3172296,47.6667852
+875,Amazon,Seating 0-12,-122.1749453,47.6142073
+876,Ambaum Grocery,Grocery,[0.0],[0.0]
+877,Amber,Seating 151-250,-122.3456586,47.6130686
+878,Ambers Red Hot Espresso,Limited Food Services,-122.1706138,47.6787848
+879,Ambrosia,Seating 13-50,-122.3254928,47.5982488
+880,Amc Theaters Southcenter 16,Seating 0-12,-122.2625394,47.4495791
+881,Amc Theatres Kent Station 14,Seating 0-12,1.0884689915716277,51.2802997
+882,Amc Theatres Oaktree 6,Seating 0-12,-122.34250012460029,47.701715199999995
+883,Amc Theatres Woodinville 12,Seating 0-12,-122.15416414894086,47.7559095
+884,Amco Food Mart (Shell Station),Grocery,[0.0],[0.0]
+885,Amelia'S Famous Peanut Brittle,Seating 0-12,-122.32498795000001,47.4051057
+886,American Hotel-Hostelling Int'L,Grocery,-122.3267286,47.5984623
+887,American Legion Post #15,Seating 51-150,-122.2081435,47.3700447
+888,American Pie Bakery & Cafe,Seating 0-12,-122.3191286,47.551301
+889,Americana,Seating 51-150,-122.3212589,47.6205345
+890,Amin International Market -   Meat/ Deli  Shop,Seating 13-50,[0.0],[0.0]
+891,Ammana Houseware & Grocery,Meat/Sea Food,[0.0],[0.0]
+892,Amore Coffee,Limited Food Services,-122.1535591,47.6125993
+893,Ampersand Cafe - Alki,Seating 0-12,-122.4066648,47.5804548
+894,Ampersand Lounge,Seating 51-150,[0.0],[0.0]
+895,Ampersand Pantry,Seating 13-50,-122.3527565,47.6907234
+896,Amys Merkato,Seating 13-50,-122.2939901,47.608116
+897,Ana'S Family Style Mexican,Seating 51-150,[0.0],[0.0]
+898,Analog Coffee,Seating 0-12,-122.3254623,47.6207259
+899,Anchors Down,Seating 13-50,-122.382923,47.6688401
+900,Anchovies And Olives,Seating 51-150,-122.3126003,47.6150995
+901,Ancient Grounds,Seating 13-50,-122.3377739,47.6066765
+902,Andiamo (Restaurant),Seating 51-150,-122.1934498,47.6191564
+903,Andies Restaurant; Inc.,Seating 51-150,-122.23638791428631,47.3072899
+904,Andy'S Espresso @ 150 Sw 160Th Street,Seating 0-12,-122.33621820055183,47.459955
+905,Andy'S Handy Mart,Seating 0-12,-122.33621820055183,47.459955
+906,Angel'S Best Catering,Catering Operation,-122.362655425,47.551682
+907,Angel City Deli,Seating 0-12,-122.249758,47.4998239
+908,Angelicas Restaurant,Seating 51-150,39.226260026772074,51.52153405
+909,Angelina'S,Seating 51-150,-122.3866909,47.5825553
+910,Angelo'S Evergreen Inn,Seating 51-150,-122.167059,47.6217865
+911,Angelo'S Pizza & Pasta,Seating 13-50,-122.1671753,47.4882718
+912,Angelos,Seating 51-150,[0.0],[0.0]
+913,Angry Beaver,Seating 51-150,-122.3551066,47.6902592
+914,Anh'S Catering  - Route 206-434-9236,Mobile Food Service,[0.0],[0.0]
+915,Anjappar Chettinad Indian Restaurant,Seating 151-250,-122.145002,47.631134
+916,Annapurna Cafe,Seating 13-50,-122.3210407,47.6186509
+917,Anns Teriyaki Restaurant,Seating 13-50,-122.3868098,47.6688561
+918,Anthony'S @  Pier 66,Seating 151-250,-122.348106,47.6108496
+919,Anthony'S Bell Street Diner,Seating 51-150,-122.348106,47.6108496
+920,Anthony'S Fish Bar,Seating 13-50,-122.348106,47.6108496
+921,Anthony'S Home Port,Seating > 250,-122.2065147,47.6742361
+922,Anthony'S Homeport,Seating 151-250,-122.32865041274479,47.39737455
+923,Anthony'S Homeport Oyster & Grill,Seating 151-250,-122.32865041274479,47.39737455
+924,Antojitos Poblanos El Sapo,Seating 0-12,-122.3446191,47.7308547
+925,Antojitos Teresita,Seating 0-12,-122.2967558,47.3926731
+926,Apna Bazar,Grocery,-122.1430588,47.6101047
+927,Apogee Pub & Restaurant,Seating 151-250,[0.0],[0.0]
+928,Apollo Elementary School,School Kitchen,-122.13888054579233,47.49714025
+929,Appealing Palate @ Usi Holding Company,Catering Operation,-122.3777685,47.5617127
+930,Apple Teriyaki,Seating 13-50,-122.30933882975731,47.356331
+931,Applebee'S Neighborhood Grill,Seating 151-250,-122.20184992919464,47.3737845
+932,Aquarium Cafe @ Sodexo,Seating 51-150,-122.3431833,47.6078027
+933,Arabica Lounge,Seating 13-50,-122.3257261,47.6186174
+934,Arada Center,Seating 0-12,-122.3165646,47.6056509
+935,Aragona Restaurant,Seating 51-150,-122.3395688,47.6077976
+936,Aramark  / Espresso Cart Ii @Convention Crt,Mobile Food Service,-122.33156275066185,47.61175385
+937,Arashi Ramen,Seating 13-50,-122.2632356,47.4504492
+938,Araya'S Place,Seating 51-150,-122.3128098,47.6678482
+939,Arbat Int'L Food Market,Seating 0-12,-122.177143,47.706407
+940,Arbor Heights Elementary,School Kitchen,-122.37890803835018,47.509550899999994
+941,Arbor; The (Crista),Non-Profit Institution,-122.35254023730633,47.76788345
+942,Arby'S  #6098,Seating 51-150,-76.53205513858695,42.9195325
+943,Arby'S #6242,Seating 51-150,-122.1391866,47.3580102
+944,Arby'S #6696,Seating 51-150,[0.0],[0.0]
+945,Arby'S #7042,Seating 51-150,-122.1963974,47.4421192
+946,Arby'S ; #7842,Seating 51-150,-122.31286483693233,47.2932694
+947,Arby'S Roast Beef,Seating 51-150,-122.1098547,47.6312363
+948,Arcadia Restaurants,Seating 51-150,-122.3349917,47.5378864
+949,Archbishop Brunett Retreat Center/ Main Kitchen,Non-Profit Institution,-122.3913329,47.324350100000004
+950,Archie'S Mexican Restaurant,Seating 51-150,-122.3347656,47.4427639
+951,Arco,Seating 0-12,-122.18009552015573,47.4880614
+952,Arco  Am/Pm  #82611,Seating 0-12,-122.29712936590755,47.385971850000004
+953,Arco Am / Pm #3538,Seating 0-12,[0.0],[0.0]
+954,Arco Am/Pm,Seating 0-12,-122.18487766604011,47.616926199999995
+955,Arco Am/Pm #5243,Seating 0-12,-122.314106012,47.3155396
+956,Arco Am/Pm #5920,Seating 0-12,-122.1367538,47.6756555
+957,Arco Am/Pm Mini Mart 5527,Seating 0-12,-121.98204651106232,47.19885015
+958,Arctic Mini Mart,Grocery,-122.3128185,47.7374122
+959,Ardmore Elementary School,School Kitchen,-122.11769641507242,47.63945285
+960,Arena Sports,Seating 0-12,-122.26327396296,47.68692135
+961,Aria Food & Bakery,Seating 0-12,-122.1766564,47.706318
+962,Arielle'S Gourmet Cup,Limited Food Services,-122.2022044,47.3874887
+963,Arista,Catering Operation,-122.342397,47.6184611
+964,Armadillo,Seating 13-50,-121.9858582,47.7424749
+965,Armandino'S Salumi,Seating 0-12,-122.3305183,47.5996876
+966,Armenia,Seating 0-12,[0.0],[0.0]
+967,Armoire Chocolat,Bakery,-122.3456305,47.4666538
+968,Armstrong Family Winery,Seating 13-50,[0.0],[0.0]
+969,Arosa Cafe,Seating 0-12,-122.322565,47.6106009
+970,Arosa Cafe Madison,Seating 0-12,[0.0],[0.0]
+971,Arrowhead Elementary School,School Kitchen,-122.2516939609138,47.73694965
+972,Art Institute / A La Carte 506 Art Institute,Seating 13-50,-122.3522473,47.6142622
+973,Art Institute / Skill Kitchen 504 Art Institute,Seating 0-12,-122.3522473,47.6142622
+974,Art Institute Bakery & Pastry Lab 507 Art,Bakery,-122.3522473,47.6142622
+975,Art Of The Table,Seating 13-50,-122.3443541,47.6540795
+976,Artesano Coffee Company,Seating 0-12,-122.2102233,47.6874104
+977,Artesano Ne 116Th Espresso,Seating 0-12,-122.20998015987958,47.70451525
+978,Asian Xpress / Hong Kong Market - Meat Shop,Seating 0-12,-122.2302821,47.3812871
+979,Asiana Bistro,Seating 13-50,[0.0],[0.0]
+980,Asiana Teriyaki,Seating 13-50,[0.0],[0.0]
+981,Aspen,Seating 13-50,-122.0282062,47.5173143
+982,Assabr Mini Mart,Meat/Sea Food,[0.0],[0.0]
+983,Assaggio Ristorante,Seating 151-250,-122.3403218,47.6134273
+984,Assimba Restaurant,Seating 51-150,-122.2966719,47.6081172
+985,Associated Espresso,Limited Food Services,-122.22841775,47.41999145
+986,Aston Manor,Seating 51-150,-122.3338904,47.5760477
+987,At Cafe,Seating 13-50,-122.3114321,47.5961706
+988,At The Peak,Seating 13-50,-122.32119921528431,47.60552285
+989,At The Station Bistro,Seating 51-150,[0.0],[0.0]
+990,Athena'S Gyros @ Route,Mobile Food Service,-122.354658465,47.5334565
+991,Athenian Inn,Seating 151-250,-122.3408807,47.6086962
+992,Athens Pizza & Pasta,Seating 51-150,-122.3241644,47.4006332
+993,Athens Pizza & Spaghetti,Seating 51-150,-122.2164447,47.3082089
+994,Athina,Seating 13-50,-122.3565421,47.6241619
+995,Atlantic Crossing; The,Seating 51-150,-122.3171808,47.676143
+996,Atrium Cafe @ Overlake Hospital,Seating 0-12,-122.18695620450657,47.6211869
+997,Attic Alehouse & Eatery,Seating 51-150,-122.2775678,47.6362841
+998,Auburn'S Main Street Market,Meat/Sea Food,-122.2141138,47.3084526
+999,Auburn Adventist Academy,Non-Profit Institution,-122.16240047375751,47.2822464
+1000,Auburn Eagles,Seating 151-250,-122.2129561,47.3016465
+1001,Auburn Guesthouse Inn,Seating 13-50,-122.23091578091801,47.32050855
+1002,Auburn High School - Deca Store,Non-Profit Institution,-122.2193853,47.3100536
+1003,Auburn Mountainview Hs - Field House,Non-Profit Institution,-122.17186386254401,47.3419624
+1004,Auburn Mountainview Hs - Student Store,Non-Profit Institution,-122.17186386254401,47.3419624
+1005,Auburn Mountainview Hs -Indoor Concesison,Non-Profit Institution,-122.17186386254401,47.3419624
+1006,Auburn Riverside Hs-Student St,Non-Profit Institution,[0.0],[0.0]
+1007,Auburn Riverside Senior Hs,School Kitchen,[0.0],[0.0]
+1008,Auburn S. Shell Food Mart,Grocery,-122.22626953298611,47.305347350000005
+1009,Auburn School District-Home Conc. Stand,Non-Profit Institution,-122.2083976,47.3118616
+1010,Auburn Senior High - Cafeteria,School Kitchen,-122.2193853,47.3100536
+1011,Auburn Senior High - Restaurant,Non-Profit Institution,-122.2193853,47.3100536
+1012,Auburn Shell / Dahabreh Enterprise Inc.,Seating 0-12,[0.0],[0.0]
+1013,Auburn Skate Connection,Seating 51-150,-122.21180438339334,47.291903899999994
+1014,Auburn Stadium  #17,Seating 0-12,-122.24568490540247,47.29916465
+1015,Auburn Subway,Seating 13-50,-122.2242281,47.3019092
+1016,Auburn Valley Chevron,Seating 0-12,-122.2177504,47.2977078
+1017,Auburn Way Bigfoot Java,Seating 0-12,-122.22611482426063,47.303935499999994
+1018,Auburn Way Texaco,Seating 0-12,-122.225735,47.307513
+1019,Auburn Wine & Caviar Company,Seating 0-12,-122.22852602051256,47.287199
+1020,Audubon Elementary/Kitchen,School Kitchen,-122.10165760732802,47.637619599999994
+1021,August Moon,Seating 51-150,-122.0355556,47.5845809
+1022,Aunt Becky'S Deli,Seating 13-50,[0.0],[0.0]
+1023,Auntie Anne'S,Seating 0-12,[0.0],[0.0]
+1024,Auntie Anne'S Pretzels,Bakery,-85.0179986,42.4437685
+1025,Auntie Anne'S Soft Pretzels,Bakery,[0.0],[0.0]
+1026,Auntie Irene'S,Seating 13-50,-122.3201243,47.3724799
+1027,Aura,Seating 13-50,-122.2075177,47.676675
+1028,Aurora 76,Grocery,-122.344085,47.690225
+1029,Aurora Donuts,Seating 13-50,-122.3467479,47.7260056
+1030,Aurora Grocery Outlet,Grocery,-122.3467479,47.7260056
+1031,Aurora Mini Mart,Seating 0-12,-122.3442477,47.7054011
+1032,Aurora Village Subs,Grocery,-122.3452038,47.734507
+1033,Australian Pie Co,Seating 0-12,[0.0],[0.0]
+1034,Auto Battery Bar,Seating 51-150,-122.318913,47.6126974
+1035,Avalanche Delite,Seating 13-50,-121.9892385,47.2016111
+1036,Avondale Food Center,Seating 0-12,-122.105863,47.6774665
+1037,Awash Restaurant,Seating 51-150,-122.2850109,47.5587746
+1038,Awers; Inc,Grocery,-122.1684555,47.6235019
+1039,Ay Chihuahua @ 5500 15Th Ave Nw; Seattle 98107,Mobile Food Service,-122.3539978,47.5210333
+1040,Ay! Jalisco,Meat/Sea Food,-122.19791991048183,47.48442
+1041,Ayaan Grocery,Meat/Sea Food,-122.2767013,47.545749
+1042,Ayutthaya Thai Restaurant,Seating 13-50,-122.3222885,47.6139466
+1043,Azteca,Seating 51-150,-122.3013138,47.6655763
+1044,Azteca Restaurant,Seating > 250,-122.2583964977926,47.45894615
+1045,Azteca Restaurant #3,Seating 151-250,-122.2053157886136,47.371661849999995
+1046,Azuma Sushi,Seating 13-50,-122.3870413,47.5621007
+1047,B'S Dogs @ 902 Occidental Ave S/ Qwest Field,Mobile Food Service,-122.3339614,47.5946668
+1048,B & E Meats & Seafood,Meat/Sea Food,-122.1647869,47.5379971
+1049,B & E Meats & Seafood; Inc.,Meat/Sea Food,[0.0],[0.0]
+1050,B & E Meats And Seafood,Meat/Sea Food,-122.360628796132,47.2830952
+1051,B & R Espresso Bar,Seating 13-50,-122.3356356,47.3073287
+1052,B & Z'S Food For The Soul,Catering Operation,-122.3556546,47.5863127
+1053,B&E Meats And Seafood,Meat/Sea Food,[0.0],[0.0]
+1054,Ba Bar,Seating 13-50,-122.31650285,47.607011150000005
+1055,Ba Mien Seafood Market -  Deli,Seating 0-12,[0.0],[0.0]
+1056,Ba Xi,Seating 51-150,-122.249758,47.4998239
+1057,Baby Doll Espresso,Seating 0-12,-122.20255595897638,47.3858616
+1058,Bacco Cafe ; Llc,Seating 13-50,-122.3414556,47.6099627
+1059,Back Door Pub,Seating 13-50,-122.2955772,47.7182759
+1060,Back To The Grind,Seating 0-12,-122.322673,47.6906524
+1061,Bacon Mansion; Llc,Catering Operation,-122.3216569,47.628471
+1062,Bad Jimmy'S Brewing Company,Seating 0-12,-122.3693954,47.6635203
+1063,Bad Monkey Bar & Grill,Seating 51-150,-122.23067332612473,47.375859750000004
+1064,Baguette Box,Seating 13-50,-122.3284271,47.6148772
+1065,Bahama Breeze #3035,Seating > 250,-122.26134921733623,47.461136749999994
+1066,Bahas Green Lake,Seating 13-50,[0.0],[0.0]
+1067,Bahn Thai Restaurant,Seating 51-150,-122.34837094199679,47.62523935
+1068,Bai Pai Thai Restaurant,Seating 51-150,[0.0],[0.0]
+1069,Bai Tong Thai Restaruant,Seating 51-150,-122.1417254,47.6318759
+1070,Bai Tong Thai Restaurant,Seating 51-150,-122.2610352,47.4525731
+1071,Bailey-Gatzert Elementary,School Kitchen,-122.31565099969008,47.6011606
+1072,Bait Shop,Seating 13-50,-122.320847,47.6186726
+1073,Baja Bistro,Seating 13-50,-122.3141258,47.5815997
+1074,Bake'S,Seating 51-150,-122.1968831,47.6118602
+1075,Baked,Bakery,-122.38623,47.5808954
+1076,Bakemans Restaurant Inc,Seating 51-150,-122.3335297,47.602996
+1077,Bakery,Bakery,-122.2797136,47.7543645
+1078,Bakery - El Mercado Latino Iii,Bakery,[0.0],[0.0]
+1079,Bakery Detour,Seating 13-50,-122.17704085,47.3219047
+1080,Bakery Nouveau,Seating 0-12,-122.3870252,47.5599943
+1081,Bakery The Original,Seating 13-50,-122.3904447,47.5206926
+1082,Bakkalch Mini Market,Grocery,-122.2740563,47.5442513
+1083,Ballard Annex Oyster House,Seating 151-250,-122.3851867,47.6680399
+1084,Ballard Bridge Cafe,Seating 51-150,[0.0],[0.0]
+1085,Ballard Brothers,Seating 51-150,-122.3765633,47.6673017
+1086,Ballard Coffee Works,Seating 13-50,-122.38451237845626,47.6689554
+1087,Ballard Community Center,Non-Profit Institution,-122.39218530611328,47.672843549999996
+1088,Ballard Elks #827,Non-Profit Institution,-122.408178,47.6751324
+1089,Ballard High School Kitchen,School Kitchen,-122.37454536973,47.6767863
+1090,Ballard Landmark Inn,Seating 51-150,-122.38332680506042,47.667332200000004
+1091,Ballard Mail & Dispatch- Sip & Ship,Seating 13-50,-122.381164,47.6688291
+1092,Ballard Mandarin Chinese Restaurant,Seating 51-150,-122.3659727,47.6688162
+1093,Ballard Market,Grocery,-122.3741876446963,47.6698049
+1094,Ballard Market - Deli,Seating 0-12,-122.3741876446963,47.6698049
+1095,Ballard Market - Meat,Meat/Sea Food,-122.3741876446963,47.6698049
+1096,Ballard Market - Seafood,Meat/Sea Food,-122.3741876446963,47.6698049
+1097,Ballard Pizza Company,Seating 13-50,-122.3812745,47.6645689
+1098,Ballard Smoke Shop,Seating 13-50,-122.3861758,47.6683592
+1099,Ballard Station Public House,Seating 51-150,-122.3863888,47.6688461
+1100,Ballinger Chevron,Grocery,-122.3130293,47.7454763
+1101,Ballinger Gas & Car Wash,Seating 0-12,-122.302833,47.7701365
+1102,Balmar; The,Seating 51-150,-122.3863172,47.6684731
+1103,Baltic Room,Seating 13-50,-122.3282968,47.6149316
+1104,Bamboo Bar & Grill,Seating 51-150,-122.412365,47.5784426
+1105,Bamboo Bistro,Seating 13-50,-122.355837,47.7044236
+1106,Bamboo Garden,Seating 51-150,-122.1983601,47.6251375
+1107,Bamboo Garden Teriyaki,Seating 13-50,-122.3349917,47.5378864
+1108,Bamboo Garden Vegetarian Cuisine,Seating 51-150,-122.349409,47.6255988
+1109,Bamboo Kitchen; Inc,Seating 13-50,[0.0],[0.0]
+1110,Bamboo Restaurant,Seating 51-150,-122.3128721,47.6217831
+1111,Bamboo Village,Seating 151-250,-122.34024056781436,47.664538199999996
+1112,Bamiyan Restaurant,Seating 13-50,[0.0],[0.0]
+1113,Banana Leaf Cafe,Seating 13-50,-122.313141,47.6554532
+1114,Bananas Grill,Seating 13-50,[0.0],[0.0]
+1115,Bandido'S Mexican Cafe,Seating 13-50,-122.1235673,47.6801602
+1116,Bandits Bar,Seating 13-50,-122.3532494,47.618325
+1117,Bang Bang Cafe; Llc,Seating 13-50,-122.349302,47.6140207
+1118,Bangbar Thai,Seating 51-150,-122.3866131,47.5595706
+1119,Bangkok Basil,Seating 13-50,-122.1281254,47.6687101
+1120,Banh Mi Unwrapped,Seating 13-50,-122.3133245,47.6638406
+1121,Banyan Tree Restaurant,Seating 51-150,[0.0],[0.0]
+1122,Bar Cantinetta,Seating 13-50,-122.2955596,47.6236444
+1123,Bar Code,Seating 13-50,[0.0],[0.0]
+1124,Bar Del Corso,Seating 13-50,-122.3095482,47.5754307
+1125,Bar Sajor,Seating 51-150,-122.3330924,47.5993473
+1126,Baraka Market,Meat/Sea Food,-122.2775735,47.5501186
+1127,Baranof Restaurant,Seating 51-150,-122.3555689,47.6918029
+1128,Barbeque Pit,Seating 13-50,-122.29946145,47.607835300000005
+1129,Barca,Seating 51-150,-122.317972,47.6144779
+1130,Barclay Seafood & Meat Co,Meat/Sea Food,-122.3235241,47.5982378
+1131,Bargain Beverage,Grocery,-122.1785855,47.6805329
+1132,Baristas,Seating 0-12,-122.24802493256098,47.38418165
+1133,Baristas Coffee Company,Seating 0-12,-122.22102010467768,47.3258571
+1134,Baristas Coffee Company; Inc.,Limited Food Services,-122.3298914,47.5455825
+1135,Bark Espresso,Seating 0-12,-122.3181297,47.7113739
+1136,Barking Dog Alehouse,Seating 13-50,-122.364783,47.6794438
+1137,Barking Frog Restaurant,Seating 51-150,-122.1443375,47.7328349
+1138,Barnacle,Seating 13-50,-122.3801366,47.6636067
+1139,Barnes & Noble #2280,Seating 13-50,[0.0],[0.0]
+1140,Barnes & Noble #2957,Seating 13-50,-122.33528897632405,47.6128833
+1141,Barnes & Noble Booksellers #2706,Seating 13-50,-122.3153612,47.3208851
+1142,Barnes & Noble Booksellers #2910,Seating 51-150,-122.1566276,47.7577418
+1143,Barnes & Noble Booksellers; Inc,Seating 13-50,-122.0542361,47.5485069
+1144,Barnes & Noble Cafe,Seating 13-50,-122.36487716304028,47.52319145
+1145,Baro Grocery & Deli,Bakery,-122.3452038,47.734507
+1146,Barolo Restaurant,Seating 51-150,-122.3374592,47.6145988
+1147,Barrel Tavern,Seating 13-50,-122.3349917,47.5378864
+1148,Barrel Thief; The,Seating 51-150,[0.0],[0.0]
+1149,Barriga Llena Trailer @ Route 253-569-9197,Mobile Food Service,-122.3447045,47.6859464
+1150,Barrio,Seating 51-150,-122.3166222,47.6136973
+1151,Bartell Drug #07,Grocery,[0.0],[0.0]
+1152,Bartell Drug #20,Grocery,[0.0],[0.0]
+1153,Bartell Drug #27,Grocery,-122.1655728,47.6172417
+1154,Bartell Drug #38,Grocery,-122.3979101,47.6383888
+1155,Bartell Drug Co #10,Grocery,-122.3242162,47.6091718
+1156,Bartell Drug Co #11,Grocery,-122.312998,47.661119
+1157,Bartell Drug Co #30,Grocery,-122.1592091,47.5161074
+1158,Bartell Drug Co #36,Seating 0-12,-122.3368726,47.6241543
+1159,Bartell Drug Co #42,Grocery,-122.3550464,47.6248865
+1160,Bartell Drug Co #45,Grocery,-122.1556387,47.4898137
+1161,Bartell Drug Co #6,Grocery,-122.1252847,47.6809705
+1162,Bartell Drugs  #61,Seating 0-12,-122.3295958,47.6024612
+1163,Bartell Drugs #02,Seating 0-12,[0.0],[0.0]
+1164,Bartell Drugs #1,Grocery,-122.3370284,47.6125927
+1165,Bartell Drugs #16,Grocery,-122.3846328,47.5606916
+1166,Bartell Drugs #17,Grocery,[0.0],[0.0]
+1167,Bartell Drugs #18,Grocery,-122.1743117,47.732084
+1168,Bartell Drugs #19,Grocery,-122.2270547,47.2735393
+1169,Bartell Drugs #22,Grocery,-122.2993199,47.4076413
+1170,Bartell Drugs #24,Grocery,-122.3166359,47.6752743
+1171,Caffe Torino,Seating 0-12,-122.33006701245836,47.62246535
+1172,Caffe Umbria,Seating 13-50,-122.332689,47.5993857
+1173,Caffe Vita Coffee Roasting,Seating 13-50,-122.329437,47.6010326
+1174,Caffe Vita Coffee Roasting Company,Seating 13-50,-122.355109,47.6827295
+1175,Caffe Zingaro,Seating 13-50,-122.3543623,47.6244508
+1176,Cajun & Grill Of Westlake Center,Seating 0-12,-122.33739137258601,47.6119908
+1177,Cajun Crawfish,Seating 13-50,[0.0],[0.0]
+1178,Cake House,Seating 0-12,-122.325432,47.5976334
+1179,Cake Noir,Catering Operation,[0.0],[0.0]
+1180,Cakes Of Paradise,Bakery,-122.3257846,47.5455412
+1181,Calcutta Grill,Seating > 250,[0.0],[0.0]
+1182,California Burrito Taco Shop,Seating 13-50,-122.2952044921908,47.397479149999995
+1183,California Monster Sushi,Seating 13-50,-122.200831,47.3717664
+1184,California Pizza Kitchen,Seating 151-250,-122.32817613271743,47.70838405
+1185,California Pizza Kitchen #101,Seating 51-150,-122.19932926229453,47.6153163
+1186,Callahan Cellars,Seating 0-12,[0.0],[0.0]
+1187,Calozzi'S,Seating 0-12,-122.3229022,47.5403437
+1188,Camelot Elementary School,School Kitchen,-122.2547529,47.3354686
+1189,Camp Berachah -  Dining Hall,Non-Profit Institution,-122.08006959477812,47.3096699
+1190,Camp Burton,Non-Profit Institution,-122.4514301,47.3858129
+1191,Camp Don Bosco Kitchen,Non-Profit Institution,-121.9035424,47.6500981
+1192,Camp Korey- Dining Center,Non-Profit Institution,-121.9412953,47.6720605
+1193,Camp Mccullough,Non-Profit Institution,-122.06549345883576,47.363684
+1194,Camp River Ranch,Non-Profit Institution,-121.9067648,47.6385086
+1195,Camp Sealth,Non-Profit Institution,-122.5139731,47.3644546
+1196,Camp Waskowitz Dining Hall,School Kitchen,[0.0],[0.0]
+1197,Campagne,Seating 151-250,-122.3414556,47.6099627
+1198,Campbell Hill Elementary,School Kitchen,-122.25278108863338,47.492461649999996
+1199,Campfire,Catering Operation,-122.2983889,47.5921581
+1200,Campus Christian Ministry,Non-Profit Institution,-122.3075419,47.6621642
+1201,Campus Corner Cafe,Seating 0-12,-122.3175458,47.6570405
+1202,Can Am Pizza,Seating 13-50,-122.1464685,47.6278515
+1203,Can Can,Seating 13-50,-122.3405657,47.608856
+1204,Canon Whisky & Bitters Emporium,Seating 13-50,-122.316577,47.6112689
+1205,Canterbury Ale House,Seating 51-150,-122.3124466,47.6242936
+1206,Cantina De San Patricios,Seating 13-50,-122.3422197,47.6103021
+1207,Cantinetta,Seating 13-50,-122.2048875,47.6102896
+1208,Cantinetta,Seating 13-50,-122.3361496,47.6518718
+1209,Canton Noodle House,Seating 13-50,-122.3170592,47.5980586
+1210,Canton Wonton House,Seating 13-50,-122.3259031,47.5976332
+1211,Capital Grille; The  #8030,Seating 151-250,-122.33536719060264,47.608324550000006
+1212,Capitol Cider,Seating 51-150,-122.3210992,47.6142084
+1213,Capitol Hill Arco,Seating 0-12,-122.31727167346939,47.605947349999994
+1214,Capri Cellars,Seating 0-12,-122.0352264,47.5289901
+1215,Captain Blacks,Seating 51-150,-122.3241849,47.6193202
+1216,Car Wash Enterprises; Inc,Grocery,-122.14370665,47.6318246
+1217,Caramia'S Sweeties Treaties @ Route 206-718-1891,Mobile Food Service,-122.1281254,47.6687101
+1218,Caravan Crepes @,Mobile Food Service,-122.3231882,47.5728531
+1219,Cardonza'S Market  - Meat,Meat/Sea Food,-100.577913,33.258367
+1220,Cardoza'S Market - Deli,Seating 13-50,-100.577913,33.258367
+1221,Carl'S Jr,Seating 51-150,-122.11461746452514,47.3577813
+1222,Carl'S Jr.,Seating 51-150,-122.1379856,47.4883635
+1223,Carl Sandburg Elementary,School Kitchen,-122.23075890632525,47.716794199999995
+1224,Carleton Grocery,Grocery,-122.3214772,47.544207
+1225,Carnation Cafe,Seating 51-150,-121.912656,47.64960725
+1226,Carnation Elementary,School Kitchen,-121.9156294,47.6455191
+1227,Carnation Market,Grocery,[0.0],[0.0]
+1228,Carnation Market- Deli/Bakery/Seattle'S Best,Seating 0-12,[0.0],[0.0]
+1229,Carniceria 'La Chiquita',Seating 0-12,-122.1634834,47.5045576
+1230,Carniceria Azteca,Meat/Sea Food,-122.3144062,47.5997659
+1231,Carniceria El Paisan,Seating 0-12,-122.353913,47.5336929
+1232,Carpinito Brothers Produce,Grocery,0.7354444499865738,51.3395012
+1233,Carriage Crest Elementary,School Kitchen,-122.1517031,47.464134
+1234,Carriage Square Sports Pub,Seating 51-150,-122.2039939,47.3719479
+1235,Casa Bonita,Seating 51-150,-122.4618433,47.4468935
+1236,Casa Cabana,Seating 51-150,[0.0],[0.0]
+1237,Casa D'S Taqueria Corp,Seating 13-50,-122.2011613221968,47.61141275
+1238,Casa Durango,Seating 13-50,-122.3336415,47.4442334
+1239,Casa Grullense,Seating 51-150,-122.1279569,47.6175454
+1240,Casa Patron,Seating 51-150,-122.3195542,47.6756889
+1241,Cascade Catering,Catering Operation,-122.2200019,47.4433463
+1242,Cascade Elementary School,School Kitchen,-122.184840244534,47.4587119
+1243,Cascade Garden Chinese Restaurant,Seating 151-250,[0.0],[0.0]
+1244,Cascade Grind,Seating 0-12,-122.12597902622699,47.67539480000001
+1245,Cascade Junior High School,School Kitchen,-122.3479889,47.5175623
+1246,Cascade Middle School  - Kitchen,School Kitchen,[0.0],[0.0]
+1247,Cascade Ridge Elementary,School Kitchen,[0.0],[0.0]
+1248,Cascade View Elementary School,School Kitchen,-122.2913112,47.6016094
+1249,Cascadia Inn Cafe,Seating 13-50,-121.3578505,47.7095943
+1250,Cash & Carry #551,Grocery,-122.3279278,47.5866972
+1251,Cash & Carry #555,Grocery,-122.2272783,47.408911
+1252,Cash & Carry #556,Grocery,-122.31193446084514,47.293942650000005
+1253,Cash & Carry #583,Grocery,-122.305823,47.5860532
+1254,Cashpot,Seating 151-250,-122.1464685,47.6278515
+1255,Cask & Trotter,Seating 51-150,-122.3391283,47.6259957
+1256,Caspian,Seating 51-150,-122.1580861,47.6260524
+1257,Cassis,Seating 13-50,-122.4127632,47.578361
+1258,Cast Iron Studios,Seating 51-150,-122.1983242,47.6140043
+1259,Castaway Spirits On 99,Seating 51-150,-122.3104214,47.3576962
+1260,Castillos Supermarket,Seating 0-12,-122.3551228,47.519196
+1261,Castle Ice Arena Snack Shop,Seating 0-12,-122.1210414,47.4896178
+1262,Caterer,Catering Operation,-122.33156275066185,47.61175385
+1263,Catering By Phyllis,Catering Operation,-122.3759783,47.6487318
+1264,Catering Company; The,Catering Operation,[0.0],[0.0]
+1265,Catfish Corner,Seating 13-50,-122.296447,47.6081548
+1266,Catherine Blaine Elementary,School Kitchen,-122.39994015637643,47.643004000000005
+1267,Catholic Comm Serv-Aloha,Non-Profit Institution,-122.34420469829111,47.636602249999996
+1268,Caveman Kitchen,Seating 0-12,-122.2486558,47.3889657
+1269,Cc'S Lounge,Seating 51-150,-122.34344680808204,47.46657055
+1270,Ccattle'S; Llc,Seating 151-250,-122.3233324,47.6197166
+1271,Cedar'S Restaurant,Seating 13-50,-122.313383,47.6596891
+1272,Cedar Grange; #534,Non-Profit Institution,-122.0392877818037,47.4064611
+1273,Cedar Grill,Seating 51-150,[0.0],[0.0]
+1274,Cedar Park Christian School,Non-Profit Institution,-122.15418928421059,47.616225099999994
+1275,Cedar Rapids Grocery - Snack Bar,Seating 0-12,-122.1933846,47.4813334
+1276,Cedar River Cafe,Seating 0-12,-122.20857633281454,47.48048645
+1277,Cedar River Coffee Co,Seating 0-12,-122.0789083,47.4567871
+1278,Cedar River Espresso - 8957Mf,Limited Food Services,-122.12154669621756,47.488494450000005
+1279,Cedar River Middle School,School Kitchen,-122.05139635154384,47.398216000000005
+1280,Cedar River Montessori School,Non-Profit Institution,-122.12792934281066,47.466948
+1281,Cedar River Smokehouse,Seating 13-50,-122.2052252,47.4794923
+1282,Cedarcrest High School,School Kitchen,-121.9727424,47.7361562
+1283,Cedarcrest High School Baseball Concession,Seating 0-12,-121.9727424,47.7361562
+1284,Cedarhurst Elementary  - New Bldg,School Kitchen,-122.3155185,47.484963
+1285,Cedars On Brooklyn,Seating 51-150,-122.3144998,47.6647206
+1286,Celebration Pk Complex Bldg B,Seating 0-12,-122.3201165,47.3084278
+1287,Celebrations,Seating 51-150,[0.0],[0.0]
+1288,Celesto Espresso @ 1010 Valley St Seattle 98109,Mobile Food Service,-122.362656,47.6760761
+1289,Celtic Bayou,Seating 51-150,-122.1303397,47.6691535
+1290,Celtic Swell,Seating 51-150,-122.4103152,47.5790584
+1291,Cemitas Tepeaca Mexican Food Ii Llc,Seating 13-50,-122.29783334999999,47.407529600000004
+1292,Cento & Fanti,Seating 13-50,-85.0179986,42.4437685
+1293,Central Area Senior Nutrition,Seating 13-50,-122.2942649,47.5868811
+1294,Central Area Youth Association,Non-Profit Institution,-122.302776,47.6022946
+1295,Central Avenue Pub & Eatery,Seating 51-150,0.7354444499865738,51.3395012
+1296,Central Cinema,Seating 13-50,-122.3051662,47.6132215
+1297,Central Club,Seating 13-50,-122.2055416,47.6756461
+1298,Central Co-Op - Deli,Seating 0-12,-122.31103051001656,47.61548605
+1299,Central Coop,Grocery,-122.31103051001656,47.61548605
+1300,Central Park Tennis Club,Seating 13-50,-122.17026178445161,47.660035949999994
+1301,Central Pizza,Seating 51-150,-122.2948655,47.5990966
+1302,Central Saloon ; The,Seating 51-150,-122.3344038,47.6006031
+1303,Century Theatre @ The Commons #493,Seating 0-12,-122.30766027182254,47.31279095
+1304,Ceres Roasting Company; Llc (Kc185),Mobile Food Service,-122.35397700018214,47.6220986
+1305,Cfm - Weyerhaeuser  Chq Cafe,Seating > 250,-122.296056,47.3013331
+1306,Cfm / Medtronic; Inc,Seating 151-250,-122.1367538,47.6756555
+1307,Cfm / Weyerhaeuser  / Wtc Bldg.,Seating > 250,-122.2960379,47.3057027
+1308,Cha Cha Lounge,Seating 51-150,-122.3187251,47.6139807
+1309,Cha Cha Thai Restaurant,Seating 13-50,[0.0],[0.0]
+1310,Cha Cyber Cafe,Seating 0-12,-122.2610098,47.4543461
+1311,Chaat N Roll,Seating 13-50,-122.1098547,47.6312363
+1312,Chaco Canyon Organic Cafe,Seating 13-50,-122.3154104,47.6648079
+1313,Chaco Canyon Organic Cafe West,Seating 51-150,-122.3799435,47.5611661
+1314,Chada Thai Restaurant,Seating 13-50,-122.3548462,47.719872
+1315,Chaiyo Thai Restaurant,Seating 13-50,-122.3128347,47.71543545
+1316,Challenger Elementary School,School Kitchen,[0.0],[0.0]
+1317,Champagne Lady,Seating 51-150,[0.0],[0.0]
+1318,Champion Gourmet Food Company,Seating 0-12,-122.2201323,47.43911075
+1319,Champions Centre - Bellevue,Non-Profit Institution,-122.1494891,47.5953527
+1320,Chan'S Place,Seating 151-250,-122.1771285,47.7061193
+1321,Chan'S Place Issaquah,Seating 51-150,[0.0],[0.0]
+1322,Chandler'S Bay Market & Deli,Seating 0-12,0.7354444499865738,51.3395012
+1323,Chelan Restaurant,Seating 51-150,-122.36151957980255,47.571968049999995
+1324,Chelsea Station Inn B & B,Bed and Breakfast,-122.34877865,47.66481735
+1325,Chemo'S Mexican Restaurant,Seating 51-150,-122.3551228,47.519196
+1326,Chen'S Village,Seating 51-150,-122.36504304305456,47.6244404
+1327,Cherry Crest Elementary,School Kitchen,-122.17367558994368,47.640349900000004
+1328,Cherry De Pon,Seating 0-12,[0.0],[0.0]
+1329,Cherry St Coffee House,Seating 13-50,-122.33662285358932,47.61273165
+1330,Cherry Street Cafe,Seating 0-12,[0.0],[0.0]
+1331,Cherry Street Cafe; Llc,Seating 13-50,-122.3514425,47.6160838
+1332,Cherry Street Cofee House - Belltown,Seating 13-50,-122.3447764,47.6121669
+1333,Cherry Street Coffee House,Seating 51-150,-122.3165408,47.6076763
+1334,Cherry Street Coffeehouse,Seating 13-50,-122.3339412,47.5976226
+1335,Cherry Street Espresso,Seating 13-50,-122.3339216,47.6025843
+1336,Cherry Street Kitchen,Seating 0-12,[0.0],[0.0]
+1337,Cherry Street Museum; Llc,Seating 13-50,-122.3376368,47.6065118
+1338,Cherry Valley Elementary,School Kitchen,-121.9819971444777,47.74697785
+1339,Chestnut Hill Academy South,Non-Profit Institution,-122.15712308974068,47.5867527
+1340,Chevron,Grocery,-122.0355556,47.5845809
+1341,Chevron - 347 Federal Way,Seating 0-12,-122.3132965,47.3149287
+1342,Chevron - Auburn Way,Seating 0-12,-122.22235490802855,47.3212075
+1343,Chevron - Seatac,Seating 0-12,[0.0],[0.0]
+1344,Chevron # 91557 Strander,Seating 0-12,[0.0],[0.0]
+1345,Chevron #207721,Seating 0-12,-122.3745395,47.6944665
+1346,Chevron & Grocery- Federal Way,Seating 0-12,-122.312828996489,47.3219962
+1347,Chevron 68Th Ave,Seating 0-12,-122.2486024716751,47.42338015
+1348,Chevron Enumclaw,Seating 0-12,[0.0],[0.0]
+1349,Chevron Extra Mile,Seating 0-12,-122.2968649744004,47.3867982
+1350,Chevron Grady Way,Seating 0-12,-122.2154504,47.47079359999999
+1351,Chevron Kent Mcdonalds,Grocery,-122.1977681,47.3866919
+1352,Chevron Mini Mart #1153,Seating 0-12,-122.22123602503808,47.4406068
+1353,Chevron Station #1005,Seating 0-12,-122.19940942560486,47.51817085
+1354,Chevron Station #1121,Seating 0-12,-122.3452038,47.734507
+1355,Chevron Station #20-6035,Grocery,-122.17527760053648,47.4879342
+1356,Chevron Station #20-7760,Seating 0-12,-122.1485097,47.6254105
+1357,Chevron Station #301816,Seating 0-12,-122.0407895,47.6954192
+1358,Chevron Station #9-0374,Seating 0-12,-122.1220271,47.616973
+1359,Chevron Station #9-2175,Seating 0-12,-122.1651198,47.6280512
+1360,Chevron Station #9-3299,Grocery,-122.18439470435723,47.743431799999996
+1361,Chevron Station #9-8759,Seating 0-12,-122.12679675056876,47.675201
+1362,Chevron Station #90-126,Seating 0-12,-122.17188704107001,47.6790766
+1363,Chevron Stations #1113,Seating 0-12,-122.33459897897727,47.549688
+1364,Chevron Stations; Inc #1193,Seating 0-12,-122.139867,47.6109259
+1365,Chevron/Car Wash,Grocery,-122.24784985,47.3808921
+1366,Chew  Chew'S,Seating 13-50,-122.32963866789018,47.60503555
+1367,Chewaya @ Route 425-319-3797,Mobile Food Service,-122.1694139,47.6240237
+1368,Chi Omega,Seating 51-150,-122.3086775,47.6627901
+1369,Chi Psi,Seating 13-50,-122.30414632200363,47.662049749999994
+1370,Chiang'S Gourmet Restaurant,Seating 51-150,-122.31433091735343,47.68635515
+1371,Chicago Pastrami,Seating 13-50,-122.0363651,47.5322061
+1372,Chicago Willys,Seating 51-150,-122.22112431468182,47.318727749999994
+1373,Chick'N Fix (Kc258) @ 206-914-0610,Mobile Food Service,-122.3293495,47.5751981
+1374,Chickalatte Beautiful Coffee,Seating 0-12,-122.3452543,47.7077766
+1375,Chicken Valley Farm Store,Seating 0-12,-122.3407212,47.6086005
+1376,Chico Madrid,Seating 13-50,-122.3265784,47.6231311
+1377,Chief Sealth Hs - Concession Stand C121,Non-Profit Institution,-122.36638769939715,47.530170049999995
+1378,Chief Sealth Hs/ Denny Ms/ Main Kitchen,School Kitchen,-122.36638769939715,47.530170049999995
+1379,Chieftan; The,Seating 51-150,-122.31642791008247,47.610721749999996
+1380,Chile-Pepper,Seating 13-50,-122.339467244578,47.66118285
+1381,Chili'S Deli,Seating 13-50,-122.3128039,47.6650817
+1382,Chili'S Too / Hms,Seating 51-150,[0.0],[0.0]
+1383,Chili & Sesame Korean Kitchen,Seating 13-50,-122.3476204,47.6149743
+1384,Chillies Paste Restaurant,Seating 13-50,-122.3567849,47.6525775
+1385,China Dragon Restaurant,Seating 51-150,-122.3451451,47.7026815
+1386,China First,Seating 51-150,-122.313348,47.6594156
+1387,China Gourmet,Seating 13-50,-122.3560213,47.733559
+1388,China Harbor Restaurant,Seating > 250,-122.3399752,47.6374143
+1389,China House,Seating 51-150,-122.2242281,47.3019092
+1390,China Light,Seating 13-50,[0.0],[0.0]
+1391,China Pavilion,Seating 51-150,-122.3279284,47.8049032
+1392,Chinaloa,Seating 151-250,-122.22862454601557,47.396446999999995
+1393,Chinatown Cafe #2 @ Hilltop Red Apple,Seating 0-12,-122.31291760814356,47.579053200000004
+1394,Chinatown Cafe 15,Seating 0-12,-122.3018888,47.5989213
+1395,Chinese Gourmet Express,Seating 0-12,[0.0],[0.0]
+1396,Chinoise Cafe,Seating 51-150,-122.3563302,47.6385183
+1397,Chinook'S At Salmon Bay,Seating 51-150,-122.3988753,47.6558728
+1398,Chinook @ Ringdall Middle School,School Kitchen,-122.18278784257828,47.5503219
+1399,Chinook Elementary School,School Kitchen,-122.18130926228625,47.2897068
+1400,Chinook Middle School,School Kitchen,-122.2807834,47.5676379
+1401,Chip & Drew'S Express,Seating 51-150,[0.0],[0.0]
+1402,Chipotle,Seating 51-150,[0.0],[0.0]
+1403,Chipotle Mexican Grill,Seating 51-150,-122.1998673,47.6135929
+1404,Chipotle Mexican Grill #1144,Seating 51-150,-122.2609871,47.449121
+1405,Chipotle Mexican Grill #1364,Seating 13-50,-122.1323682,47.6133384
+1406,Chipotle Mexican Grill #578,Seating 51-150,-122.3133536,47.6614221
+1407,Chipotle Mexican Grill #778,Seating 51-150,[0.0],[0.0]
+1408,Chipotle Mexican Grill; #1363,Seating 51-150,[0.0],[0.0]
+1409,Chippy'S,Seating 13-50,-122.3800867,47.6635783
+1410,Chittenden House B & B,Bed and Breakfast,-122.39271825265578,47.55064315
+1411,Chloe Bistrot,Seating 13-50,-122.2895547,47.6609882
+1412,Cho Binh Minh,Meat/Sea Food,-122.353913,47.5336929
+1413,Choco Amore,Seating 0-12,[0.0],[0.0]
+1414,Chocolat Vitale Inc,Seating 0-12,-122.3609677,47.6757846
+1415,Chocolate & Ice Cream Delight,Seating 13-50,-122.3427753,47.6101103
+1416,Chocolate Box,Seating 13-50,-122.3406212,47.6100865
+1417,Chocolate Man,Seating 0-12,[0.0],[0.0]
+1418,Chocolate Market,Seating 0-12,-122.3419884,47.6101688
+1419,Chocolati Cafe,Seating 13-50,-122.336844,47.6614926
+1420,Chocolati Cafe @ 1000 4Th Ave ; Seattle,Mobile Food Service,-122.33269832546111,47.6067142
+1421,Chocolopolis,Seating 0-12,-122.3572216,47.6332272
+1422,Choi'S Mongolian Grill,Seating 13-50,-122.3627109,47.7022928
+1423,Choice Deli & Grocery,Seating 0-12,-122.36653075734432,47.675810150000004
+1424,Choice Espresso,Limited Food Services,-122.1928783,47.6347545
+1425,Chop Suey,Seating 13-50,-122.31445695731445,47.6134847
+1426,Chopstick Teriyaki,Seating 13-50,[0.0],[0.0]
+1427,Chopsticks - Teriyaki & Sushi,Seating 13-50,-122.3242875,47.6194168
+1428,Chopsticks Chinese Restaurant,Seating 13-50,-122.1962315,47.4136979
+1429,Chopstix,Mobile Food Service,-122.3081011,47.6101723
+1430,Chorizo Loco @ 15720 Sw 100Th,Mobile Food Service,-122.3551228,47.519196
+1431,Chow King,Seating 51-150,[0.0],[0.0]
+1432,Christ Church Kirkland,Non-Profit Institution,-122.1854621,47.7054574
+1433,Christa Mc Auliffe Elem,School Kitchen,-122.0233392,47.6294385
+1434,Christian Faith Center - Cafe,Non-Profit Institution,-122.30867224873323,47.29891925
+1435,Christian Faith Center - School Lunch Program,Non-Profit Institution,-122.30867224873323,47.29891925
+1436,Christie'S Catering,Catering Operation,-122.1852465,47.449172
+1437,Chuck'S Donut,Seating 13-50,-122.1471729,47.488064
+1438,Chuck'S Hop Shop,Seating 51-150,-122.3058391,47.612702
+1439,Chuck E Cheese'S,Seating > 250,-122.1430588,47.6101047
+1440,Chuck Top Of The Hill,Seating 51-150,[0.0],[0.0]
+1441,Chuminh Tofu & Tn Vegeterian Deli,Seating 13-50,[0.0],[0.0]
+1442,Chungee'S Drink And Eat,Seating 13-50,-122.3167369,47.6185976
+1443,Church'S Chicken,Seating 13-50,-122.29681189062507,47.38717475
+1444,Church Chicken,Seating 13-50,-122.31382235000001,47.3168905
+1445,Church Of Blessing,Seating > 250,-122.3147887,47.3060827
+1446,Chutney'S Bistro,Seating 51-150,[0.0],[0.0]
+1447,Chutneys,Seating 51-150,-122.1934498,47.6191564
+1448,Chutneys Queen Anne,Seating 13-50,-122.3556256,47.6238835
+1449,Ci Mart,Seating 0-12,-122.2898609,47.675577
+1450,Ciao Amore,Seating 51-150,[0.0],[0.0]
+1451,Cicchetti,Seating 51-150,-122.3261136,47.6381408
+1452,Cigarette Depot,Grocery,-122.36024747304818,47.5225908
+1453,Cinebarre,Seating > 250,-122.0542361,47.5485069
+1454,Cinnabon,Seating 0-12,[0.0],[0.0]
+1455,Cinnamon Works,Seating 0-12,-122.3415568,47.6094145
+1456,Circa,Seating 13-50,-122.3868121,47.5808989
+1457,Circle Food Store,Seating 0-12,-122.2031814,47.4622643
+1458,Circle K #1602,Seating 0-12,[0.0],[0.0]
+1459,Circle K 76,Seating 0-12,-122.22598907492298,47.301594449999996
+1460,Circle K Store #1452,Seating 0-12,-122.0006062,47.2068802
+1461,Circle Of Friends,Seating 51-150,-122.1978246,47.6107811
+1462,Citizen,Seating 0-12,-122.34595197416967,47.62569825
+1463,Citra,Seating 13-50,-122.312918,47.6641041
+1464,Citrus Thai,Seating 13-50,-122.332284,47.6155055
+1465,City Catering Company,Seating 51-150,-122.3427802,47.6235537
+1466,City Centre Sundries,Seating 0-12,-122.3347656,47.6105197
+1467,City Espresso,Seating 0-12,-122.14242087081281,47.610179099999996
+1468,City Fish Company ;  Rsw; Inc.,Meat/Sea Food,-122.3411459,47.6088557
+1469,City Grind Espresso @ 600 4Th Ave / City Hall,Mobile Food Service,-122.33009864948392,47.6038904
+1470,City Hall Saloon,Seating 13-50,-121.92590320810345,47.283408
+1471,City Of Pacific Community Center,Seating 0-12,[0.0],[0.0]
+1472,City Perk,Seating 0-12,-121.99601,47.362503
+1473,City Scene Cafe,Seating 13-50,-122.2097739,47.472562
+1474,City Soups @ Columbia Center,Seating 0-12,[0.0],[0.0]
+1475,Cj'S Eatery,Seating 51-150,-122.3506423,47.6155804
+1476,Claim Jumper Restaurant,Seating > 250,[0.0],[0.0]
+1477,Clancy'S Coffee,Seating 0-12,-121.98975773856702,47.198520599999995
+1478,Clarion Hotel Federal Way,Seating 151-250,-122.307515,47.3060647
+1479,Clark Elementary School,School Kitchen,-122.0309276,47.5234302
+1480,Class Act,Catering Operation,[0.0],[0.0]
+1481,Classic Catering Northwest,Seating 0-12,-122.33371,47.5539041
+1482,Classic Street Dining @ 10500 Greenwood Ave N,Mobile Food Service,-122.362655425,47.551682
+1483,Classics Court,Seating 0-12,-122.235683,47.3222772
+1484,Classics Sports Bar,Seating 13-50,-122.1867123,47.4773759
+1485,Clay'S Market Place,Seating 0-12,-122.3319121,47.6119776
+1486,Clay Oven,Seating 13-50,-122.1535456,47.7533541
+1487,Cleveland High School,School Kitchen,-122.31483194989266,47.5522979
+1488,Clever Bottle,Seating 13-50,[0.0],[0.0]
+1489,Clipper Cafe,Seating 51-150,[0.0],[0.0]
+1490,Cloud 9,Seating 13-50,0.7354444499865738,51.3395012
+1491,Cloud City Coffee,Seating 13-50,-122.3180005,47.6922672
+1492,Cloud City Coffee Sand Point,Seating 13-50,-122.3180005,47.6922672
+1493,Cloud Nine Burgers,Seating 51-150,-122.1774829,47.5518497
+1494,Club Hollywood Casino,Seating > 250,-122.3452038,47.734507
+1495,Club Vip,Seating 13-50,-122.3130524,47.3025211
+1496,Clubhouse Sportsbar  & Grill,Seating 151-250,-122.1993297,47.372346
+1497,Coa Mexican Eatery & Taquileria,Seating 13-50,-122.3177277,47.6866278
+1498,Coast Bellevue Hotel,Seating > 250,-122.18671822985486,47.6159947
+1499,Coast Gateway Hotel,Seating 13-50,[0.0],[0.0]
+1500,Coastal Kitchen,Seating 51-150,-122.3128146,47.6227765
+1501,Cocina Esperanza,Seating 13-50,-122.3979721,47.6903909
+1502,Cocina Mexicana,Seating 13-50,-122.2954622,47.3888638
+1503,Cocina Mexicana @ 24215 Pac Hwy,Mobile Food Service,-122.3090569,47.3587931
+1504,Cockatoo'S Chicken Restaurant,Seating 51-150,-122.3127517,47.3044274
+1505,Coco Joe'S,Seating 51-150,-122.25082033340725,47.2794444
+1506,Coco Ramen & Curry Bar,Seating 51-150,-122.201701,47.6255964
+1507,Cocoa Banana,Seating 0-12,-122.333758,47.6029194
+1508,Cocoa Chai Chocolates,Seating 0-12,-122.35423812147165,47.64300205
+1509,Coe Elementary,School Kitchen,-122.3650868,47.6408896
+1510,Coffe Madison,Seating 51-150,-122.3221649,47.6107677
+1511,Coffee & Specialty Bakery,Bakery,-122.3410215,47.6085786
+1512,Coffee @ Mudd Puddle,Limited Food Services,[0.0],[0.0]
+1513,Columbia Winery,Grocery,-122.1524727,47.7343394
+1514,Combo Restaurant,Seating 13-50,-122.1494891,47.5953527
+1515,Comfort Inn,Seating 13-50,-122.31103740380533,47.31765825
+1516,Comfort Inn - Breakfast Area,Seating 51-150,-122.3279284,47.8049032
+1517,Comfort Inn - Kent,Seating 0-12,-122.22886237149933,47.401750899999996
+1518,Comfort Suites Hotel,Seating 51-150,[0.0],[0.0]
+1519,Commercial Food Solutions,Seating 13-50,-122.1749453,47.6142073
+1520,Commissary Cash & Carry #562,Grocery,-122.37285832176755,47.66277575
+1521,Common Ground Coffee & Cupcake,Seating 13-50,-122.2052884,47.4797754
+1522,Common Ground Coffee @ 17350 Woodinville Duvall Road,Limited Food Services,[0.0],[0.0]
+1523,Common Grounds Espresso,Seating 0-12,-122.121797,47.481804
+1524,Commons Cafe,Seating 13-50,[0.0],[0.0]
+1525,Commons; The,Seating 51-150,-122.1419021,47.7322151
+1526,Community Grocery,Seating 0-12,-122.3333098,47.6077653
+1527,Community Psychiatric Clinic,Non-Profit Institution,-122.3420771,47.6574818
+1528,Commuter Comforts Cafe,Seating 13-50,-122.33851128796024,47.6027143
+1529,Company,Seating 51-150,-122.3550629,47.5345059
+1530,Compass Cafe @ Mohai,Seating 51-150,-122.3367336,47.6181596
+1531,Compass Housing Alliance,Non-Profit Institution,-122.3351764,47.6006742
+1532,Conc. A - Africa Lounge - South C 15,Seating 51-150,[0.0],[0.0]
+1533,Conc. A - Coffee Bean & Tea Leaf,Seating 13-50,[0.0],[0.0]
+1534,Conc. D - Alaska Board Rm,Seating 151-250,[0.0],[0.0]
+1535,Concession Stadium,Non-Profit Institution,-122.0355605,47.6159702
+1536,Concord Elementary,School Kitchen,-122.32430537426123,47.5235052
+1537,Cone & Steiner,Seating 0-12,-122.30684840541575,47.6240321
+1538,Confectional,Seating 0-12,-122.3414303,47.6093438
+1539,Confetti Cupcakes,Seating 0-12,-122.0365275,47.5302601
+1540,Contessa Catering,Catering Operation,-122.2212051,47.4433284
+1541,Contigo Mobile @ 3813 California Ave Sw,Mobile Food Service,-122.3867904,47.5739363
+1542,Contour,Seating 51-150,-122.3353812,47.6034741
+1543,Convention Center - Deli A.,Seating 0-12,-122.33156275066185,47.61175385
+1544,Convention Place  - Wsctc - Deli  E,Seating 0-12,-122.33156275066185,47.61175385
+1545,Coopers Nw Alehouse,Seating 51-150,-122.3115359,47.688107
+1546,Copacabana Restaurant,Seating 13-50,-122.3412642,47.6092405
+1547,Copper Coin,Seating 51-150,-122.3867171,47.5821486
+1548,Copper Falls Restaurant,Seating > 250,-122.20665796663859,47.33619445
+1549,Core Bistro,Seating 13-50,[0.0],[0.0]
+1550,Corinthian Yacht Club,Seating 51-150,-122.4036693,47.6855164
+1551,Corner Cafe; The,Seating 13-50,-122.3261909,47.6090339
+1552,Corner Mart,Grocery,-122.31042155,47.35679945
+1553,Corner Pocket,Seating 13-50,-122.3871325,47.5612665
+1554,Corner Produce,Seating 0-12,-122.34141017673986,47.60939675
+1555,Corner Sandwich Cafe,Seating 0-12,-122.26969157439717,47.52201650000001
+1556,Corner Store,Grocery,-122.3830889,47.6452583
+1557,Corporate Deli,Seating 13-50,-122.1955761,47.6158976
+1558,Corretto Trattoria & Bar,Seating 51-150,-122.320847,47.6186726
+1559,Corson Building,Seating 13-50,-122.3203934,47.5519579
+1560,Cortona Coffee,Seating 13-50,-122.300283,47.6127598
+1561,Cosmic Creamery,Catering Operation,-122.1943442,47.6819779
+1562,Costas Restaurant,Seating 51-150,-122.3132817,47.6629735
+1563,Costco-Bakery #106,Bakery,-122.3402716,47.7777616
+1564,Costco-Deli,Seating 0-12,-122.3402716,47.7777616
+1565,Costco-Food Court,Seating 51-150,-122.3402716,47.7777616
+1566,Costco - Bakery,Bakery,-122.05277328320018,47.551020949999995
+1567,Costco - Food Court,Seating 0-12,-122.05277328320018,47.551020949999995
+1568,Costco - Grocery,Grocery,-122.05277328320018,47.551020949999995
+1569,Costco - Service Deli,Seating 0-12,-122.05277328320018,47.551020949999995
+1570,Costco  #1029 - Meat Shop,Meat/Sea Food,-122.1221063,47.3549442
+1571,Costco #06 Food Processor Rotisserie,Seating 0-12,-122.2480934,47.4453922
+1572,Costco #061 Bakery,Bakery,-122.31299037470345,47.28650805
+1573,Costco #061 Food Court,Seating 13-50,-122.31299037470345,47.28650805
+1574,Costco #061 Food Processor Deli,Seating 0-12,-122.31299037470345,47.28650805
+1575,Costco #061 Meat,Meat/Sea Food,-122.31299037470345,47.28650805
+1576,Costco #1029 - Grocery,Grocery,-122.1221063,47.3549442
+1577,Costco #1029  - Deli/ Rotiss,Seating 0-12,-122.1221063,47.3549442
+1578,Costco #6 - Meat Shop,Meat/Sea Food,-122.2480934,47.4453922
+1579,Costco Deli #006 Food Court,Seating 51-150,-122.2480934,47.4453922
+1580,Costco Home Office No. 3,Seating 151-250,-122.05047826233377,47.54761095
+1581,Costco Lake Place Deli,Seating 51-150,-122.0475337,47.5519364
+1582,Costco Service Deli #8,Seating 0-12,-122.18271744580932,47.683614399999996
+1583,Costco Wholesale,Grocery,-122.3297706,47.5651231
+1584,Costco Wholesale  #01 - Bakery,Bakery,-122.3297706,47.5651231
+1585,Costco Wholesale  #1 - Meat Shop,Meat/Sea Food,-122.3297706,47.5651231
+1586,Costco Wholesale #006 Grocery,Grocery,-122.2480934,47.4453922
+1587,Costco Wholesale #01 - Deli,Seating 0-12,-122.3297706,47.5651231
+1588,Costco Wholesale #06 Bakery,Bakery,-122.2480934,47.4453922
+1589,Costco Wholesale #1; Pizza,Seating 13-50,-122.3297706,47.5651231
+1590,Costco Wholesale #106,Grocery,-122.3402716,47.7777616
+1591,Costco Wholesale #8,Seating 13-50,-122.18271744580932,47.683614399999996
+1592,Costco Wholesale #8 - Bakery,Bakery,-122.18271744580932,47.683614399999996
+1593,Costco Wholesale #99,Seating 151-250,-122.05170340954376,47.5492511
+1594,Costco Wholesale Corp #8,Meat/Sea Food,-122.18271744580932,47.683614399999996
+1595,Costco Wholesale Grocery #061,Grocery,-122.31299037470345,47.28650805
+1596,Coterie Room,Seating 51-150,-122.3443025,47.6130469
+1597,Cottage,Seating 51-150,-122.342404,47.6496447
+1598,Cottage Grove Mart,Seating 0-12,-122.36328224964765,47.552274249999996
+1599,Cottage Lake Elementary School,School Kitchen,-122.07868935515873,47.74481245
+1600,Cougar Mountain Academy,Non-Profit Institution,-122.0818609,47.552801
+1601,Cougar Ridge Elementary School,School Kitchen,-122.1177361,47.5450625
+1602,Country Burger & Teriyaki,Seating 13-50,-122.2559717007343,47.38154165
+1603,Country Corner Grocery,Grocery,-122.03771798218028,47.2103745
+1604,Country Deli Grocery,Grocery,-122.3471040004199,47.5321137
+1605,Country Inn & Suites,Seating 151-250,-122.18586571542252,47.767733899999996
+1606,Country Pride Restaurant,Seating 51-150,-121.7659032,47.4850381
+1607,Country Side Cafe,Seating 51-150,[0.0],[0.0]
+1608,Countryside Donut House,Bakery,-122.206202,47.7602128
+1609,Courtside Bistro,Seating 151-250,-122.14579486775135,47.65113875
+1610,Courtyard By Marriott,Seating 51-150,[0.0],[0.0]
+1611,Courtyard By Marriott- Grocery,Grocery,-122.338488,47.6184325
+1612,Courtyard By Marriott - Grocery,Grocery,-122.29055869456585,47.65943985
+1613,Courtyard By Marriott - Starbucks,Seating 13-50,-122.2033982,47.6174878
+1614,Courtyard By Marriott Kirkland,Seating 51-150,-122.19085242777018,47.710753749999995
+1615,Courtyard By Marriott/Bellevue Dwtn,Seating 151-250,-122.19335479890239,47.6178211
+1616,Couth Buzzard Books-Espresso Buono Cafe,Seating 0-12,-122.3550934,47.6895162
+1617,Couzins Cafe,Seating 13-50,-122.1669694,47.6791282
+1618,Covenant Shores,Non-Profit Institution,-122.2151771,47.5812284
+1619,Covington  Teriyaki,Seating 13-50,[0.0],[0.0]
+1620,Covington Cellars,Seating 13-50,-122.1495844,47.7573212
+1621,Covington Elementary,School Kitchen,[0.0],[0.0]
+1622,Covington Pitstop Express,Seating 0-12,-122.11896033934008,47.357880949999995
+1623,Cow Chip Cookies- Pioneer Square,Seating 0-12,-122.3341977,47.5912484
+1624,Cow Chip Cookies @ Kent Station,Seating 0-12,[0.0],[0.0]
+1625,Cowen Park Grocery,Seating 13-50,[0.0],[0.0]
+1626,Cowgirls Espresso,Seating 0-12,-71.8304282,42.2211011
+1627,Cowgirls Espresso @ Silver Dollar Casino,Mobile Food Service,-122.26141276634294,47.4775426
+1628,Cr Grocery,Grocery,-122.1220271,47.616973
+1629,Crabpot Restaurant; The,Seating > 250,-122.1798444,47.6201255
+1630,Crawfish House,Seating 13-50,-122.3550629,47.5345059
+1631,Crawfish King,Seating 51-150,-122.3227265,47.5964613
+1632,Crazy Cherry,Seating 0-12,-122.320847,47.6186726
+1633,Crazy Coffee Cabin,Limited Food Services,-122.203124,47.3890168
+1634,Crazy Pho Cajun,Seating 51-150,-122.3031668,47.3139204
+1635,Crazy Taco @ 166 N 35Th Street,Mobile Food Service,-122.3124224,47.6238096
+1636,Creative Cafes/Simons,Grocery,-122.1570108,47.5762032
+1637,Creative Coffee@Marymoor Dog Park,Mobile Food Service,-122.1281254,47.6687101
+1638,Creative Concepts,Mobile Food Service,-122.35077847477159,47.61934015
+1639,Creekside Elementary School,School Kitchen,-122.0634703,47.594393
+1640,Creekside; The,Seating 51-150,-122.1526463,47.7503191
+1641,Crema Creperie @ Route 425-417-8564,Mobile Food Service,-122.3450671,47.7040774
+1642,Crepe Cafe & Wine Bar; The,Seating 13-50,-122.3042993,47.675906
+1643,Crepe Cravers,Seating 13-50,-122.3133016,47.6615613
+1644,Crepe Crazy,Seating 0-12,-122.3223229,47.610349
+1645,Crepe De France,Seating 13-50,[0.0],[0.0]
+1646,Creperie De Paris,Seating 0-12,-122.1200369,47.6697989
+1647,Crest Theatre,Seating 0-12,-122.3235358,47.7344405
+1648,Crestwood Elem. School,School Kitchen,[0.0],[0.0]
+1649,Crimson Cane Cakes,Catering Operation,-122.2212051,47.4433284
+1650,Criscafe,Non-Profit Institution,-122.3528448,47.7668464
+1651,Crisp Creperie @ Route 360-320-6266,Mobile Food Service,-122.3759783,47.6487318
+1652,Cristwood,Non-Profit Institution,-122.3528448,47.7668464
+1653,Crocodile/ Via Tribunali,Seating 151-250,-122.34428048264263,47.61358905
+1654,Crooked Spoon,Seating 51-150,[0.0],[0.0]
+1655,Cross Roads Mini Mart,Grocery,-122.1323495,47.6300347
+1656,Crossley'S Country Brew,Limited Food Services,-121.98871966129033,47.217169
+1657,Crossroads Cafe,Seating 0-12,-122.130154,47.6209366
+1658,Crossroads Community Center,Non-Profit Institution,-122.1215643,47.6185452
+1659,Crossroads Theatre #404,Seating 0-12,-122.1323682,47.6133384
+1660,Crosswalk,Seating 13-50,-122.3550944,47.6916037
+1661,Crow,Seating 51-150,-122.3477368,47.6270447
+1662,Crown Hill Grocery Outlet,Grocery,-122.37592001824898,47.69289305
+1663,Crown Hill Pub,Seating 13-50,-122.3771138,47.6909917
+1664,Crown Market,Seating 0-12,-122.3449141,47.6985701
+1665,Crown Rumbar Rain City,Seating 0-12,-80.8572249,39.0957056
+1666,Crowne Plaza Hotel,Seating > 250,-122.33212146181444,47.6080972
+1667,Crumble & Flake,Bakery,-122.3263788,47.6178484
+1668,Crumpet Shop; The,Seating 0-12,-122.3403898,47.6089676
+1669,Crush,Seating 13-50,-122.30186728896615,47.61936385
+1670,Cst Sam'S Kitchen,Seating 13-50,-122.22708967600798,47.3383492
+1671,Cuatro Caminos Restaurant,Seating 51-150,-122.308022828909,47.3582805
+1672,Cuautla Grocery & Video,Grocery,-122.3375508,47.4666002
+1673,Cuff; The,Seating 51-150,-122.3159367398168,47.6151116
+1674,Culinary Arts/Nikki Schiebel,Non-Profit Institution,-122.2205601933174,47.760475
+1675,Cumberland Grocery,Seating 0-12,-121.92686190267176,47.2831435
+1676,Cupcake Royale,Seating 13-50,-122.3405426,47.610122
+1677,Cupcake Royale/Verite Coffee,Seating 13-50,-122.3569618,47.63596
+1678,Curb Jumper Street Eats,Mobile Food Service,-122.33816797160011,47.7216498
+1679,Curbside @ 3 W Nickerson,Mobile Food Service,-122.3293495,47.5751981
+1680,Cure,Seating 13-50,[0.0],[0.0]
+1681,Curri Box,Seating 13-50,-122.1863028,47.4772134
+1682,Curry Now @ 9706 4Th Ave Ne; Seattle 98115,Mobile Food Service,-122.362655425,47.551682
+1683,Curry Point 2 Go,Seating 0-12,-122.1464685,47.6278515
+1684,Curry Point At Abricos,Seating 0-12,-122.1375199,47.6455846
+1685,Custom Smoothie & Sports Nutrition,Seating 0-12,-122.3338511,47.6034446
+1686,Custom Smoothie And Sports,Seating 0-12,-122.35186781450236,47.650065850000004
+1687,Custom Smoothies,Seating 13-50,-122.3382342,47.6226639
+1688,Cutter'S Crab  House,Seating > 250,-122.344298,47.6106306
+1689,Cutters Point Coffee,Seating 13-50,[0.0],[0.0]
+1690,Cutting Board,Seating 13-50,-122.32113212363618,47.5531644
+1691,Cyber-Dogs,Seating 0-12,-122.3309519,47.6123727
+1692,Cyber Cafe,Seating 0-12,[0.0],[0.0]
+1693,Cyclops,Seating 51-150,-122.3487351,47.614483
+1694,Cynthia'S Polynesian Market,Seating 0-12,[0.0],[0.0]
+1695,D'Ambrosio Gelato,Seating 0-12,-122.3843529,47.6672047
+1696,D'Lara Mediterranean Grill,Seating 0-12,[0.0],[0.0]
+1697,D'Unik Gift Shoppe,Seating 0-12,-122.3130293,47.7454763
+1698,D.K. Market,Grocery,-122.22242642744692,47.4729939
+1699,Dae Young Palace,Seating 13-50,-122.31438700964137,47.307100399999996
+1700,Dahlak Eritrean Cuisine,Seating 51-150,-122.30593126766996,47.587607399999996
+1701,Dahlia Lounge,Seating 151-250,-122.3450697,47.6160285
+1702,Dahlia Retail  Bakery,Bakery,-122.3450697,47.6160285
+1703,Daily Dozen Doughnut Co,Seating 0-12,-122.3402705,47.6085956
+1704,Daily Grill,Seating 151-250,-122.3334588,47.6113383
+1705,Daimonji Japanese,Seating 13-50,-122.3218342,47.547918
+1706,Dairy Queen,Seating 13-50,[0.0],[0.0]
+1707,Davita Cafe,Seating 51-150,-122.29482617320099,47.31177965
+1708,Dawgpound,Seating 0-12,-122.3134976,47.6667365
+1709,Day And Night Grocery,Seating 0-12,-122.1852607,47.287872199999995
+1710,Day Break Cafe,Seating 13-50,[0.0],[0.0]
+1711,Dayosense Catering,Catering Operation,-122.3025212,47.6081687
+1712,Days Inn Auburn / Restaurant,Seating 0-12,-122.22546258005536,47.3218862
+1713,Days Inn South Seattle,Seating 13-50,-122.26913380254038,47.4857229
+1714,Days Inn/ Bellevue,Seating 0-12,-122.1321542,47.6061585
+1715,Dean Straleys James St Bp,Seating 0-12,-122.3242029,47.6061457
+1716,Dearborn Park Elementary,School Kitchen,-122.29605484893456,47.5522762
+1717,Deborah'S Homemade Pies,Bakery,-122.3423903,47.7325215
+1718,Decatur Hs - Student Store,Non-Profit Institution,-122.36879594039382,47.31688
+1719,Deez Dogz,Mobile Food Service,-122.3446906,47.6845936
+1720,Deez Dogz Cart # 1 @ 7617 Aurora Ave N,Mobile Food Service,-122.3446906,47.6845936
+1721,Del Taco,Seating 51-150,-122.31287292514676,47.2917621
+1722,Delancey Pizzeria,Seating 13-50,-122.3748134,47.6794479
+1723,Deli Cut Subs,Seating 13-50,[0.0],[0.0]
+1724,Deli Espresso,Seating 0-12,-122.3587045,47.6183281
+1725,Deli No More,Seating 0-12,-122.3328088,47.6078772
+1726,Deli Smith,Seating 13-50,-122.3234971,47.2998926
+1727,Deli; The,Seating 51-150,-122.3279284,47.8049032
+1728,Delicately Sweet,Bakery,-122.2797136,47.7543645
+1729,Delicatus A Seattle Delicatessen,Seating 13-50,-122.3343745,47.6015299
+1730,Delicious Authorithai (Kc250) @ 1721 1St Ave S,Mobile Food Service,-122.3293495,47.5751981
+1731,Delille Cellars @ Sotherby'S,Seating 0-12,-122.2068027,47.6759528
+1732,Delite Bakery,Seating 0-12,-122.3134083,47.5686116
+1733,Delridge Arco Am/Pm,Seating 0-12,-122.36162872361398,47.5371169
+1734,Delridge Bakery,Seating 0-12,-122.3567134,47.5183644
+1735,Delridge Deli Mart,Seating 0-12,-122.3637663,47.5685935
+1736,Delridge Food Mart,Grocery,-122.36328594794773,47.55386635
+1737,Delta Gamma,Seating 51-150,-122.30588095042401,47.661545849999996
+1738,Delta Tau Delta,Seating 13-50,-122.3068879,47.6619738
+1739,Delta Zeta,Seating 51-150,-122.30870250719803,47.662331050000006
+1740,Deluxe Tavern & Restaurant #1,Seating 51-150,-122.320847,47.6186726
+1741,Denny'S #7546,Seating 51-150,-122.31288737452692,47.2901158
+1742,Denny'S #8665,Seating 51-150,-122.32869917073418,47.57797855
+1743,Denny'S Inc #7860,Seating 51-150,-122.33424362913237,47.469857000000005
+1744,Denny'S Inc #7864,Seating 151-250,-122.1430588,47.6101047
+1745,Denny'S Inc #7865,Seating 51-150,[0.0],[0.0]
+1746,Denny'S Inc #7871,Seating 151-250,0.7354444499865738,51.3395012
+1747,Denny'S Inc. #7876,Seating 151-250,-122.22627740518058,47.30235385
+1748,Denny'S Restaurant,Seating 51-150,[0.0],[0.0]
+1749,Denny'S; Inc. #7866,Seating 151-250,-122.3055017,47.3155137
+1750,Denny'S; Inc. #7874,Seating 51-150,[0.0],[0.0]
+1751,Denny Mountain Lodge,Seating 51-150,-121.86949043591915,47.54057635
+1752,Denny Way Shell,Seating 0-12,-122.34406419999999,47.618911100000005
+1753,Deru Catering Aka Block 170,Seating 0-12,-122.1943442,47.6819779
+1754,Des Moines Activity Center,Non-Profit Institution,-122.3058724,47.4069935
+1755,Des Moines Dog House,Seating 0-12,-122.32424295,47.4017105
+1756,Des Moines Elementary School,School Kitchen,-122.3201243,47.3724799
+1757,Design Perfect Inc.,Catering Operation,-122.1694139,47.6240237
+1758,Desimone'S 76,Seating 0-12,-122.2896767,47.463796
+1759,Diablo Food Truckz; Llc,Mobile Food Service,-122.3258497,47.599351
+1760,Diamond Lil'S,Seating 51-150,-122.21705847342565,47.47884755
+1761,Diamond Mart,Seating 0-12,-122.002911,47.3084341
+1762,Diane'S Market Kitchen; Llc,Seating 0-12,-122.3418293,47.6100208
+1763,Dianne'S Delights Llc,Bakery,-122.3739871,47.6304068
+1764,Dick'S Drive In,Seating 0-12,-122.327812953505,47.66106165
+1765,Dick Scobee Elementary,School Kitchen,-122.21625233551075,47.3209986
+1766,Dickey'S Barbecue Pit,Seating 13-50,[0.0],[0.0]
+1767,Dickeys Bbq Pit,Seating 51-150,-122.2530222,47.3808214
+1768,Dicks Drive In,Seating 0-12,-122.29693470169329,47.7182099
+1769,Diedrich Espresso,Limited Food Services,-122.1770226,47.7035763
+1770,Diesel,Seating 13-50,-122.3144514,47.6133629
+1771,Diggity Dog 2,Seating 13-50,-122.3555082,47.6896828
+1772,Diggity Dog Hot Dog & Sausage Co,Seating 13-50,-122.3338444,47.6685683
+1773,Digipen Cafeteria,Seating 51-150,-122.15066104245184,47.688941850000006
+1774,Dilenttante Mocha Cafe,Seating 0-12,-122.23536639589963,47.38520025
+1775,Dilettante Chocolates,Seating 0-12,-122.3351213,47.6158077
+1776,Dilettante Mocha Cafe,Seating 0-12,[0.0],[0.0]
+1777,Dilettante Mocha Cafe @ 1601 5Th Ave Ste 100,Mobile Food Service,[0.0],[0.0]
+1778,Diller Room,Seating 13-50,-122.3378903,47.6068071
+1779,Dim Sum King,Seating 13-50,-122.3255837,47.599033
+1780,Dimitriou'S Jazz Alley,Seating > 250,-122.339691,47.6148163
+1781,Dimmitt Middle School,School Kitchen,-122.23156168432774,47.492325199999996
+1782,Dimples,Grocery,-122.33214253371987,47.6097245
+1783,Dimples Gift & Sundries,Grocery,[0.0],[0.0]
+1784,Dimples Gifts & Sundries,Grocery,-122.33071812801815,47.60454285
+1785,Din Tai Fung,Seating 151-250,-76.99691028917354,38.6674915
+1786,Din Tai Fung Restaurant,Seating > 250,-122.299554,47.6615873
+1787,Dinners Ready,Seating 0-12,-122.1851967,47.7087344
+1788,Dino'S Grill,Seating 13-50,[0.0],[0.0]
+1789,Dino'S Gyros,Seating 0-12,-122.3360179,47.4718742
+1790,Dino'S Pub,Seating 51-150,-122.19416992845413,47.5327256
+1791,Discount Fuel,Grocery,-122.24682640712928,47.387072
+1792,Discount Village,Seating 0-12,-122.31520859998474,47.5269655
+1793,Discovery Elementary School,School Kitchen,-122.0355556,47.5845809
+1794,Discovery Espresso And Juice,Seating 0-12,-122.3979418,47.6598834
+1795,Dish Cafe,Seating 13-50,-122.3252848,47.6757995
+1796,Dish D'Lish,Seating 51-150,[0.0],[0.0]
+1797,Dish D'Lish 2,Seating 13-50,-122.3010951,47.443612
+1798,Dish; The,Seating 13-50,-122.3657621,47.6603209
+1799,Diva  Ii; Llc,Seating 13-50,-122.32469504417287,47.6049735
+1800,Diva Espresso,Seating 13-50,-122.35509637031218,47.6868051
+1801,Diva Espresso West,Seating 0-12,-122.3782481,47.5634117
+1802,Diva Ii - Llc,Seating 13-50,-122.3419463,47.6627178
+1803,Diva Ii Llc,Seating 13-50,-122.3560941,47.7337051
+1804,Diva Ii; Llc,Seating 13-50,-122.3286689,47.6027991
+1805,Divan Fine Turkish Cuisine,Seating 13-50,-122.3369848,47.6614949
+1806,Dixie'S Bbq,Seating 13-50,-122.18658522689643,47.633783199999996
+1807,Djan'S Dining,Seating 13-50,-122.3254124,47.6614956
+1808,Djung On Wheels @ A & J Commissary,Mobile Food Service,-122.3293495,47.5751981
+1809,Dm Cafe & Deli Llc,Seating 0-12,-122.3447846,47.6207073
+1810,Dock; The,Seating 51-150,-122.34379028754807,47.64888835
+1811,Dog & Pony Ale House & Grill; The,Seating 13-50,-122.2025797,47.4881861
+1812,Dog In The Park,Seating 0-12,-122.3367461,47.611022
+1813,Dog Mountain'S Farm To Table,Seating 13-50,-121.9135167,47.6496172
+1814,Dog On The Ave @ 4130 University Way Ne,Mobile Food Service,-122.31291588182182,47.65779565
+1815,Dogfather Catering  #3 @ Route 650-269-7686,Mobile Food Service,-122.1113252,47.703826
+1816,Dogfather Catering #1 @ Route 650-269-7686,Mobile Food Service,-122.1113252,47.703826
+1817,Dogfather Catering #2 @ Route 650-269-7686,Mobile Food Service,-122.1113252,47.703826
+1818,Dolce Vita Espresso,Seating 0-12,-122.252311,47.7602984
+1819,Dolcetta Artisan Sweets,Catering Operation,[0.0],[0.0]
+1820,Dollar Latino,Grocery,-122.2272357,47.3073176
+1821,Dollar Tree # 5276,Grocery,-122.1491543,47.7558341
+1822,Dollar Tree #4208,Grocery,[0.0],[0.0]
+1823,Dollar Tree #4423,Grocery,[0.0],[0.0]
+1824,Dollar Tree #4494,Grocery,-122.3539978,47.5210333
+1825,Dollar Tree #4600,Grocery,-122.2010351,47.4842831
+1826,Dollar Tree #4876,Grocery,-122.3442491,47.6860452
+1827,Dollar Tree Store #2487,Grocery,-122.31222066317113,47.3237079
+1828,Dollar Tree Store #2563,Grocery,[0.0],[0.0]
+1829,Dollar Tree Store #2921,Grocery,-122.1993297,47.372346
+1830,Dollar Tree Store #3063,Grocery,-122.29479313872794,47.39150755
+1831,Dollar Tree Store #3197,Grocery,-122.2238357,47.3190759
+1832,Dollar Tree; #3894,Grocery,-122.33886895,47.46778585
+1833,Domani Pizzeria & Restaurant,Seating 51-150,-122.3572204,47.6327965
+1834,Dominic'S,Grocery,[0.0],[0.0]
+1835,Domino'S Pizza,Seating 0-12,-122.2093015,47.7646484
+1836,Domino'S Pizza #7063,Seating 0-12,-122.3457874,47.6259005
+1837,Domino'S Pizza #7086,Seating 0-12,[0.0],[0.0]
+1838,Domino'S Pizza #7108,Seating 0-12,-122.3634059,47.2998029
+1839,Domino'S Pizza #7113,Seating 0-12,-122.2242281,47.3019092
+1840,Domino'S Pizza #7126,Seating 0-12,[0.0],[0.0]
+1841,Domino'S Pizza #7129,Seating 0-12,[0.0],[0.0]
+1842,Domino'S Pizza #7135,Seating 0-12,-122.3349917,47.5378864
+1843,Domino'S Pizza #7137,Seating 0-12,[0.0],[0.0]
+1844,Domino'S Pizza #7139,Seating 0-12,[0.0],[0.0]
+1845,Domino'S Pizza #7142,Seating 0-12,-122.3866653,47.5436427
+1846,Domino'S Pizza #7145,Seating 0-12,-122.287653,47.5630551
+1847,Domino'S Pizza #7149,Seating 0-12,-122.3130293,47.7454763
+1848,Domino'S Pizza #7157,Seating 0-12,-122.1995664,47.620807
+1849,Domino'S Pizza;  #7148,Seating 13-50,-122.3771747,47.6901302
+1850,Dominos Pizza,Seating 0-12,[0.0],[0.0]
+1851,Dominos Pizza #7147,Seating 0-12,-122.3550719,47.7199294
+1852,Don & Joe'S Meats,Meat/Sea Food,-122.3407779,47.6084817
+1853,Don Lucho'S @ 2407 Nw 80Th Street,Mobile Food Service,-122.3869651,47.6684979
+1854,Dona Queen Donut & Deli,Seating 13-50,-122.3297037,47.5806293
+1855,Dong Hkanh Restaurant,Seating 51-150,-122.3550629,47.5345059
+1856,Dong Sing Market,Meat/Sea Food,-122.3253602,47.5989611
+1857,Donut & Muffin Factory Inc,Seating 13-50,-122.22661398953244,47.310868600000006
+1858,Donut Star,Seating 13-50,-122.22219457609918,47.30025365
+1859,Doofer'S Bar & Grill,Seating 51-150,-122.1204011,47.4889136
+1860,Double Header,Seating 13-50,[0.0],[0.0]
+1861,Double T,Limited Food Services,-121.991717,47.2048547
+1862,Double Tree - Espresso Bar,Seating 13-50,-122.3279284,47.8049032
+1863,Double Wired Espresso,Seating 0-12,-122.1987458,47.4456782
+1864,Doubletree Hotel - Maxi'S,Seating > 250,-122.3279284,47.8049032
+1865,Doubletree Seattle-Coffee Garden,Seating 151-250,-122.3279284,47.8049032
+1866,Doubletree Seattle - Seaports,Seating > 250,-122.3279284,47.8049032
+1867,Dough Zone,Seating 51-150,-122.1279569,47.6175454
+1868,Dow Baseball Club,Seating 0-12,-122.10605000288777,47.6924585
+1869,Downtown Romio'S Pizza & Pasta,Seating 13-50,-122.332284,47.6155055
+1870,Downtown Spirits,Seating 0-12,-122.3415247678039,47.6177883
+1871,Dragon'S Kettle Korn  @ 901 Occidental S,Mobile Food Service,-122.3334441,47.5934567
+1872,Dragon Gate Restaurant,Seating 51-150,[0.0],[0.0]
+1873,Dragon Pearl,Seating 51-150,-122.3333858,47.46576885
+1874,Dream Espresso,Seating 0-12,[0.0],[0.0]
+1875,Dream Girls,Seating 0-12,-122.3338874,47.5892872
+1876,Dreamgirls At Rick'S,Seating 51-150,-122.2995459,47.7112992
+1877,Drexel Deli & Grocery,Seating 0-12,-122.331457,47.6025458
+1878,Drift On Inn,Seating 151-250,-122.3452038,47.734507
+1879,Drifting Donut (Kc247) @ 206-999-3608,Mobile Food Service,-122.362655425,47.551682
+1880,Drip City Coffee Company Llc,Seating 13-50,-122.3533853,47.6172467
+1881,Drive Thru Boba,Seating 0-12,-122.2010503,47.6136449
+1882,Druids Glen Golf Clubhouse,Seating > 250,[0.0],[0.0]
+1883,Dub Pub,Seating 51-150,-122.1748205,47.7033185
+1884,Dubsea Coffee,Seating 13-50,-122.3453915,47.5191498
+1885,Duchess Tavern; The,Seating 51-150,-122.2960883,47.6684047
+1886,Duck Island Ale House,Seating 13-50,-122.344707,47.6823063
+1887,Duk Li Dim Sum,Seating 13-50,-122.324324,47.5976282
+1888,Duke'S Alki Chowder House,Seating 151-250,-122.405959,47.5807773
+1889,Duke'S Greenlake Chowder House,Seating 51-150,-122.34388239952041,47.671350450000006
+1890,Duke'S Lake Union Chowder House,Seating 151-250,-122.3332714,47.6277316
+1891,Dukem Market; Llc,Meat/Sea Food,-122.3372645,47.4666018
+1892,Dulces Bistro & Wine,Seating 51-150,-122.3076123,47.6168326
+1893,Dumas Bay Centre,Catering Operation,-122.3747293710704,47.328415899999996
+1894,Duos Co.; Llc,Seating 51-150,-122.3710297,47.5697582
+1895,Durdur Cafe,Seating 13-50,-122.3031719,47.6081791
+1896,Durn Good Grocery,Grocery,-122.3360908,47.6557553
+1897,Duvall Coffeehouse,Seating 13-50,-121.9858582,47.7424749
+1898,Duvall Family Grocer,Grocery,[0.0],[0.0]
+1899,Duvall Family Grocer Inc,Meat/Sea Food,[0.0],[0.0]
+1900,Duvall Grill,Seating 51-150,-121.9858582,47.7424749
+1901,Duvall Market,Grocery,-121.9858582,47.7424749
+1902,E J Burger,Seating 13-50,-122.3129247,47.6616455
+1903,E Smith Mercantile,Seating 0-12,-122.3339778,47.6005092
+1904,E Z Mart,Grocery,-122.32537400356563,47.40801785
+1905,Eagles #3054 Kitchen,Seating 51-150,-122.0365275,47.5302601
+1906,Eagles Foe;#3144,Seating 51-150,-122.4604917,47.4328471
+1907,Earl'S On The Ave,Seating 51-150,-122.31348994398931,47.660817
+1908,Earl'S Restaurant,Seating > 250,-76.99691028917354,38.6674915
+1909,East African Grocery & Deli Llc,Seating 0-12,[0.0],[0.0]
+1910,East African Imports,Seating 13-50,[0.0],[0.0]
+1911,East Hill Dairy Queen,Seating 51-150,-122.20186173415809,47.37600995
+1912,East Hill Elementary Scho,School Kitchen,-122.20805526898911,47.38603115
+1913,East Lake Specialty Deli,Seating 0-12,-122.32538080368789,47.6334077
+1914,East Main Gas Mart,Grocery,-122.2129293,47.3077221
+1915,East Main Shortstop,Seating 0-12,-122.2221717,47.3073581
+1916,East Monkey Tap Room,Seating 51-150,-122.3136984,47.756796
+1917,East Union Food; Llc,Seating 0-12,-122.30319449999999,47.6133052
+1918,East West Bookshop,Seating 0-12,-122.3171792,47.6759993
+1919,East Yesler Grocery,Grocery,-122.3209333,47.6016992
+1920,Eastern'S Pharmacy,Seating 0-12,[0.0],[0.0]
+1921,Eastern Pearl,Seating 51-150,-122.1228658,47.673494
+1922,Eastgate Elementary School,School Kitchen,-122.1354069,47.5655549
+1923,Eastlake Bar & Grill,Seating 51-150,-122.3240482016285,47.64858485
+1924,Eastlake High School,School Kitchen,-122.0355605,47.6159702
+1925,Eastlake Hs - Student Store,Non-Profit Institution,-122.0355605,47.6159702
+1926,Eastlake Market,Seating 0-12,-122.325518,47.6396272
+1927,Eastlake Teriyaki,Seating 13-50,-122.3255125,47.6393506
+1928,Eastridge Church,Non-Profit Institution,-122.0258383,47.5489601
+1929,Eastridge Elementary School,School Kitchen,-122.04300719778227,47.7437696
+1930,Eastside Catholic Deca,Non-Profit Institution,-122.0354353,47.6148979
+1931,Eastside Catholic Gym,Non-Profit Institution,-122.0354353,47.6148979
+1932,Eastside Catholic School Cafeteria,Non-Profit Institution,-122.0354353,47.6148979
+1933,Eastside Christian School,Non-Profit Institution,-122.140333,47.5908581
+1934,Eastside Harley-Davidson,Seating 0-12,-122.14776697423291,47.629474849999994
+1935,Eastside Preparatory School,Non-Profit Institution,-122.202018,47.6461582
+1936,Eastside Subs,Seating 13-50,[0.0],[0.0]
+1937,Easy Joe'S,Seating 51-150,-122.3342483,47.6027659
+1938,Easy Shoppe,Seating 0-12,-122.3129621,47.6554503
+1939,Easy Stop,Seating 0-12,-121.715717371538,47.468890099999996
+1940,Easy Street Cafe/ Records,Seating 13-50,-122.3870841,47.5614664
+1941,Eat Local,Seating 0-12,[0.0],[0.0]
+1942,Eathai Cafe,Seating 13-50,-122.3560722,47.7339586
+1943,Eats Market Cafe,Seating 13-50,[0.0],[0.0]
+1944,Ebru,Seating 0-12,-122.130154,47.6209366
+1945,Echo Lake Elementary School,School Kitchen,-122.337161,47.7402852
+1946,Econolodge,Seating 13-50,[0.0],[0.0]
+1947,Ecs Aurora,Seating 0-12,-122.3450908,47.7010524
+1948,Edgar Batiste Seattle Sausage,Mobile Food Service,[0.0],[0.0]
+1949,Edgebrook Snack Shack,Grocery,-122.1583292,47.5712127
+1950,Edible Arrangements,Seating 0-12,-122.200669,47.6136515
+1951,Edible Arrangements,Seating 0-12,-122.340008,47.6120712
+1952,Edible Arrangements #225,Seating 0-12,-122.2110446,47.707029
+1953,Edokko Japanese Restaurant,Seating 13-50,-122.2201323,47.43911075
+1954,Educare Early Learning Center,School Kitchen,-122.3825381,47.5137639
+1955,Eet Bar,Seating 51-150,-122.3786897,47.6695934
+1956,Efeste,Seating 13-50,-122.1477621,47.7631665
+1957,Egg & Us Of Issaquah,Seating 51-150,[0.0],[0.0]
+1958,Egg Ceteras Blue Star Cafe & Pub,Seating 151-250,-122.34186630492022,47.66182255
+1959,Eggs And Plants Llc,Seating 13-50,-122.342911,47.6157487
+1960,Einstein Bro'S Bagels;  #3588,Seating 13-50,[0.0],[0.0]
+1961,Einstein Bros Bagels,Seating 13-50,-122.356615,47.6312384
+1962,Einstein Bros Bagels #2161,Seating 13-50,[0.0],[0.0]
+1963,Einstein Bros Bagels #2175,Seating 13-50,-122.20644571741636,47.665724
+1964,Einstein Bros Bagels #3410,Seating 13-50,[0.0],[0.0]
+1965,Einstein Bros Bagels #3477,Seating 13-50,-122.33009864948392,47.6038904
+1966,El 42 Cantina,Seating 51-150,-122.0364045,47.5305818
+1967,El Asador,Mobile Food Service,-122.29406472017426,47.57348525
+1968,El Borracho,Seating 13-50,-122.340694,47.6093089
+1969,El Burrito Mojado @ 12312 116Th Ave Ne Kirkland,Mobile Food Service,[0.0],[0.0]
+1970,El Cabrito (Kc270) @ 21104 Pacific Hwy S Seatac,Mobile Food Service,-122.3379314,47.6058092
+1971,El Camino,Seating 51-150,-121.9902133,47.2039003
+1972,El Camion (3) @ 5314 15Th Ave Nw,Mobile Food Service,-122.34388527539394,47.7149982
+1973,El Camion 1 @ 11728 Aurora Ave N,Mobile Food Service,-122.34388527539394,47.7149982
+1974,El Camion 2 @ 2918 1St Ave S,Mobile Food Service,-122.34388527539394,47.7149982
+1975,El Caporal,Seating 51-150,-121.7877138,47.4918696
+1976,El Caporal Fall City Inc,Seating 51-150,-121.9002651,47.5716653
+1977,El Caporal Family Mexican,Seating 151-250,[0.0],[0.0]
+1978,El Centro De La Raza,Non-Profit Institution,-122.31129317944496,47.580324950000005
+1979,El Charro Hnos,Seating 151-250,-122.20371115161558,47.38764485
+1980,El Chilango 425 @ Route 425-221-0572,Mobile Food Service,-122.1694139,47.6240237
+1981,El Chupacabra,Seating 13-50,-122.3555686,47.6781419
+1982,Factoria Cinemas,Seating 0-12,-122.1702876,47.5541905
+1983,Football Booster Club,Non-Profit Institution,-121.9727424,47.7361562
+1984,Goodtime 2,Seating 51-150,[0.0],[0.0]
+1985,Goodtime 3,Seating 51-150,[0.0],[0.0]
+1986,Grocery,Grocery,-122.2797136,47.7543645
+1987,Himalayan Bambino,Seating 13-50,-122.3477189,47.6178289
+1988,Lacy Lady Latte,Seating 0-12,-122.31181883882869,47.35445165
+1989,Lady Mary,Seating 51-150,[0.0],[0.0]
+1990,Main Term. - Diva Espresso,Seating 0-12,-122.3080158569515,47.4475673
+1991,Mc Donald'S  (Abboud'S),Seating 51-150,-122.3302791,47.5462772
+1992,Meat Dept,Meat/Sea Food,-122.138147664149,47.5765346
+1993,Meat/Seafood,Meat/Sea Food,-122.2797136,47.7543645
+1994,N Gates - Bigfoot Food & Spirits,Seating 51-150,[0.0],[0.0]
+1995,Pacific Place Ii / Lower Level,Seating 0-12,-122.33528897632405,47.6128833
+1996,Pacific Place Ii / Upper,Seating 0-12,-122.33528897632405,47.6128833
+1997,Pho 206,Seating 13-50,-122.3527636,47.5318895
+1998,Rosie'S (Boeing Co4-81 Cafeteria),Seating > 250,-122.2022163,47.4827297
+1999,Royal Argosy,Seating > 250,[0.0],[0.0]
+2000,Royal Argosy - Prep Kitchen,Seating 0-12,[0.0],[0.0]
+2001,Seafood Department,Meat/Sea Food,-122.138147664149,47.5765346
+2002,Seattle Art  / Multi-Use Kitchen 508 B501,Seating 0-12,-122.3522473,47.6142622
+2003,Sightseer,Seating 51-150,[0.0],[0.0]
+2004,So. Satellite- British Airways Terrace Lounge,Seating 51-150,[0.0],[0.0]
+2005,Spirit Of Seattle,Seating > 250,[0.0],[0.0]
+2006,Starbuck'S @ Albertson'S  #496,Seating 0-12,-122.31537883070413,47.32358275
+2007,Starbucks  @ Albertson'S #483,Seating 0-12,-122.2273843,47.2728215
+2008,Suprem Bean Coffee House C/O Andy'S Chevron,Seating 0-12,-122.302833,47.7701365
+2009,Sushi@ Fm608,Seating 0-12,-122.3685179,47.6597396
+2010,Ta C-Store,Seating 0-12,-121.7659032,47.4850381
+2011,The Comet,Seating 51-150,-122.3196324,47.6142126
+2012,The Confectional @ 305 Harrison St Armory,Mobile Food Service,[0.0],[0.0]
+2013,Totem Lake Chevron #1188,Grocery,[0.0],[0.0]
+2014,Tower Bar & Cafe @Amc Theatres Pacific Place,Seating 0-12,-122.33528897632405,47.6128833
+2015,Warehouse 345 Cafe @ Amazon Bon Appetit,Seating > 250,-122.3351383,47.6183768
+2016,West Seattle Thriftway - Chinatown Cafe,Seating 0-12,-122.38701059446328,47.5447063
+2017,Wsctc -Deli   F,Seating 0-12,-122.33156275066185,47.61175385
+2018,A Burger Place,Seating 13-50,-122.313034,47.6592986
+2019,A Pizza Mart Bar & Grill Inc,Seating 51-150,-122.3128098,47.6678482
+2020,Act 3 Catering,Seating 0-12,-122.24378963226204,47.46208145
+2021,Afc Sushi @ Fred Meyer #19,Seating 0-12,-122.22628172847675,47.3152515
+2022,Afc Sushi @ Qfc #838,Seating 0-12,-122.2430042,47.7283342
+2023,Afc Sushi @ Qfc 858,Seating 0-12,-122.310498,47.7333469
+2024,Afc Sushi @ Safeway # 1624,Seating 0-12,[0.0],[0.0]
+2025,Afc Sushi @ Safeway #1600,Seating 0-12,-85.0179986,42.4437685
+2026,Ai Teriyaki,Seating 13-50,-122.305721,47.3167023
+2027,Albertson'S Food Center #473 (Meat),Meat/Sea Food,-122.33579101502755,47.48912704999999
+2028,Alki Masonic Temple,Seating 51-150,-122.38246807485466,47.5600035
+2029,All City Coffee,Seating 0-12,-122.3171131,47.54902
+2030,Am-Pm,Seating 0-12,-122.22733275462645,47.41155885
+2031,Anise Thai Cuisine,Seating 13-50,-122.2309338,47.5866773
+2032,Aoki Japanese Grill & Sushi,Seating 51-150,-122.320847,47.6186726
+2033,Applebee'S,Seating 151-250,-122.22519370056145,47.3198326
+2034,Aqua By El Gaucho,Seating 51-150,-122.3547916,47.6146314
+2035,Arbor Deli,Seating 13-50,-122.3481484,47.6153176
+2036,Atlantic Street Pizza,Seating 0-12,-122.33407229160818,47.6050344
+2037,Auburn Mountainview Hs Cafeteria,School Kitchen,-122.17186386254401,47.3419624
+2038,Auburn Senior Center -Kitchen,Non-Profit Institution,-83.821768,34.011799
+2039,Azteca Mexican Restaurant,Seating > 250,-122.18975911313908,47.611493749999994
+2040,Bagel Oasis,Seating 13-50,-122.3046095,47.6759082
+2041,Baja Fresh Mexican Grill,Seating 51-150,-122.22273732458024,47.44063885
+2042,Balkan Market,Seating 0-12,-122.3391755,47.4659459
+2043,Ballard Kiss Cafe,Seating 13-50,-122.3937385,47.6684721
+2044,Ballet Restaurant,Seating 51-150,-122.320034,47.614204
+2045,Balloons And Cupcakes,Seating 13-50,-122.3342932,47.463023
+2046,Bannerwood Sports Park,Seating 0-12,-122.1674643,47.5983075
+2047,Barney And Al'S Chevron,Seating 0-12,-122.2014909,47.6099652
+2048,Bartell Drugs #04,Grocery,-122.3850508,47.6696258
+2049,Bartell Drugs #56,Grocery,-122.385512,47.5820435
+2050,Bay Cafe  #108,Seating 51-150,[0.0],[0.0]
+2051,Beach Cafe,Seating 151-250,-122.20550976372161,47.65513355
+2052,Beacon Bbq Deli,Seating 0-12,-122.3035419494193,47.558532650000004
+2053,Beacon Hill Foods,Grocery,-122.3137388,47.5639735
+2054,Bear And The Bee,Seating 13-50,-122.3449584,47.6134075
+2055,Belltown Market; Inc.,Seating 0-12,-122.3483956,47.6147246
+2056,Benjamin Franklin Elementary,School Kitchen,-122.1748291,47.6607643
+2057,Bennett'S,Seating 51-150,-122.2309338,47.5866773
+2058,Best Pho & Thai Restaurant,Seating 51-150,-122.21767804999999,47.473067400000005
+2059,Best Teriyaki & Sushi; The,Seating 13-50,-121.9858582,47.7424749
+2060,Big Picture @ Manhattan,School Kitchen,-122.32701167480663,47.4370776
+2061,Billiard Hoang/Pool Hall,Seating 13-50,-122.290149,47.5573095
+2062,Bizzy Bean Espreso; Llc,Seating 0-12,-122.28311263672839,47.315432
+2063,Black Bottle Postern,Seating 51-150,-122.2019875,47.6187583
+2064,Blaine Memorial United Methodist Church,Non-Profit Institution,-122.3019071,47.5764762
+2065,Blarney Stone Pub,Seating 51-150,-122.3393223,47.6083465
+2066,Blue Saucer,Seating 13-50,-122.3178803,47.6957309
+2067,Boat Street Cafe,Seating 51-150,-122.3573615,47.6183937
+2068,Boba T,Seating 13-50,[0.0],[0.0]
+2069,Boeing Co.-D.C. Cafeteria,Seating 51-150,-122.2557124,47.4677895
+2070,Boeing Co.-Garden Plaza,Seating 151-250,-122.2021988,47.4920939
+2071,Bogart'S Airport Way,Seating 51-150,-122.32233567724913,47.568269099999995
+2072,Bogul Bogul Cafe,Seating 51-150,-122.31438700964137,47.307100399999996
+2073,Boiling Point Chinese Restaurant,Seating 13-50,-122.2027436,47.6197786
+2074,Bon Appetit @ Amazon.Com / Kitchen/ Downstairs,Seating 0-12,-122.33650545,47.622950349999996
+2075,Bothell High School Cafeteria,School Kitchen,-122.2205601933174,47.760475
+2076,Botticelli Cafe,Seating 0-12,-122.34085030943379,47.6103133
+2077,Brewin' Around Coffee/Route 425-417-8564,Mobile Food Service,-122.3450671,47.7040774
+2078,Brickyard Pub,Seating 51-150,-122.3020056,47.3422501
+2079,Burger Madness,Seating 13-50,-122.3298999,47.5666776
+2080,Burien Big Foot Java,Seating 0-12,-122.34857859403675,47.487741549999996
+2081,Bz'S Sports Bar And Grill,Seating 51-150,[0.0],[0.0]
+2082,Cafe 5Ive,Seating 13-50,-122.33191132674216,47.605820300000005
+2083,Cafe Besalu; Inc,Seating 0-12,-122.3878282,47.6719658
+2084,Cafe Cugini,Seating 0-12,-122.3832818,47.6666758
+2085,Cafe Fava Llc,Seating 0-12,-122.3021778,47.6118278
+2086,Cafe Javasti,Seating 13-50,-122.3398769,47.6141455
+2087,Cafe Luna,Seating 13-50,-122.4752328,47.4473364
+2088,Cafe Munir,Seating 0-12,-122.3879616,47.6869194
+2089,Cafe On The Ave,Seating 13-50,-122.3133866,47.6584393
+2090,Cafe Paloma,Seating 13-50,-122.3346682,47.6016165
+2091,Cafe Weekend,Seating 0-12,-122.309515,47.594645
+2092,Caffe Delia,Seating 13-50,-122.3551139,47.5227879
+2093,Cakes By Creme De La Creme,Bakery,-122.17178104999999,47.4893867
+2094,Calf & Kid,Seating 0-12,-122.3281535,47.6148398
+2095,Calozzi'S Cheesesteaks,Seating 13-50,-122.3349346,47.6087653
+2096,Camp Berachah /Cs Country Store,Non-Profit Institution,-122.08006959477812,47.3096699
+2097,Can-Am Pizza,Seating 0-12,-122.3128176,47.310208
+2098,Canlis Restaurant,Seating 151-250,-122.34673608520322,47.6430534
+2099,Canyon'S Restaurant,Seating 151-250,-122.12970970085085,47.6747473
+2100,Casablanca Cafe & Deli,Seating 13-50,[0.0],[0.0]
+2101,Cascina Spinasse,Seating 51-150,-122.3143994,47.6150591
+2102,Casey'S Bar & Grill,Seating 51-150,[0.0],[0.0]
+2103,Cash & Carry Commissary #561,Grocery,[0.0],[0.0]
+2104,Cask; The,Seating 13-50,-122.3862254,47.5815001
+2105,Cavu Cafe,Seating 13-50,-122.30089181028575,47.5298443
+2106,Cedar River Market,Grocery,-122.17269317215832,47.47525815
+2107,Cedar Valley Elementary School,School Kitchen,[0.0],[0.0]
+2108,Cedarbrook Lodge,Seating > 250,[0.0],[0.0]
+2109,Cedarcrest Hs - Ptsa Stadium Concession,Non-Profit Institution,-121.9727424,47.7361562
+2110,Cemitas Poblanas,Seating 0-12,-122.252641,47.5028036
+2111,Chateau Espresso,Limited Food Services,-122.1421578,47.7361369
+2112,Chef Liao,Seating 13-50,-122.3541709,47.6729217
+2113,Chestnut Cafe,Seating 13-50,-122.2315022249998,47.440672649999996
+2114,China Star,Seating 51-150,[0.0],[0.0]
+2115,Chip & Drew'S Filling Station,Seating 13-50,[0.0],[0.0]
+2116,City Cafe,Seating 13-50,[0.0],[0.0]
+2117,City Market,Seating 0-12,-122.32644216295957,47.61703705
+2118,City Of Redmond Senior Center,Non-Profit Institution,-122.126928,47.6743621
+2119,City Soups @ Key Center,Seating 13-50,-122.1967971,47.6159538
+2120,Coffee Miner; The,Limited Food Services,-122.0357343,47.541911
+2121,Coffee Pronto,Seating 0-12,-122.31249,47.621029
+2122,Coho Cafe,Seating 151-250,-122.0357343,47.541911
+2123,Cookies In Bloom,Bakery,-122.2201504,47.618167
+2124,Corazon Taqueria,Seating 13-50,-122.2804642,47.5535399
+2125,Corner Market,Grocery,[0.0],[0.0]
+2126,Costco - 3 Or More Persons,Meat/Sea Food,-122.3402716,47.7777616
+2127,Costco #1029 - Food Court,Seating 13-50,-122.1221063,47.3549442
+2128,Covington Subway,Seating 13-50,-122.1128641,47.357091
+2129,Cowgirls Inc.,Seating 51-150,-122.3344257,47.5985061
+2130,Cozy Inn Tavern,Seating 51-150,[0.0],[0.0]
+2131,Cuoco,Seating 151-250,-122.33677785,47.62154445
+2132,Cupcake Royale @ 2052 Nw Market St,Mobile Food Service,-122.31764,47.6139831
+2133,D'Ambrosio Gelato; Llc,Seating 13-50,-122.3166522,47.6151474
+2134,Dahlia Workshop,Bakery,-122.3402579,47.6152884
+2135,Dairy Queen/Orange Julius,Seating 0-12,-122.24568490540247,47.29916465
+2136,Dang Dang Cha Lua Restaurant,Seating 0-12,[0.0],[0.0]
+2137,Davis Wright  Tremaine Llp,Seating 51-150,-122.3360548,47.6071366
+2138,Dc'S Bar And Grill,Seating 51-150,-122.2047491,47.4795576
+2139,De Novo Chocolates,Bakery,-122.2212051,47.4433284
+2140,Decadence Custom Cakes Llc,Seating 0-12,[0.0],[0.0]
+2141,Delfino'S Pizzeria,Seating 13-50,[0.0],[0.0]
+2142,Deli Shez Cafe,Seating 0-12,-122.3431513,47.6143716
+2143,Delta Sky Club,Seating 151-250,[0.0],[0.0]
+2144,Denny'S Inc. #7875,Seating 51-150,[0.0],[0.0]
+2145,Deshi Halal Catering,Catering Operation,-122.1142299,47.6159899
+2146,Dim Sum House,Seating 13-50,-122.303972,47.5590892
+2147,Dollar Tree #2320,Grocery,-122.34488,47.7170604
+2148,Dominos Pizza-7128,Seating 13-50,[0.0],[0.0]
+2149,Dot'S Delicatessen,Seating 13-50,-122.3498788,47.659079
+2150,Down Home Catering,Catering Operation,-122.23390117425237,47.38053465
+2151,Dream Dinners - West Seattle,Seating 0-12,-122.3846372,47.5731026
+2152,East Valley 13 Cinema #311,Seating 0-12,-122.22004228615941,47.445459799999995
+2153,Eat Local; Llc,Grocery,[0.0],[0.0]
+2154,Eddie'S Pan Asian Restaurant,Seating 13-50,-122.3447144,47.6860967
+2155,El Camion,Seating 13-50,-122.3759088443635,47.67582365
+2156,El Catrin @ Route 206-915-7506,Mobile Food Service,-122.2024462,47.4862607
+2157,Latino Espresso Cafe,Seating 0-12,-122.2886740034632,47.471504749999994
+2158,Main Term. - Anthony'S @ Seatac Airport,Seating > 250,[0.0],[0.0]
+2159,Pacific Science Center / Imax Concession Stand,Non-Profit Institution,-122.35077847477159,47.61934015
+2160,The Bean @ 2103 Sw 152Nd St; Seattle,Mobile Food Service,[0.0],[0.0]
+2161,Zoka Coffee Roaster @ Amazon Bon Appetit,Seating 13-50,-122.3351383,47.6183768
+2162,Arbys  #6282,Seating 51-150,-122.3295429009249,47.581025999999994
+2163,Ba Mien Seafood Market,Meat/Sea Food,[0.0],[0.0]
+2164,Bartell Drugs #21,Grocery,-122.1658986,47.6653141
+2165,Casino Caribbean; Llc,Seating 51-150,-122.1731486,47.7318549
+2166,China Village Restaurant,Seating 51-150,-122.2913034,47.6613922
+2167,Cycle Cafe,Seating 51-150,-122.33061332095437,47.6177064
+2168,Dahlia Bakery Workshop,Seating 13-50,-122.33885205,47.6222181
+2169,Der Baring Store,Seating 13-50,-121.4777031,47.7661924
+2170,Dickey'S Bbq Pit,Seating 51-150,-122.1464685,47.6278515
+2171,Draft Choice,Seating 51-150,-122.09587915,47.31259095
+2172,Lilly'S @ Aljoya Thornton Place,Seating 51-150,-122.32353130373814,47.701789649999995
+2173,Northwest Senior Center,Non-Profit Institution,-122.3986058,47.6684286
+2174,Brunos Restaurant,Seating 51-150,-122.3374991,47.6091461
+2175,Clyde Hill Elementary,School Kitchen,-122.2043768,47.6319791
+2176,Dollar Tree #4761,Grocery,-122.3133133,47.6622794
+2177,Caffe Migliore,Seating 13-50,-122.3368208,47.6103062
+2178,Brick Wood Fired Pizza @ Callahan Cellars,Mobile Food Service,[0.0],[0.0]
+2179,Brookside Grocery,Seating 0-12,[0.0],[0.0]
+2180,Bubba'S Place,Seating 13-50,-122.2283751,47.4095392
+2181,Buddha Ruksa,Seating 51-150,-122.37722514949175,47.5648449
+2182,C & F Food Store,Grocery,-122.3866653,47.5436427
+2183,Bathtub Gin & Co.,Seating 0-12,[0.0],[0.0]
+2184,Asia Ginger Teriyaki,Seating 13-50,-122.23417512493037,47.441688400000004
+2185,Albertson'S #473 Bakery,Bakery,-122.33579101502755,47.48912704999999
+2186,Alison Coastal Cafe & Bakery,Seating 0-12,-122.3825173,47.6672738
+2187,Amicus Curiae,Seating 13-50,-122.2318796,47.381733
+2188,Catering By John,Catering Operation,-122.1121926,47.6870867
+2189,Chandlers Crab House,Seating 151-250,-122.3332714,47.6277316
+2190,China Best Wok,Seating 13-50,-122.3297958,47.5130718
+2191,Creative Cake Design,Bakery,-122.19731595,47.414187
+2192,Dexter & Hayes Public House,Seating 51-150,-122.3420228,47.6338758
+2193,Die Bierstube,Seating 13-50,-122.3171406,47.6729348
+2194,Dunlap Ele School -New Kitchen,School Kitchen,-122.27473747222928,47.52488505
+2195,Eagle Express,Grocery,-122.20264919829317,47.4888271
+2196,Best Teriyaki & Wok,Seating 13-50,-122.1837222,47.7432556
+2197,El Carrico Espresso I @ 1400 4Th Ave; Seattle 98101,Mobile Food Service,-122.3361863,47.6093694
+2198,Chef  Bar And Restaurant,Seating 0-12,-122.3031625,47.5994286
+2199,Brief Encounter,Seating 51-150,-85.0179986,42.4437685
+2200,Brooklake  Bistro #2,Non-Profit Institution,-122.32595101267553,47.28163555
+2201,Caddy Shack Coffee @ 6310 Ne 74Th Street,Mobile Food Service,[0.0],[0.0]
+2202,Cafe At The Park,Seating 0-12,-122.1281254,47.6687101
+2203,Afc Sushi @ Safeway 558,Seating 0-12,-122.16775987922422,47.5394931
+2204,Bb Ranch,Meat/Sea Food,-122.3361352,47.6104644
+2205,Beacon Hill Elementary School,School Kitchen,-122.31534707513144,47.58510855
+2206,Bean Juice Java @ Grady Way Shell,Limited Food Services,-122.23344401330075,47.468216850000005
+2207,Big House Bbq @ Route 425-894-1510,Mobile Food Service,-122.0361627,47.6163511
+2208,Bigfoot Java,Seating 0-12,[0.0],[0.0]
+2209,A-Street Big Foot Java,Seating 0-12,-122.22861585,47.2957279
+2210,Applebee'S Restaurant,Seating 151-250,-122.31042636634919,47.3147845
+2211,Arco Woodinville #05481,Seating 0-12,-122.1491543,47.7558341
+2212,Ballard Jam House,Seating 13-50,-122.3793357,47.6685294
+2213,Cedar Park Christian School Kitchen,Non-Profit Institution,-122.18937074905118,47.7466823
+2214,Century Ballroom,Seating 51-150,-122.3198707,47.6151211
+2215,Chef At Wok,Seating 13-50,-122.3557875,47.7193863
+2216,Chevron #304567,Seating 0-12,-122.22772702536068,47.3023071
+2217,Cho Dang Tofu,Seating 13-50,[0.0],[0.0]
+2218,Chun'S Family Restaurant,Seating 13-50,-122.211227,47.7054832
+2219,D'Ambrosio Gelato Bellevue,Seating 0-12,-62.7605017,46.0795408
+2220,Delaurenti Italian Market,Seating 13-50,-122.3400821,47.6086519
+2221,Duke'S Southcenter Chowder House,Seating 151-250,[0.0],[0.0]
+2222,Eastlake Zoo Tavern,Seating 51-150,-122.3261163,47.6398898
+2223,A Plus Burger Teriyaki,Seating 13-50,[0.0],[0.0]
+2224,Bethany Presbyterian,Non-Profit Institution,-122.3566631,47.6353815
+2225,Boulevard Park Thriftway- Grocery,Grocery,[0.0],[0.0]
+2226,Brimstones Espresso,Seating 0-12,-122.22923879999999,47.321148050000005
+2227,Cabin;The,Seating 51-150,-122.3918323,47.7708552
+2228,Baskin Robbins 31,Seating 0-12,-122.1189216,47.3564201
+2229,Bellevue 76 Circle K,Seating 0-12,-122.1702876,47.5541905
+2230,Blue Water Burrito Co,Seating 0-12,-122.33511435,47.605674300000004
+2231,Biondo Pizza,Seating 0-12,-122.2019979,47.6201659
+2232,Albertson'S #483 (Grocery),Grocery,-122.2273843,47.2728215
+2233,Alki Urban Market,Grocery,-122.4127632,47.578361
+2234,Arby'S #6281,Seating 13-50,-122.32559287620631,47.5460402
+2235,Ballard 76,Seating 0-12,-122.37674200000001,47.6706362
+2236,Ballard Grill & Ale House,Seating 13-50,-122.36450090773471,47.65910525
+2237,Ballard Loft,Seating 51-150,-122.3813084,47.6644602
+2238,Ballroom; The,Seating 51-150,-122.3530066,47.6521396
+2239,Bangkok Thai Restaurant,Seating 13-50,-121.99067168441566,47.203803449999995
+2240,Bartell Drugs #14,Grocery,-122.33548463768294,47.6615842
+2241,Caffe Vita,Seating 13-50,-122.2701248,47.5560767
+2242,Camelot Catering,Catering Operation,-122.1666249,47.5404071
+2243,Camp Gilead Kitchen,Non-Profit Institution,-121.92749401642314,47.6641163
+2244,Caroline; The,Seating 13-50,-122.31240922460879,47.72864075
+2245,Cedars On Broadway,Seating 13-50,-122.3204104,47.6063628
+2246,Central Coop - Meat,Meat/Sea Food,-122.31103051001656,47.61548605
+2247,Chambered Nautilus B &  B,Bed and Breakfast,-122.30481894815568,47.6651514
+2248,Chiso Restaurant,Seating 13-50,-122.3497167,47.6511647
+2249,Circo Circo Mexican Restaurant,Seating 51-150,[0.0],[0.0]
+2250,Clever Dunnes,Seating 51-150,-122.3258481,47.6179365
+2251,Costco # 1029 - Bakery,Bakery,-122.1221063,47.3549442
+2252,Crescent Tavern,Seating 13-50,-122.32627418779964,47.6174647
+2253,Curry & Kabab,Seating 51-150,-122.2032092,47.3861938
+2254,Domino'S Pizza #7144,Seating 0-12,-122.3209747,47.6136903
+2255,Duke'S  Kent Station Chowder,Seating 51-150,-85.658279411638,42.867105699999996
+2256,Easy Espresso; Inc.,Seating 0-12,-122.36160387788539,47.283718199999996
+2257,Delta Upsilon,Seating 13-50,-122.3069275720735,47.661666600000004
+2258,Coldstone Creamery,Seating 13-50,-122.1697798,47.5739462
+2259,Brgr Bar,Seating 13-50,-122.333104,47.6012454
+2260,Cafe Piccolo,Seating 13-50,-122.3172545,47.6969312
+2261,Baskin-Robbins 31 Flavors,Seating 0-12,-122.22178417447682,47.30029375
+2262,Bengal Tiger East Indian Cuisine,Seating 51-150,-122.3175071,47.6761594
+2263,Big Bear Restaurant,Seating 51-150,[0.0],[0.0]
+2264,Blu Water Bistro,Seating 51-150,[0.0],[0.0]
+2265,Bobachine Cafe,Seating 0-12,-122.3366777,47.6107586
+2266,Detour Espresso,Seating 0-12,-122.3031446,47.585356
+2267,Divine Decadence Espresso,Limited Food Services,-122.21399296026681,47.3156282
+2268,Dragonfish Asian Cafe,Seating 51-150,-122.3337587,47.6129667
+2269,Dubliner,Seating 51-150,-122.3501319,47.651241
+2270,El Corazon,Seating 51-150,-122.3293843,47.6188258
+2271,The District,Seating 13-50,-122.3146422,47.6615147
+2272,B F Day Elementary School Kitc,School Kitchen,-122.34914822661263,47.655161050000004
+2273,Blue Olive Mediterranean Cafe,Seating 13-50,-122.1928336,47.6175431
+2274,City Foods,Seating 0-12,-122.3459312,47.6179284
+2275,Club International,Seating 51-150,-122.3279284,47.8049032
+2276,Alive Juice Bar,Seating 13-50,-122.302833,47.7701365
+2277,Ariana,Seating 51-150,-122.2084407,47.6762282
+2278,Baja Fish Tacos,Seating 0-12,-122.3420842,47.4662905
+2279,Bartell Drugs  #37,Grocery,-122.3369141,47.6090622
+2280,Cameron Catering,Seating 0-12,-122.3637506,47.6582389
+2281,Camp Korey @ Carnation Farm,Non-Profit Institution,-121.9412953,47.6720605
+2282,Cedar Heights Junior Hs,School Kitchen,-122.1391866,47.3580102
+2283,Cederberg Tea House,Seating 13-50,[0.0],[0.0]
+2284,Chevron Station #20-3553,Seating 0-12,-122.2114445437193,47.758902199999994
+2285,Children'S Hospital Deli / Pantry,Seating 13-50,[0.0],[0.0]
+2286,Chipotle Mexican Grill #2270,Seating 0-12,[0.0],[0.0]
+2287,Conor Byrne'S,Seating 13-50,-122.3818804,47.6654648
+2288,Costco #110 - Meat Shop,Meat/Sea Food,-122.05277328320018,47.551020949999995
+2289,Da Vine,Seating 13-50,[0.0],[0.0]
+2290,Daily Coffee & Tea Co,Seating 0-12,-122.33651828491438,47.55390155
+2291,Delta Chi Fraternity,Seating 13-50,-122.3075408,47.6628108
+2292,Cafeteria,School Kitchen,-122.36879594039382,47.31688
+2293,Burger King #4662,Seating 13-50,-122.31220673892781,47.73331805
+2294,Cafe Chi,Seating 0-12,-122.035281,47.5284949
+2295,Cafe Pogacha,Seating 13-50,-122.1951795,47.613361
+2296,A Fire Inside Wood Fire Pizza #2 @ Route 206-713-0512,Mobile Food Service,-122.2212051,47.4433284
+2297,Advantage Sales & Marketing,Seating 0-12,-122.34210239286935,47.72802365
+2298,Afc Sushi   @ Fred Meyer; Inc.,Seating 0-12,-122.29807799666054,47.37418845
+2299,Afc Sushi @  (Qfc #807),Seating 0-12,-122.2967604,47.6625492
+2300,Afc Sushi @ Safeway 3500,Seating 0-12,[0.0],[0.0]
+2301,Bastyr Center For Natural Health,Grocery,-122.34220891273509,47.65227395
+2302,Belle Epicurean,Seating 13-50,-122.29203259376996,47.6260548
+2303,Beth'S Cafe,Seating 51-150,-122.344708,47.6821453
+2304,Beveridge Place Pub,Seating 51-150,-122.38749978493036,47.545426899999995
+2305,Big Finn Hill Concessions,Seating 0-12,-122.2336504,47.7250261
+2306,Blissberri,Seating 13-50,[0.0],[0.0]
+2307,Boom Noodles,Seating 51-150,-122.201701,47.6255964
+2308,Artists Studio Loft B & B,Bed and Breakfast,-122.4496535,47.4603057
+2309,Asian Planet Food Market,Meat/Sea Food,[0.0],[0.0]
+2310,Basil Garden,Seating 13-50,-122.2011707,47.370918
+2311,Bills On Greenwood,Seating 51-150,-122.3550798,47.6917436
+2312,At The Vineyard,Seating 0-12,[0.0],[0.0]
+2313,Cash & Carry #549,Grocery,-122.3417772,47.7247284
+2314,Cele'S Meals,Catering Operation,[0.0],[0.0]
+2315,Champions Bar,Seating 151-250,-122.235683,47.3222772
+2316,Christo'S On Alki,Seating 13-50,-122.4057616,47.5808405
+2317,Circle K Store #1546,Seating 0-12,-122.1899108,47.3869347
+2318,Delta Delta Delta,Seating 51-150,-122.305791,47.6621657
+2319,Denny'S,Seating 51-150,-122.1857,47.623824
+2320,Des Moines Grocery & Produce,Grocery,-122.2942991,47.3915672
+2321,East India Grill,Seating 51-150,[0.0],[0.0]
+2322,Einstein Bros Bagels #2171,Seating 0-12,-122.2967604,47.6625492
+2323,Baskin Robbins 31 Ice Cream,Seating 0-12,-122.2333632,47.5843729
+2324,Easthill Am/Pm,Seating 0-12,-122.20171799740669,47.37305775
+2325,Boulevard Park Thriftway- Deli,Seating 0-12,[0.0],[0.0]
+2326,Collective On Tap,Seating 51-150,-122.1604269,47.7579334
+2327,Cafe Juanita,Seating 51-150,-122.2124295,47.7076146
+2328,Bethany Community Church,Non-Profit Institution,-122.34221332221631,47.6874248
+2329,Bilaall Mini Market Llc,Meat/Sea Food,[0.0],[0.0]
+2330,Bleu Bistor'S Grotto,Seating 13-50,-122.3219212,47.619794
+2331,Blue Island Roll & Sushi,Seating 51-150,-122.31791941857102,47.2881597
+2332,Bj'S Restaurant And Brewery,Seating > 250,[0.0],[0.0]
+2333,Black Rock Coffee Bar,Seating 0-12,-122.34563152475862,47.732773249999994
+2334,Bon - Appetit @ Cornish College,Non-Profit Institution,-122.33623329835106,47.61819595
+2335,Akasaka Restaurant,Seating 51-150,-122.3128992,47.32136085
+2336,Bill The Butcher,Meat/Sea Food,[0.0],[0.0]
