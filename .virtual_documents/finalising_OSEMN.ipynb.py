@@ -32,6 +32,86 @@ pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
 
 
+def getClosest(home_lat: float, home_lon: float, dest_lat_series: 'series', dest_lon_series: 'series'):
+    """Pass 1 set of coordinates and one latitude or longitude column you would like to compare it's distance to"""
+    #radius of the earth in miles 
+    r = 3963
+    #setting variables to use to iterate through  
+    closest = 100
+    within_mile = 0
+    i = 0
+    #using a while loop to iterate over our data and calculate the distance between each datapoint and our homes 
+    while i < dest_lat_series.size:
+        lat_dist = radians(home_lat) - (dest_lat := radians(dest_lat_series.iloc[i]))
+        lon_dist = radians(home_lon) - (radians(dest_lon_series.iloc[i]))
+        a = sin(lat_dist / 2)**2 + cos(radians(home_lat)) * cos(radians(dest_lat)) * sin(lon_dist / 2)**2
+        c = 2 * atan2(sqrt(a), sqrt(1 - a))
+        c = r * c 
+        #find the closest data to our homes by keeping our smallest (closest) value
+        if (c < closest):
+            closest = c
+        #find all of the points that fall within one mile and count them 
+        if (c <= 1.0):
+            within_mile += 1
+        i += 1
+    return [closest, within_mile]
+
+
+def plotcoef(model):
+    """Takes in OLS results and returns a plot of the coefficients"""
+    #make dataframe from summary of results 
+    coef_df = pd.DataFrame(model.summary().tables[1].data)
+    #rename your columns
+    coef_df.columns = coef_df.iloc[0]
+    #drop header row 
+    coef_df = coef_df.drop(0)
+    #set index to variables
+    coef_df = coef_df.set_index(coef_df.columns[0])
+    #change dtype from obj to float
+    coef_df = coef_df.astype(float)
+    #get errors
+    err = coef_df['coef'] - coef_df['[0.025']
+    #append err to end of dataframe 
+    coef_df['errors'] = err
+    #sort values for plotting 
+    coef_df = coef_df.sort_values(by=['coef'])
+    ## plotting time ##
+    var = list(coef_df.index.values)
+    #add variables column to dataframe 
+    coef_df['var'] = var
+    # define fig 
+    fig, ax = plt.subplots(figsize=(8,5))
+    #error bars for 95% confidence interval
+    coef_df.plot(x='var', y='coef', kind='bar',
+                ax=ax, fontsize=20, yerr='errors')
+    #set title and label 
+    plt.title('Coefficients of Features With 95% Confidence Interval', fontsize=30)
+    ax.set_ylabel('Coefficients', fontsize=20)
+    ax.set_xlabel(' ')
+    #coefficients 
+    ax.scatter(x= np.arange(coef_df.shape[0]),
+              marker='o', s=80, 
+              y=coef_df['coef'])
+    return plt.show()
+
+
+def make_ols(df, x_columns, target='price'):
+    """Pass in a DataFrame & your predictive columns to return an OLS regression model """
+    #set your x and y variables
+    X = df[x_columns]
+    y = df[target]
+    # pass them into stats models OLS package
+    ols = sm.OLS(y, X)
+    #fit your model
+    model = ols.fit()
+    #display the model summarry
+    display(model.summary())
+    #plot the residuals 
+    fig = sm.graphics.qqplot(model.resid, dist=stats.norm, line='45', alpha=.05, fit=True)
+    #return model for later use 
+    return model
+
+
 #wrote up our data types to save on computer space and stop some of them from being inccorectly read as objs
 kc_dtypes = {'id': int, 'date' : str,  'price': float, 'bedrooms' : int, 'bathrooms' : float, 'sqft_living': int, 'sqft_lot': int, 
              'floors': float, 'waterfront': float, 'view' : float, 'condition': float, 'grade': int, 'sqft_above': int, 
@@ -40,50 +120,43 @@ kc_dtypes = {'id': int, 'date' : str,  'price': float, 'bedrooms' : int, 'bathro
 
 kc_data = pd.read_csv(r'~\Documents\Flatiron\data\data\kc_house_data.csv', parse_dates = ['date'], dtype=kc_dtypes)
 schools = pd.read_csv(r'~\Documents\Flatiron\data\data\Schools.csv')
+foods = pd.read_csv(r'~\Documents\Flatiron\foods.csv')
 
 
-#calculate distance between schools and data 
-kc = {}
+foods = foods.loc[foods['lat'] get_ipython().getoutput("= '[0.0]'].copy()")
+foods = foods.loc[foods['long'] get_ipython().getoutput("= '[0.0]'].copy()")
+foods['lat'] = foods['lat'].astype(dtype=float)
+foods['long'] = foods['long'].astype(dtype=float)
 
-# approximate radius of earth in miles  miles
+
+rest = foods.loc[foods['SEAT_CAP'] get_ipython().getoutput("= 'Grocery']")
+groc = foods.loc[foods['SEAT_CAP'] == 'Grocery']
+
+
+kc_dict = {}
+
+
 i = 0
-#iterate over each of our rows in the dataframe
-while i <= 21480:
-    R = 3963.0
-    k = 0
-    lat1 = radians(kc_data['lat'].iloc[i])
-    lon1 = radians(kc_data['long'].iloc[i])
-    distance = []
-    #iterate over each school to see which school is the closest to each row in our datframe 
-    while k <= 641:
-        lat2 = radians(schools['LAT_CEN'].iloc[k])
-        lon2 = radians(schools['LONG_CEN'].iloc[k])
-
-        dlon = lon2 - lon1
-        dlat = lat2 - lat1
-
-        a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
-        c = 2 * atan2(sqrt(a), sqrt(1 - a))
-        distance.append(R * c)
-        
-        k += 1 
-    #sort schools by distance 
-    distance.sort()
-    #choose closest school 
-    kc[i] = distance[0:1]
-    i += 1
+while i < kc_data['lat'].size:
+    school = getClosest(kc_data['lat'].iloc[i], kc_data['long'].iloc[i], schools['LAT_CEN'], schools['LONG_CEN'])
+    restaurant = getClosest(kc_data['lat'].iloc[i], kc_data['long'].iloc[i], rest['lat'], rest['long'])
+    grocery = getClosest(kc_data['lat'].iloc[i], kc_data['long'].iloc[i], groc['lat'], groc['long'])
+    kc_dict[i] = {
+        "closest school": school[0],
+        "schools within mile": school[1],
+        "closest restaurant": restaurant[0],
+        "restaurants within mile": restaurant[1],
+        "closest grocery": grocery[0],
+        "groceries within mile": grocery[1]}
+    i += 1 
 
 
-kc1 = pd.DataFrame.from_dict(kc, orient='index', columns=['mi_nearest_scl'])
+kc = pd.DataFrame.from_dict(kc_dict, orient='index')
+kc_data = kc_data.merge(kc, left_index=True, right_index=True)
 
 
-kc_data = kc_data.merge(kc1, left_index=True, right_index=True)
-
-
-kc_data.describe()
-
-
-kc_data.info()
+kc_data = kc_data.rename(columns ={'closest school': 'mi_2_scl', 'schools within mile': 'scls_in_mi', 'closest restaurant':'mi_2_rest', 
+                          'restaurants within mile':'rest_in_mi','closest grocery': 'mi_2_groc', 'groceries within mile': 'groc_in_mi'})
 
 
 kc_data.isnull().sum()
@@ -173,14 +246,19 @@ kc_data = kc_data.rename({'gra_4': 'D', 'gra_5':'Cmin', 'gra_6':'C','gra_7':'Cpl
                           'gra_10':'Bpl', 'gra_11':'Amin', 'gra_12':'A', 'gra_13':'Apl'},axis=1)
 
 
-kc_data.hist(figsize=(10,10))
+hist = kc_data[['price', 'bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'waterfront', 'view',
+                'condition', 'grade', 'sqft_above', 'sqft_basement', 'yr_built', 'yr_renovated', 'zipcode', 
+                'lat', 'long', 'sqft_living15', 'sqft_lot15', 'mi_2_scl', 'scls_in_mi', 'mi_2_rest',
+                'rest_in_mi', 'mi_2_groc', 'groc_in_mi']]
+hist.hist(figsize=(15,15))
 plt.tight_layout()
 
 
 # fig = pd.plotting.scatter_matrix(kc_data,figsize=(16,16));
+kc_data.columns
 
 
-fig, ax = plt.subplots(figsize=(16,12))
+fig, ax = plt.subplots(figsize=(25,20))
 corr = kc_data.corr().abs().round(3)
 mask = np.triu(np.ones_like(corr, dtype=np.bool))
 sns.heatmap(corr, annot=True, mask=mask, cmap='Oranges', ax=ax)
@@ -215,7 +293,7 @@ kc_data = kc_data[['price', 'bedrooms', 'bathrooms', 'floors','waterfront',
                    'zip107t115', 'zip116t122', 'zip125t144', 'zip146t168', 
                    'zip177t199', 
                    'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80',
-                   'mi_nearest_scl']].copy()
+                   'mi_2_scl', 'scls_in_mi', 'mi_2_rest', 'rest_in_mi', 'mi_2_groc', 'groc_in_mi']].copy()
 
 
 lowtier = kc_data[kc_data.price <=300000]
@@ -232,7 +310,7 @@ lowincome = ['bedrooms', 'bathrooms', 'floors', 'waterfront',
           'zip107t115', 'zip116t122', 'zip125t144', 'zip146t168', 
           'zip177t199', 
           'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80',
-          'mi_nearest_scl']
+          'mi_2_scl', 'scls_in_mi', 'mi_2_rest', 'rest_in_mi', 'mi_2_groc', 'groc_in_mi']
 
 mediumincome = ['bedrooms', 'bathrooms', 'floors', 'waterfront', 
           'yr_renovated', 'lat', 'long', 
@@ -244,7 +322,7 @@ mediumincome = ['bedrooms', 'bathrooms', 'floors', 'waterfront',
           'zip107t115', 'zip116t122', 'zip125t144', 'zip146t168', 
           'zip177t199', 
           'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80',
-          'mi_nearest_scl']
+          'mi_2_scl', 'scls_in_mi', 'mi_2_rest', 'rest_in_mi', 'mi_2_groc', 'groc_in_mi']
 
 highincome = ['bedrooms', 'bathrooms', 'floors', 'waterfront', 
           'yr_renovated', 'lat', 'long', 
@@ -256,23 +334,7 @@ highincome = ['bedrooms', 'bathrooms', 'floors', 'waterfront',
           'zip107t115', 'zip116t122', 'zip125t144', 'zip146t168', 
           'zip177t199', 
           'thru2000', 'thru2020', 'thru40', 'thru60', 'thru80',
-          'mi_nearest_scl']
-
-
-def make_ols(df, x_columns, drops=None, target='price', add_constant=False):
-    if drops:
-        drops.append(target)
-        X = df.drop(columns=drops)
-    else:
-        X = df[x_columns]
-    if add_constant:
-        X = sm.add_constant(X)
-    y = df[target]
-    ols = sm.OLS(y, X)
-    model = ols.fit()
-    display(model.summary())
-    fig = sm.graphics.qqplot(model.resid, dist=stats.norm, line='45', alpha=.05, fit=True)
-    return model
+          'mi_2_scl', 'scls_in_mi', 'mi_2_rest', 'rest_in_mi', 'mi_2_groc', 'groc_in_mi']
 
 
 price_tiers = [('low', lowtier, lowincome), 
@@ -317,7 +379,7 @@ kc_data = kc_data.loc[kc_data['sqft_habitable'] <= 1.000000e+07]
 kc_data =  kc_data.loc[kc_data['bathrooms'] >= 1]
 kc_data =  kc_data.loc[kc_data['bathrooms'] <= 5]
 kc_data =  kc_data.loc[kc_data['bedrooms'] <= 7]
-all_data.describe()
+kc_data.columns
 
 
 lowtier = kc_data[(kc_data.price >= 210000) & (kc_data.price <= 348000) ]
@@ -326,27 +388,35 @@ uppermidtier = kc_data[(kc_data.price >= 480000) & (kc_data.price <= 640000) ]
 hightier = kc_data[(kc_data.price >= 640000) & (kc_data.price <= 900000)]
 
 
-lowincome = ['bathrooms', 'lat', 'long',  'sqft_habitable', 
-             'view1', 'view2', 'view3', 'Cpl', 'Bmin', 'B', 
-             'Bpl', 'Amin', 'zip055t065', 'zip092t106',
-             'zip107t115', 'zip146t168']
+lowincome = ['bathrooms', 'waterfront', 'lat', 'long',
+             'sqft_total', 'sqft_habitable', 
+             'view1', 'view2', 'view3', 
+             'C', 'Cpl', 'Bmin', 'B',
+             'zip040t053', 'zip055t065', 'zip092t106', 
+             'zip107t115', 'zip146t168', 
+             'groc_in_mi']
 
-mediumincome = ['bathrooms', 'lat', 'long', 
-                'view2', 'Bmin', 'B', 'Bpl', 
-                'zip006t011', 'zip032t039', 'zip040t053', 
-                'zip070t077',  'zip107t115', 'zip116t122', 
-                'zip125t144', 'thru2000', 'thru80']
+mediumincome = ['bathrooms',  'lat', 'long', 
+                'sqft_habitable', 'view2',   
+                'Cpl', 'Bmin', 'B', 'Bpl',   
+                'zip006t011', 'zip014t024', 'zip032t039', 
+                'zip055t065', 'zip070t077', 'zip092t106', 
+                'zip177t199', 'rest_in_mi', 'groc_in_mi',
+                'thru2000', 'thru2020', 'thru60', 'thru80']
 
-uppermedincome = ['bathrooms', 'long', 'sqft_habitable',
-                  'Cpl', 'Bmin', 'B', 'Bpl',
-                  'zip014t024', 'zip146t168', 
-                  'zip125t144', 
-                  'thru2000', 'thru2020', 'thru80']
+uppermedincome = ['bathrooms',  'lat', 'sqft_habitable',   
+                  'C', 'Bmin', 'B', 
+                  'zip014t024', 'zip027t031', 'zip032t039', 
+                  'zip070t077', 'zip125t144', 'zip146t168', 
+                  'thru2000', 'thru2020', 'thru60', 'thru80']
+
 
 highincome = ['bathrooms', 'floors', 'sqft_neighb', 
               'sqft_habitable', 'thru2020',
               'zip006t011', 'zip107t115',
-              'zip116t122', 'zip177t199']
+              'zip116t122', 'zip177t199', 
+              'mi_2_scl', 'scls_in_mi', 'mi_2_rest',
+              'mi_2_groc', 'groc_in_mi']
 
 
 price_tiers = [('low', lowtier, lowincome), 
@@ -360,86 +430,15 @@ for name, tier, income in price_tiers:
     make_ols(tier, income)
 
 
-#make_ols(hightier, highincome)
-model = make_ols(lowtier, lowincome)
-
-
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(model, "Bpl", fig=fig)
-plt.show()
-
-
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(model, "bathrooms", fig=fig)
-plt.show()
-
-
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(model, "lat", fig=fig)
-plt.show()
-
-
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(model, "long", fig=fig)
-plt.show()
-
-
-# fig = plt.figure(figsize=(15,8))
-# fig = sm.graphics.plot_regress_exog(model, "sqft_total", fig=fig)
-# plt.show()
-lowtier.columns
-
-
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(model, "sqft_habitable", fig=fig)
-plt.show()
-
-
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(model, "Bmin", fig=fig)
-plt.show()
-
-
-lowtier['sqft_total'].describe()
-
-
 #first step
 high_data = hightier[['price', 'bathrooms', 'floors', 'sqft_neighb', 
-              'sqft_habitable', 'Amin', 'thru2020',
-              'zip006t011', 'zip027t031',  'zip070t077', 
-              'zip107t115', 'zip116t122', 'zip177t199']].copy()
+                      'sqft_habitable', 'thru2020',
+                      'zip006t011', 'zip107t115',
+                      'zip116t122', 'zip177t199', 
+                      'mi_2_scl', 'scls_in_mi', 'mi_2_rest',
+                      'mi_2_groc', 'groc_in_mi']].copy()
 
-training_data, testing_data = train_test_split(high_data, test_size=0.30, random_state=42)
-
-
-#split columns
-target = 'price'
-predictive_cols = training_data.drop('price', 1).columns
-
-
-model = make_ols(hightier, predictive_cols)
-
-
-# predictions
-y_pred_train = model.predict(training_data[predictive_cols])
-y_pred_test = model.predict(testing_data[predictive_cols])
-# then get the scores:
-train_mse = mean_squared_error(training_data[target], y_pred_train)
-test_mse = mean_squared_error(testing_data[target], y_pred_test)
-print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
-print('Training Mean Error', sqrt(train_mse), '\nTesting Mean Error:', sqrt(test_mse))
-print(r2_score(training_data[target], y_pred_train))
-print(r2_score(testing_data[target], y_pred_test))
-
-
-#first step
-upper_med_data = uppermidtier[['price', 'bathrooms', 'long', 'sqft_habitable',
-                  'Cpl', 'Bmin', 'B', 'Bpl',
-                  'zip014t024', 'zip146t168', 
-                  'zip055t065', 'zip125t144', 
-                  'thru2000', 'thru2020', 'thru80']].copy()
-
-training_data, testing_data = train_test_split(upper_med_data,test_size=0.25, random_state=42)
+training_data, testing_data = train_test_split(high_data, test_size=0.25, random_state=44)
 
 
 #split columns
@@ -447,28 +446,37 @@ target = 'price'
 predictive_cols = training_data.drop('price', 1).columns
 
 
-model = make_ols(training_data, predictive_cols)
+high_model = make_ols(hightier, predictive_cols)
 
 
 # predictions
-y_pred_train = model.predict(training_data[predictive_cols])
-y_pred_test = model.predict(testing_data[predictive_cols])
+y_pred_train = high_model.predict(training_data[predictive_cols])
+y_pred_test = high_model.predict(testing_data[predictive_cols])
 # then get the scores:
 train_mse = mean_squared_error(training_data[target], y_pred_train)
 test_mse = mean_squared_error(testing_data[target], y_pred_test)
 print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
-print('Training Mean Error', sqrt(train_mse), '\nTesting Mean Error:', sqrt(test_mse))
-print(r2_score(training_data[target], y_pred_train))
-print(r2_score(testing_data[target], y_pred_test))
+plotcoef(high_model)
+
+
+fig = plt.figure(figsize=(15,8))
+fig = sm.graphics.plot_regress_exog(high_model, "groc_in_mi", fig=fig)
+plt.show()
+
+
+fig = plt.figure(figsize=(15,8))
+fig = sm.graphics.plot_regress_exog(high_model, "sqft_habitable", fig=fig)
+plt.show()
 
 
 #first step
-mid_data = midtier[['bathrooms', 'waterfront',  'lat', 'long', 
-                'view2', 'Bmin', 'B', 'Bpl', 'Amin', 'price',
-                'zip006t011', 'zip032t039', 'zip040t053', 
-                'zip070t077',  'zip107t115', 'zip116t122', 
-                'zip125t144', 'thru2000', 'thru60', 'thru80']].copy()
-training_data, testing_data = train_test_split(mid_data, test_size=0.25, random_state=42)
+upper_med_data = uppermidtier[['bathrooms',  'lat', 'sqft_habitable',   
+                               'C', 'Bmin', 'B', 'price',
+                               'zip014t024', 'zip027t031', 'zip032t039', 
+                               'zip070t077', 'zip125t144', 'zip146t168', 
+                               'thru2000', 'thru2020', 'thru60', 'thru80']].copy()
+
+training_data, testing_data = train_test_split(upper_med_data,test_size=0.30, random_state=55)
 
 
 #split columns
@@ -476,28 +484,68 @@ target = 'price'
 predictive_cols = training_data.drop('price', 1).columns
 
 
-model = make_ols(mid_data, predictive_cols)
+uppmid_model = make_ols(training_data, predictive_cols)
 
 
 # predictions
-y_pred_train = model.predict(training_data[predictive_cols])
-y_pred_test = model.predict(testing_data[predictive_cols])
+y_pred_train = uppmid_model.predict(training_data[predictive_cols])
+y_pred_test = uppmid_model.predict(testing_data[predictive_cols])
 # then get the scores:
 train_mse = mean_squared_error(training_data[target], y_pred_train)
 test_mse = mean_squared_error(testing_data[target], y_pred_test)
 print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
-print('Training Mean Error', sqrt(train_mse), '\nTesting Mean Error:', sqrt(test_mse))
-print(r2_score(training_data[target], y_pred_train))
-print(r2_score(testing_data[target], y_pred_test))
+plotcoef(uppmid_model)
+
+
+fig = plt.figure(figsize=(15,8))
+fig = sm.graphics.plot_regress_exog(uppmid_model, "sqft_habitable", fig=fig)
+plt.show()
 
 
 #first step
-low_data = lowtier[['bathrooms', 'lat', 'long',  'sqft_habitable', 
-             'view1', 'view2', 'view3', 'Cpl', 'Bmin', 'B', 
-             'Bpl', 'Amin', 'zip055t065', 'zip092t106', 'price',
-             'zip107t115', 'zip116t122', 'zip146t168']].copy()
+mid_data = midtier[['bathrooms',  'lat', 'long', 
+                    'sqft_habitable', 'view2', 'price', 
+                    'Cpl', 'Bmin', 'B', 'Bpl',   
+                    'zip006t011', 'zip014t024', 'zip032t039', 
+                    'zip055t065', 'zip070t077', 'zip092t106', 
+                    'zip177t199', 'rest_in_mi', 'groc_in_mi',
+                    'thru2000', 'thru2020', 'thru60', 'thru80']].copy()
+training_data, testing_data = train_test_split(mid_data, test_size=0.30, random_state=70)
 
-training_data, testing_data = train_test_split(low_data, test_size=0.25, random_state=42)
+
+#split columns
+target = 'price'
+predictive_cols = training_data.drop('price', 1).columns
+
+
+mid_model = make_ols(mid_data, predictive_cols)
+
+
+# predictions
+y_pred_train = mid_model.predict(training_data[predictive_cols])
+y_pred_test = mid_model.predict(testing_data[predictive_cols])
+# then get the scores:
+train_mse = mean_squared_error(training_data[target], y_pred_train)
+test_mse = mean_squared_error(testing_data[target], y_pred_test)
+print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
+plotcoef(mid_model)
+
+
+fig = plt.figure(figsize=(15,8))
+fig = sm.graphics.plot_regress_exog(high_model, "sqft_habitable", fig=fig)
+plt.show()
+
+
+#first step
+low_data = lowtier[['bathrooms', 'waterfront', 'lat', 'long',
+                    'sqft_total', 'sqft_habitable', 
+                    'view1', 'view2', 'view3', 
+                    'C', 'Cpl', 'Bmin', 'B', 'price',
+                    'zip040t053', 'zip055t065', 'zip092t106', 
+                    'zip107t115', 'zip146t168', 
+                    'groc_in_mi']].copy()
+
+training_data, testing_data = train_test_split(low_data, test_size=0.25, random_state=66)
 
 
 #split columns
@@ -515,16 +563,19 @@ y_pred_test = model.predict(testing_data[predictive_cols])
 train_mse = mean_squared_error(training_data[target], y_pred_train)
 test_mse = mean_squared_error(testing_data[target], y_pred_test)
 print('Training MSE:', train_mse, '\nTesting MSE:', test_mse)
-print('Training Mean Error', sqrt(train_mse), '\nTesting Mean Error:', sqrt(test_mse))
-print(r2_score(training_data[target], y_pred_train))
-print(r2_score(testing_data[target], y_pred_test))
+plotcoef(low_model)
+
+
+fig = plt.figure(figsize=(15,8))
+fig = sm.graphics.plot_regress_exog(high_model, "sqft_habitable", fig=fig)
+plt.show()
 
 
 fig, ax = plt.subplots(figsize=(12,8))
 
-sns.boxplot(x='grade', y='price', data=all_data)
-ax.set(title='Grade relationship on Price', 
-       xlabel='Grade', ylabel='Price')
+sns.boxplot(x='mi_2_scl', y='price', data=kc_data)
+ax.set(title='Miles To Nearest School & Relationship to Price', 
+       xlabel='Miles', ylabel='Price')
 
 fig.tight_layout()
 
@@ -552,15 +603,6 @@ fig, ax = plt.subplots(figsize=(12,8))
 sns.boxplot(x='floors', y='price', data=kc_data)
 ax.set(title='Floors & Price', 
        xlabel='Floors', ylabel='Price')
-
-fig.tight_layout()
-
-
-fig, ax = plt.subplots(figsize=(12,8))
-
-sns.boxplot(x='condition', y='price', data=all_data)
-ax.set(title='Condition & Price', 
-       xlabel='Condition', ylabel='Price')
 
 fig.tight_layout()
 
