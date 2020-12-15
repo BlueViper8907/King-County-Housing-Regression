@@ -10,10 +10,13 @@ import statsmodels.stats.api as sms
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import matplotlib as mpl
+import matplotlib.patches as mpatches
 
 
 from math import sin, cos, sqrt, atan2, radians
 from sklearn import svm
+from cycler import cycler
+from matplotlib import rcParams
 from scipy.stats import zscore
 from sklearn import linear_model
 from statsmodels.formula.api import ols
@@ -28,12 +31,24 @@ from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 
 get_ipython().run_line_magic("matplotlib", " inline")
-plt.style.use('dark_background')
-mpl.rcParams['lines.linewidth'] = 2
-mpl.rcParams['lines.color'] = '#FBE122'
+#plt.style.use('dark_background')
 pd.set_option('display.max_rows', 50)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
+mpl.rcParams['lines.linewidth'] = 2
+mpl.rcParams['lines.color'] = '#FBE122'
+mpl.rcParams['grid.linewidth'] = 0.5
+mpl.rcParams['grid.color'] = '#A2AAAD'
+mpl.rcParams['grid.linestyle'] = ':'
+mpl.rcParams['axes.labelcolor'] = '#A2AAAD'
+mpl.rcParams['axes.facecolor'] = 'black'
+mpl.rcParams['axes.prop_cycle'] = mpl.cycler(color=["#2C5234", "#46664d", "#687a6c"]) 
+mpl.rcParams['figure.facecolor'] = 'black'
+mpl.rcParams['figure.edgecolor'] = 'black'   
+mpl.rcParams['image.cmap'] = 'YlGn'
+mpl.rcParams['text.color'] = '#A2AAAD'
+mpl.rcParams['xtick.color'] = '#A2AAAD'
+mpl.rcParams['ytick.color'] = '#A2AAAD'
 
 
 def getClosest(home_lat: float, home_lon: float, dest_lat_series: 'series', dest_lon_series: 'series'):
@@ -59,6 +74,22 @@ def getClosest(home_lat: float, home_lon: float, dest_lat_series: 'series', dest
             within_mile += 1
         i += 1
     return [closest, within_mile]
+
+
+# this function is directly from the matplotlib documentation 
+# https://matplotlib.org/_modules/matplotlib/figure.html#Figure.set_frameon
+def set_frameon(self, b):
+        """
+        Set the figure's background patch visibility, i.e.
+        whether the figure background will be drawn. Equivalent to
+        ``Figure.patch.set_visible()``.
+
+        Parameters
+        ----------
+        b : bool
+        """
+        self.patch.set_visible(b)
+        self.stale = True
 
 
 def plotcoef(model):
@@ -89,7 +120,7 @@ def plotcoef(model):
     coef_df.plot(x='var', y='coef', kind='bar',
                 ax=ax, fontsize=15, yerr='errors', color='#FBE122', ecolor = '#FBE122')
     #set title and label 
-    plt.title('Coefficients of Features With 95% Confidence Interval', fontsize=20)
+    plt.title('Coefficients of Features in With 95% Confidence Interval', fontsize=20)
     ax.set_ylabel('Coefficients', fontsize=15)
     ax.set_xlabel(' ')
     #coefficients 
@@ -97,6 +128,8 @@ def plotcoef(model):
               marker='+', s=50, 
               y=coef_df['coef'], color='#FBE122')
     plt.legend(fontsize= 15,frameon=True, fancybox=True, facecolor='black')
+    set_frameon(ax, False)
+    set_frameon(fig, False)
     return plt.show()
 
 
@@ -112,9 +145,10 @@ def make_ols(df, x_columns,target='price'):
     #display the model summarry
     display(model.summary())
     #plot the residuals 
-    fig = sm.graphics.qqplot(model.resid, dist=stats.norm, line='r', alpha=.65, fit=True, markerfacecolor="#FBE122")
+    fig = sm.graphics.qqplot(model.resid, dist=stats.norm, line='r', color='y', alpha=.65, fit=True, markerfacecolor="#FBE122")
     plt.xlim(-2, 2)
     plt.ylim(-2, 2)
+    fig = set_frameon(fig, False)
     #return model for later use 
     return model
 
@@ -125,6 +159,26 @@ def get_percentile(data_n_col):
     for i in range(1,100):
         q = i / 100
         print('{} percentile: {}'.format(q, data_n_col.quantile(q=q)))
+
+
+def quadregplot(model, column):
+    """Pass in model and column to stats model to create 4 regression plots in Seattle Storm colors"""
+    fig = plt.figure(figsize=(15,8))
+    fig = sm.graphics.plot_regress_exog(model, column, fig=fig)
+    ax1, ax2, ax3, ax4 = fig.get_axes()
+    ax1.properties()['children'][0].set_color('#A2AAAD')
+    ax1.properties()['children'][1].set_color('#FBE122')
+    ax1.properties()['children'][2].set_color('#2C5234')
+    ax2.properties()['children'][0].set_color('#2C5234')
+    ax2.properties()['children'][1].set_color('#FBE122')
+    ax3.properties()['children'][1].set_color('#FBE122')
+    ax1.grid(True)
+    ax2.grid(True)
+    ax3.grid(True)
+    ax4.grid(True)
+    green_patch = mpatches.Patch(color='#FBE122', label='Price')
+    yellow_patch = mpatches.Patch(color='#2C5234', label='Fitted')
+    ax1.legend(handles=[green_patch, yellow_patch])
 
 
 #wrote up our data types to save on computer space and stop some of them from being inccorectly read as objs
@@ -281,10 +335,12 @@ kc_data = kc_data.rename({'gra_4': 'D', 'gra_5':'Cmin', 'gra_6':'C','gra_7':'Cpl
 
 # looking at a histogram of value counts for al of our data can give us a sense of how it's 
 #distributed and what columns we might have issues with 
+
 hist = kc_data[['price', 'bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'waterfront', 'view',
                 'condition', 'grade', 'sqft_above', 'sqft_basement', 'yr_built', 'yr_renovated', 'zipcode', 
                 'lat', 'long', 'sqft_living15', 'sqft_lot15', 'mi_2_scl', 'scls_in_mi', 'mi_2_rest',
                 'rest_in_mi', 'mi_2_groc', 'groc_in_mi']]
+
 hist.hist(figsize=(15,15), color='#2C5234')
 plt.tight_layout()
 
@@ -298,12 +354,13 @@ plt.tight_layout()
 fig, ax = plt.subplots(figsize=(25,20))
 corr = kc_data.corr().abs().round(3)
 mask = np.triu(np.ones_like(corr, dtype=np.bool))
-sns.heatmap(corr, annot=True, mask=mask, cmap='Greens', ax=ax)
+sns.heatmap(corr, annot=True, mask=mask, cmap='YlGn', ax=ax)
 plt.setp(ax.get_xticklabels(), 
          rotation=45, 
          ha="right",
          rotation_mode="anchor")
 ax.set_title('Correlations')
+set_frameon(ax, True)
 fig.tight_layout()
 
 
@@ -405,8 +462,9 @@ for col in ['price']:
 
 
 # taking a look at our prices to make sure they're normal enough for us to use 
-plt.figure(figsize=(15,4))
-plt.plot(kc_data['price'].value_counts().sort_index(), color='#FBE122')
+with plt.style.context('dark_background'):
+    plt.figure(figsize=(15,4))
+    plt.plot(kc_data['price'].value_counts().sort_index(), color='#FBE122')
 # looks good!
 
 
@@ -524,14 +582,10 @@ print('Training Error: $', sqrt(train_mse), '\nTesting Error:', sqrt(test_mse))
 plotcoef(high_model)
 
 
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(high_model, "groc_in_mi", fig=fig)
-plt.show()
+quadregplot(high_model, 'groc_in_mi')
 
 
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(high_model, "sqft_habitable", fig=fig)
-plt.show()
+quadregplot(high_model,'sqft_habitable')
 
 
 #first step is to seperate out the data we're going to use for this model
@@ -542,6 +596,7 @@ upper_med_data = uppermidtier[['bathrooms',  'lat', 'sqft_habitable',
                                'thru2000', 'thru2020', 'thru60', 'thru80']].copy()
 # splitting it into 25/75 training/testing data to make sure our model is consistent 
 training_data, testing_data = train_test_split(upper_med_data,test_size=0.30, random_state=55)
+
 
 
 #split columns
@@ -572,11 +627,6 @@ print('Training Error: $', sqrt(train_mse), '\nTesting Error:', sqrt(test_mse))
 
 #plotting our coefficients 
 plotcoef(uppmid_model)
-
-
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(uppmid_model, "sqft_habitable", fig=fig)
-plt.show()
 
 
 #first step is to seperate out the data we're going to use for this model
@@ -621,9 +671,7 @@ print('Training Error: $', sqrt(train_mse), '\nTesting Error:', sqrt(test_mse))
 plotcoef(mid_model)
 
 
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(high_model, "sqft_habitable", fig=fig)
-plt.show()
+quadregplot(high_model, 'sqft_habitable')
 
 
 #first step is to seperate out the data we're going to use for this model
@@ -668,27 +716,43 @@ print('Training Error: $', round(sqrt(train_mse), 2), '\nTesting Error: $', roun
 plotcoef(low_model)
 
 
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(low_model, "lat", fig=fig)
-plt.show()
+quadregplot(low_model, 'lat')
 #as you can see here, the farther west, towards the cities, you go, the more expensive homes become. 
 #please note we are not missing data in those gaps, those represent bodies of water where few people live on small islands or in house boats 
 
 
-fig = plt.figure(figsize=(15,8))
-fig = sm.graphics.plot_regress_exog(low_model, "bathrooms", fig=fig)
-plt.show()
+quadregplot(low_model,'bathrooms')
 # 6,000$ doesn't look like much compared to prices in the 450,000, but, an increase from 1 to 4 could add over 20k and possibly bump you up to a higher 
 # grade, making your home worth even more. 
 
 
-fig, ax = plt.subplots(figsize=(12,8))
+#Upper Middle B Grade Rating
+sns.boxplot(x='B',y='price',data=upper_med_data,color='#2C5234')
+plt.tight_layout()
 
-sns.regplot(x='bathrooms', y='price', data=high_data, ci=95, marker='o', units=.25, color='green', scatter_kws={'s': 95})
-ax.set(title='Bathooms & Price', 
-       xlabel='Bathrooms', ylabel='Price', alpha =.75)
 
-fig.tight_layout()
+#Upper Middle B Minus Rating
+sns.boxplot(x='Bmin',y='price',data=upper_med_data,color='#2C5234')
+plt.tight_layout()
+
+
+# #Floors/Lofts High
+# sns.catplot(x='floors',y='price',data=high_data,kind='boxen')
+# ax.set(title='Value of Floors and Lofts',xlabel='Floors/Lofts',ylabel='Price')
+# plt.show()
+quadregplot(high_model, 'floors')
+
+
+#Bathrooms High
+sns.swarmplot(x='bathrooms',y='price',data=high_data,color='#FBE122', size=2, alpha=.5)
+sns.boxplot(x='bathrooms',y='price',data=high_data,color='#2C5234')
+plt.tight_layout()
+
+
+#Bathrooms Upper Middle
+sns.swarmplot(x='bathrooms',y='price',data=upper_med_data,color='black')
+sns.boxplot(x='bathrooms',y='price',data=upper_med_data,color='green')
+plt.tight_layout()
 
 
 
