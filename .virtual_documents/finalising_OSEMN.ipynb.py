@@ -726,13 +726,15 @@ quadregplot(low_model,'bathrooms')
 # grade, making your home worth even more. 
 
 
-#Upper Middle B Grade Rating
-sns.boxplot(x='B',y='price',data=upper_med_data,color='#2C5234')
+#Upper Middle B Minus Rating
+fig = plt.figure(figsize=(3,5))
+sns.boxplot(x='B',y='price',data=upper_med_data,palette=['#2C5234', '#FBE122'], width=.5, whis=1)
 plt.tight_layout()
 
 
 #Upper Middle B Minus Rating
-sns.boxplot(x='Bmin',y='price',data=upper_med_data,color='#2C5234')
+fig = plt.figure(figsize=(3,5))
+sns.boxplot(x='Bmin',y='price',data=upper_med_data,palette=['#2C5234', '#FBE122'], width=.5, whis=1)
 plt.tight_layout()
 
 
@@ -740,18 +742,15 @@ plt.tight_layout()
 # sns.catplot(x='floors',y='price',data=high_data,kind='boxen')
 # ax.set(title='Value of Floors and Lofts',xlabel='Floors/Lofts',ylabel='Price')
 # plt.show()
-quadregplot(high_model, 'floors')
+quadregplot(low_model, 'floors')
 
 
 #Bathrooms High
-sns.swarmplot(x='bathrooms',y='price',data=high_data,color='#FBE122', size=2, alpha=.5)
-sns.boxplot(x='bathrooms',y='price',data=high_data,color='#2C5234')
-plt.tight_layout()
-
-
-#Bathrooms Upper Middle
-sns.swarmplot(x='bathrooms',y='price',data=upper_med_data,color='black')
-sns.boxplot(x='bathrooms',y='price',data=upper_med_data,color='green')
+fig = plt.figure(figsize=(10,10))
+sns.boxplot(x='bathrooms',y='price',data=low_data,color='#2C5234', palette=['#fbe122', '#c9bf26', '#939a2b', '#62772f', '#44644c', '#657c6e', '#84938e', '#a2aaad'])
+plt.title('Number of Bathrooms Vs. Price in Lower Income Homes')
+plt.xlabel('Number of Bathrooms in Home')
+plt.xlim(-.5, 9.5)
 plt.tight_layout()
 
 
