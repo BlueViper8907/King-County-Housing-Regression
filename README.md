@@ -1,8 +1,9 @@
 # King County Housing Regression Project 
-<br>-Course: Flatiron Data Science </br>
-<br>-Pace: Part time </br>
-<br>-Instructor: Amber Yandow </br>
-<br>-Authors: [Fennec C. Nightingale,](mailto:fenneccharles@gmail.com)[Thomas Cornett](mailto:thmscrntt33@gmail.com) & [Cody Freese](mailto:c_freese@ymail.com)
+<br>- Course: Flatiron Data Science </br>
+<br>- Pace: Part time </br>
+<br>- Instructor: Amber Yandow </br>
+<br>- Authors: [Fennec C. Nightingale,](mailto:fenneccharles@gmail.com)[Thomas Cornett](mailto:thmscrntt33@gmail.com) & [Cody Freese](mailto:c_freese@ymail.com)
+![Map](Images/Map.png) 
 
 
 # Overview: 
@@ -11,9 +12,9 @@ https://goo.gl/maps/R72PRoBHnZcK7KCb8">King County</a> & make recommendations to
 
 # The Data:
 CSV & Webscraped Data on homes, grocery stores, schools, and restaurants in King County, provided by Flatiron School & gathered via the ArcGis library.<br> <br>
-Our housing data includes: Sale Prices, Housing Sizes, Housing Conditions, Neighbors Housing Size, Yard Size, Bedrooms, Bathrooms, Floors, View & Location</br> <br>
-Our school data includes: School Names, Grades, Size, Websites, Whether Public or Private & Location</br>  <br>
-& Grocery/Restaurant includes: Type, Seating Capacity, Grade, Phone Number, and Location. </br>
+- Our housing data includes: Sale Prices, Housing Sizes, Housing Conditions, Neighbors Housing Size, Yard Size, Bedrooms, Bathrooms, Floors, View & Location</br> <br>
+- Our school data includes: School Names, Grades, Size, Websites, Whether Public or Private & Location</br>  <br>
+- & Grocery/Restaurant includes: Type, Seating Capacity, Grade, Phone Number, and Location. </br>
 
 # The Process:
 We used Python in Jupyter Notebook to perform <a href="https://machinelearningmastery.com/how-to-work-through-a-problem-like-a-data-scientist/"> OSEMN </a> & <a href="https://en.wikipedia.org/wiki/Ordinary_least_squares"> OLS </a> regression to create our model and predictions for housing prices in King County. 
@@ -49,4 +50,32 @@ Here are a few of our favorite reccomendations:
 - if you're looking to sell your home in the medium income range ($348,00 through 480$) Get your grades up! Simply adding trim or a nice garden can add substantial value to your home, the higher the grade the more valuable it’s likely to be!
 ![grade](Images/grade.png) 
 
- 
+# Future Work
+- Extrapolate stringent values quantifying King County's Grade scale in order to provide people with measurable quantiles to track or control their Grade score
+- Calculate the distance to transit hubs, transit routes, travel locations and timetables to see its impact on housing data
+- Investigate Zipcode "" on future development prospects based on the land value, and existing infrastructure in the region to predict future suburban growth.
+
+# For More Informarion
+See the full analysis in the Jupyter Notebooks or review our Presentation.
+For additional info, contact us here: 
+[Fennec C. Nightingale,](mailto:fenneccharles@gmail.com)[Thomas Cornett](mailto:thmscrntt33@gmail.com) & [Cody Freese](mailto:c_freese@ymail.com)
+
+## Repository Strucure
+```
+├── debug.log
+├──.virtual_documents
+├──.ipynb_checkpoints
+├──data
+    ├──kc_house_data.csv
+    ├──Schools.csv
+├──Images
+    ├── grade.png
+    ├── bath.png
+    ├── b.png
+    ├── coef.png
+    ├── bath.png
+    ├── Regression_Line.png
+    ├── Hist_Matrix.png
+    ├── Map.png
+├── Final_OSEMN.ipynb
+└──Geopandas_Map
