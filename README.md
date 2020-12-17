@@ -3,7 +3,8 @@
 <br>- Pace: Part time </br>
 <br>- Instructor: Amber Yandow </br>
 <br>- Authors: [Fennec C. Nightingale,](mailto:fenneccharles@gmail.com)[Thomas Cornett](mailto:thmscrntt33@gmail.com) & [Cody Freese](mailto:c_freese@ymail.com)
-![Map](Images/Map.png) 
+<br>
+![Seattle](Images/Skyline.png) </br>
 
 
 # Overview: 
@@ -43,12 +44,12 @@ We use the<a href="https://www.statsmodels.org/stable/regression.html"> Statsmod
  # Observations
 - Different incomes have different priorities when it comes to buying or selling a home. In short, Low income tends to put more priority on pragmatic space, While Middle Income homes tend to put more on location and grade, a trend that will increase with importance as you go up income brackets. We made serveral reccomendations to both buyers and sellers based on our data. 
 Here are a few of our favorite reccomendations: 
-- If you're looking to buy a home in the upper medium range ($480,000 through $640,000) Your best deal is to look at homes that were built recently and are a bit bland, homes in the <a href="https://www.kingcounty.gov/Assessor/Reports/ArchivedAreaReports/~/media/Assessor/AreaReports/AreaReportGlossary.ashx"> C\6 </a>range are considerably cheaper, and could allow you to focus on other features you find important. 
-![Violin_B](Images/b.png) 
-- if You're looking to sell your home in the lower income range ($210,000 through $348,000) add bathrooms! so long as you don't exceed a 1:1 ratio for bedrooms and bathrooms, each bathroom will add value to your home
-![Bathroomsxprice](Images/bath.png) 
-- if you're looking to sell your home in the medium income range ($348,00 through 480$) Get your grades up! Simply adding trim or a nice garden can add substantial value to your home, the higher the grade the more valuable it’s likely to be!
-![grade](Images/grade.png) 
+- If you're looking to buy a home in the upper medium range ($480,000 through $640,000) Your best deal is to look at homes that were built recently and are a bit bland, homes in the <a href="https://www.kingcounty.gov/Assessor/Reports/ArchivedAreaReports/~/media/Assessor/AreaReports/AreaReportGlossary.ashx"> C\6 </a>range are considerably cheaper, and could allow you to focus on other features you find important. <br> 
+![Violin_B](Images/b.png) </br>
+- if You're looking to sell your home in the lower income range ($210,000 through $348,000) add bathrooms! so long as you don't exceed a 1:1 ratio for bedrooms and bathrooms, each bathroom will add value to your home<br>
+![Bathroomsxprice](Images/bath.png) </br>
+- if you're looking to sell your home in the medium income range ($348,00 through 480$) Get your grades up! Simply adding trim or a nice garden can add substantial value to your home, the higher the grade the more valuable it’s likely to be!<br>
+![grade](Images/grade.png) </br>
 
 # Future Work
 - Extrapolate stringent values quantifying King County's Grade scale in order to provide people with measurable quantiles to track or control their Grade score
@@ -62,12 +63,12 @@ For additional info, contact us here:
 
 ## Repository Strucure
 ```
-├── debug.log
-├──.virtual_documents
 ├──.ipynb_checkpoints
+├──.virtual_documents
 ├──data
     ├──kc_house_data.csv
     ├──Schools.csv
+    ├──food.csv
 ├──Images
     ├── grade.png
     ├── bath.png
@@ -76,6 +77,10 @@ For additional info, contact us here:
     ├── bath.png
     ├── Regression_Line.png
     ├── Hist_Matrix.png
-    ├── Map.png
+    ├── Skyline.png
+├── pdfs
+    ├──ArcGis_Budget_Mapping.pdf
+    ├──Final_OSEMN.pdf
+    ├──Presentation.pdf
 ├── Final_OSEMN.ipynb
-└──Geopandas_Map
+└──ArcGis_Budget_mapping.ipynb
